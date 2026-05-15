@@ -1,0 +1,793 @@
+[
+  {
+    "kt_nr": 19,
+    "name": "Aargau",
+    "abbr": "CH",
+    "region_ids": [
+      39,
+      31,
+      37,
+      42,
+      33,
+      32
+    ],
+    "region_shares": [
+      {
+        "region_id": 39,
+        "area_share": 0.313
+      },
+      {
+        "region_id": 31,
+        "area_share": 0.2893
+      },
+      {
+        "region_id": 37,
+        "area_share": 0.2772
+      },
+      {
+        "region_id": 42,
+        "area_share": 0.0686
+      },
+      {
+        "region_id": 33,
+        "area_share": 0.0356
+      },
+      {
+        "region_id": 32,
+        "area_share": 0.0127
+      }
+    ],
+    "primary_region_id": 39,
+    "primary_region_name_de": "Freiamt"
+  },
+  {
+    "kt_nr": 15,
+    "name": "Appenzell Ausserrhoden",
+    "abbr": "CH",
+    "region_ids": [
+      47,
+      51
+    ],
+    "region_shares": [
+      {
+        "region_id": 47,
+        "area_share": 0.8955
+      },
+      {
+        "region_id": 51,
+        "area_share": 0.1045
+      }
+    ],
+    "primary_region_id": 47,
+    "primary_region_name_de": "Alpstein"
+  },
+  {
+    "kt_nr": 16,
+    "name": "Appenzell Innerrhoden",
+    "abbr": "CH",
+    "region_ids": [
+      47,
+      51
+    ],
+    "region_shares": [
+      {
+        "region_id": 47,
+        "area_share": 0.8666
+      },
+      {
+        "region_id": 51,
+        "area_share": 0.1334
+      }
+    ],
+    "primary_region_id": 47,
+    "primary_region_name_de": "Alpstein"
+  },
+  {
+    "kt_nr": 13,
+    "name": "Basel-Landschaft",
+    "abbr": "CH",
+    "region_ids": [
+      31,
+      32
+    ],
+    "region_shares": [
+      {
+        "region_id": 31,
+        "area_share": 0.9778
+      },
+      {
+        "region_id": 32,
+        "area_share": 0.0194
+      }
+    ],
+    "primary_region_id": 31,
+    "primary_region_name_de": "östlicher Jura"
+  },
+  {
+    "kt_nr": 12,
+    "name": "Basel-Stadt",
+    "abbr": "CH",
+    "region_ids": [
+      31
+    ],
+    "region_shares": [
+      {
+        "region_id": 31,
+        "area_share": 0.9811
+      }
+    ],
+    "primary_region_id": 31,
+    "primary_region_name_de": "östlicher Jura"
+  },
+  {
+    "kt_nr": 2,
+    "name": "Bern",
+    "abbr": "CH",
+    "region_ids": [
+      41,
+      35,
+      33,
+      38,
+      34,
+      36,
+      37,
+      32,
+      31,
+      55,
+      54,
+      53
+    ],
+    "region_shares": [
+      {
+        "region_id": 41,
+        "area_share": 0.2026
+      },
+      {
+        "region_id": 35,
+        "area_share": 0.1821
+      },
+      {
+        "region_id": 33,
+        "area_share": 0.1494
+      },
+      {
+        "region_id": 38,
+        "area_share": 0.1194
+      },
+      {
+        "region_id": 34,
+        "area_share": 0.119
+      },
+      {
+        "region_id": 36,
+        "area_share": 0.0478
+      },
+      {
+        "region_id": 37,
+        "area_share": 0.0472
+      },
+      {
+        "region_id": 32,
+        "area_share": 0.04
+      },
+      {
+        "region_id": 31,
+        "area_share": 0.0363
+      },
+      {
+        "region_id": 55,
+        "area_share": 0.0336
+      },
+      {
+        "region_id": 54,
+        "area_share": 0.0137
+      },
+      {
+        "region_id": 53,
+        "area_share": 0.0069
+      }
+    ],
+    "primary_region_id": 41,
+    "primary_region_name_de": "Östliches Berner Oberland"
+  },
+  {
+    "kt_nr": 10,
+    "name": "Fribourg",
+    "abbr": "CH",
+    "region_ids": [
+      55,
+      36,
+      34,
+      57
+    ],
+    "region_shares": [
+      {
+        "region_id": 55,
+        "area_share": 0.442
+      },
+      {
+        "region_id": 36,
+        "area_share": 0.4268
+      },
+      {
+        "region_id": 34,
+        "area_share": 0.1083
+      },
+      {
+        "region_id": 57,
+        "area_share": 0.0196
+      }
+    ],
+    "primary_region_id": 55,
+    "primary_region_name_de": "westliches Mittelland"
+  },
+  {
+    "kt_nr": 25,
+    "name": "Genève",
+    "abbr": "CH",
+    "region_ids": [
+      56
+    ],
+    "region_shares": [
+      {
+        "region_id": 56,
+        "area_share": 0.9907
+      }
+    ],
+    "primary_region_id": 56,
+    "primary_region_name_de": "Genferseebecken"
+  },
+  {
+    "kt_nr": 8,
+    "name": "Glarus",
+    "abbr": "CH",
+    "region_ids": [
+      48,
+      46
+    ],
+    "region_shares": [
+      {
+        "region_id": 48,
+        "area_share": 0.9834
+      },
+      {
+        "region_id": 46,
+        "area_share": 0.0147
+      }
+    ],
+    "primary_region_id": 48,
+    "primary_region_name_de": "Glarner Alpen"
+  },
+  {
+    "kt_nr": 18,
+    "name": "Graubünden",
+    "abbr": "CH",
+    "region_ids": [
+      50,
+      49,
+      68,
+      46,
+      52,
+      67,
+      66,
+      64,
+      63
+    ],
+    "region_shares": [
+      {
+        "region_id": 50,
+        "area_share": 0.1762
+      },
+      {
+        "region_id": 49,
+        "area_share": 0.1707
+      },
+      {
+        "region_id": 68,
+        "area_share": 0.1447
+      },
+      {
+        "region_id": 46,
+        "area_share": 0.1319
+      },
+      {
+        "region_id": 52,
+        "area_share": 0.1128
+      },
+      {
+        "region_id": 67,
+        "area_share": 0.1051
+      },
+      {
+        "region_id": 66,
+        "area_share": 0.0835
+      },
+      {
+        "region_id": 64,
+        "area_share": 0.0495
+      },
+      {
+        "region_id": 63,
+        "area_share": 0.0184
+      }
+    ],
+    "primary_region_id": 50,
+    "primary_region_name_de": "südliches Mittelbünden"
+  },
+  {
+    "kt_nr": 26,
+    "name": "Jura",
+    "abbr": "CH",
+    "region_ids": [
+      31,
+      53
+    ],
+    "region_shares": [
+      {
+        "region_id": 31,
+        "area_share": 0.7267
+      },
+      {
+        "region_id": 53,
+        "area_share": 0.2699
+      }
+    ],
+    "primary_region_id": 31,
+    "primary_region_name_de": "östlicher Jura"
+  },
+  {
+    "kt_nr": 3,
+    "name": "Luzern",
+    "abbr": "CH",
+    "region_ids": [
+      40,
+      37,
+      39,
+      38,
+      44
+    ],
+    "region_shares": [
+      {
+        "region_id": 40,
+        "area_share": 0.3783
+      },
+      {
+        "region_id": 37,
+        "area_share": 0.3309
+      },
+      {
+        "region_id": 39,
+        "area_share": 0.2115
+      },
+      {
+        "region_id": 38,
+        "area_share": 0.0721
+      },
+      {
+        "region_id": 44,
+        "area_share": 0.0068
+      }
+    ],
+    "primary_region_id": 40,
+    "primary_region_name_de": "westliche Zentralschweiz"
+  },
+  {
+    "kt_nr": 24,
+    "name": "Neuchâtel",
+    "abbr": "CH",
+    "region_ids": [
+      54,
+      53,
+      55,
+      32
+    ],
+    "region_shares": [
+      {
+        "region_id": 54,
+        "area_share": 0.7499
+      },
+      {
+        "region_id": 53,
+        "area_share": 0.131
+      },
+      {
+        "region_id": 55,
+        "area_share": 0.1041
+      },
+      {
+        "region_id": 32,
+        "area_share": 0.0135
+      }
+    ],
+    "primary_region_id": 54,
+    "primary_region_name_de": "westlicher Jura"
+  },
+  {
+    "kt_nr": 7,
+    "name": "Nidwalden",
+    "abbr": "CH",
+    "region_ids": [
+      40,
+      45
+    ],
+    "region_shares": [
+      {
+        "region_id": 40,
+        "area_share": 0.9929
+      },
+      {
+        "region_id": 45,
+        "area_share": 0.0061
+      }
+    ],
+    "primary_region_id": 40,
+    "primary_region_name_de": "westliche Zentralschweiz"
+  },
+  {
+    "kt_nr": 6,
+    "name": "Obwalden",
+    "abbr": "CH",
+    "region_ids": [
+      40,
+      41
+    ],
+    "region_shares": [
+      {
+        "region_id": 40,
+        "area_share": 0.9764
+      },
+      {
+        "region_id": 41,
+        "area_share": 0.0222
+      }
+    ],
+    "primary_region_id": 40,
+    "primary_region_name_de": "westliche Zentralschweiz"
+  },
+  {
+    "kt_nr": 14,
+    "name": "Schaffhausen",
+    "abbr": "CH",
+    "region_ids": [
+      42
+    ],
+    "region_shares": [
+      {
+        "region_id": 42,
+        "area_share": 0.9811
+      }
+    ],
+    "primary_region_id": 42,
+    "primary_region_name_de": "östliches Mittelland"
+  },
+  {
+    "kt_nr": 5,
+    "name": "Schwyz",
+    "abbr": "CH",
+    "region_ids": [
+      44,
+      43,
+      40,
+      48,
+      45
+    ],
+    "region_shares": [
+      {
+        "region_id": 44,
+        "area_share": 0.7371
+      },
+      {
+        "region_id": 43,
+        "area_share": 0.1394
+      },
+      {
+        "region_id": 40,
+        "area_share": 0.0567
+      },
+      {
+        "region_id": 48,
+        "area_share": 0.0414
+      },
+      {
+        "region_id": 45,
+        "area_share": 0.0254
+      }
+    ],
+    "primary_region_id": 44,
+    "primary_region_name_de": "östliche Zentralschweiz"
+  },
+  {
+    "kt_nr": 11,
+    "name": "Solothurn",
+    "abbr": "CH",
+    "region_ids": [
+      32,
+      33,
+      31
+    ],
+    "region_shares": [
+      {
+        "region_id": 32,
+        "area_share": 0.4292
+      },
+      {
+        "region_id": 33,
+        "area_share": 0.3062
+      },
+      {
+        "region_id": 31,
+        "area_share": 0.2612
+      }
+    ],
+    "primary_region_id": 32,
+    "primary_region_name_de": "Balsthal"
+  },
+  {
+    "kt_nr": 17,
+    "name": "St. Gallen",
+    "abbr": "CH",
+    "region_ids": [
+      47,
+      48,
+      51,
+      43,
+      42
+    ],
+    "region_shares": [
+      {
+        "region_id": 47,
+        "area_share": 0.4315
+      },
+      {
+        "region_id": 48,
+        "area_share": 0.2815
+      },
+      {
+        "region_id": 51,
+        "area_share": 0.1568
+      },
+      {
+        "region_id": 43,
+        "area_share": 0.0986
+      },
+      {
+        "region_id": 42,
+        "area_share": 0.0241
+      }
+    ],
+    "primary_region_id": 47,
+    "primary_region_name_de": "Alpstein"
+  },
+  {
+    "kt_nr": 20,
+    "name": "Thurgau",
+    "abbr": "CH",
+    "region_ids": [
+      42,
+      47
+    ],
+    "region_shares": [
+      {
+        "region_id": 42,
+        "area_share": 0.9449
+      },
+      {
+        "region_id": 47,
+        "area_share": 0.0477
+      }
+    ],
+    "primary_region_id": 42,
+    "primary_region_name_de": "östliches Mittelland"
+  },
+  {
+    "kt_nr": 21,
+    "name": "Ticino",
+    "abbr": "CH",
+    "region_ids": [
+      62,
+      63,
+      64,
+      65,
+      46,
+      45
+    ],
+    "region_shares": [
+      {
+        "region_id": 62,
+        "area_share": 0.3836
+      },
+      {
+        "region_id": 63,
+        "area_share": 0.2589
+      },
+      {
+        "region_id": 64,
+        "area_share": 0.1828
+      },
+      {
+        "region_id": 65,
+        "area_share": 0.1575
+      },
+      {
+        "region_id": 46,
+        "area_share": 0.0076
+      },
+      {
+        "region_id": 45,
+        "area_share": 0.0066
+      }
+    ],
+    "primary_region_id": 62,
+    "primary_region_name_de": "Westliches Tessin"
+  },
+  {
+    "kt_nr": 4,
+    "name": "Uri",
+    "abbr": "CH",
+    "region_ids": [
+      45,
+      44,
+      48,
+      40
+    ],
+    "region_shares": [
+      {
+        "region_id": 45,
+        "area_share": 0.8725
+      },
+      {
+        "region_id": 44,
+        "area_share": 0.046
+      },
+      {
+        "region_id": 48,
+        "area_share": 0.0405
+      },
+      {
+        "region_id": 40,
+        "area_share": 0.032
+      }
+    ],
+    "primary_region_id": 45,
+    "primary_region_name_de": "Urner Alpen"
+  },
+  {
+    "kt_nr": 23,
+    "name": "Valais",
+    "abbr": "CH",
+    "region_ids": [
+      58,
+      60,
+      59,
+      61,
+      57,
+      62,
+      35
+    ],
+    "region_shares": [
+      {
+        "region_id": 58,
+        "area_share": 0.3331
+      },
+      {
+        "region_id": 60,
+        "area_share": 0.1998
+      },
+      {
+        "region_id": 59,
+        "area_share": 0.184
+      },
+      {
+        "region_id": 61,
+        "area_share": 0.1664
+      },
+      {
+        "region_id": 57,
+        "area_share": 0.0747
+      },
+      {
+        "region_id": 62,
+        "area_share": 0.0315
+      },
+      {
+        "region_id": 35,
+        "area_share": 0.005
+      }
+    ],
+    "primary_region_id": 58,
+    "primary_region_name_de": "Walliser Südalpen"
+  },
+  {
+    "kt_nr": 22,
+    "name": "Vaud",
+    "abbr": "CH",
+    "region_ids": [
+      56,
+      54,
+      55,
+      57,
+      36
+    ],
+    "region_shares": [
+      {
+        "region_id": 56,
+        "area_share": 0.2631
+      },
+      {
+        "region_id": 54,
+        "area_share": 0.255
+      },
+      {
+        "region_id": 55,
+        "area_share": 0.248
+      },
+      {
+        "region_id": 57,
+        "area_share": 0.1607
+      },
+      {
+        "region_id": 36,
+        "area_share": 0.0704
+      }
+    ],
+    "primary_region_id": 56,
+    "primary_region_name_de": "Genferseebecken"
+  },
+  {
+    "kt_nr": 9,
+    "name": "Zug",
+    "abbr": "CH",
+    "region_ids": [
+      39,
+      44,
+      43
+    ],
+    "region_shares": [
+      {
+        "region_id": 39,
+        "area_share": 0.6113
+      },
+      {
+        "region_id": 44,
+        "area_share": 0.3643
+      },
+      {
+        "region_id": 43,
+        "area_share": 0.0244
+      }
+    ],
+    "primary_region_id": 39,
+    "primary_region_name_de": "Freiamt"
+  },
+  {
+    "kt_nr": 1,
+    "name": "Zürich",
+    "abbr": "CH",
+    "region_ids": [
+      42,
+      43,
+      39,
+      47
+    ],
+    "region_shares": [
+      {
+        "region_id": 42,
+        "area_share": 0.5424
+      },
+      {
+        "region_id": 43,
+        "area_share": 0.2873
+      },
+      {
+        "region_id": 39,
+        "area_share": 0.1438
+      },
+      {
+        "region_id": 47,
+        "area_share": 0.0257
+      }
+    ],
+    "primary_region_id": 42,
+    "primary_region_name_de": "östliches Mittelland"
+  }
+]

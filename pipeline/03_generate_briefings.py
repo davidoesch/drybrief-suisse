@@ -418,6 +418,16 @@ def build_briefing(
 
 # ── Hilfsfunktionen ───────────────────────────────────────────────────────────
 
+class _JsonEncoder(json.JSONEncoder):
+    def default(self, o: Any):
+        import numpy as np
+        if isinstance(o, (np.integer,)):
+            return int(o)
+        if isinstance(o, (np.floating,)):
+            return float(o)
+        return super().default(o)
+
+
 def _isnan(v: Any) -> bool:
     try:
         import math
@@ -498,7 +508,7 @@ def main() -> None:
 
         # Briefing-JSON speichern
         out = BRIEFING_DIR / f"{region_id}.json"
-        out.write_text(json.dumps(briefing, ensure_ascii=False, indent=2))
+        out.write_text(json.dumps(briefing, ensure_ascii=False, indent=2, cls=_JsonEncoder))
 
         # Index-Eintrag
         index_entries.append({
@@ -521,7 +531,7 @@ def main() -> None:
     index_path.write_text(json.dumps({
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "regions":      sorted(index_entries, key=lambda x: x["region_id"]),
-    }, ensure_ascii=False, indent=2))
+    }, ensure_ascii=False, indent=2, cls=_JsonEncoder))
     log.info("Index gespeichert: %s", index_path)
 
     # Zeitstempel-Datei für GitHub Actions / Cache-Busting
@@ -529,7 +539,7 @@ def main() -> None:
     ts_path.write_text(json.dumps({
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "n_regions":    len(index_entries),
-    }))
+    }, cls=_JsonEncoder))
 
     log.info("")
     log.info("CDI-Verteilung:")

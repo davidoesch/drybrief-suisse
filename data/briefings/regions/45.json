@@ -1,0 +1,99 @@
+{
+  "region_id": 45,
+  "region_name_de": "Urner Alpen",
+  "region_name_fr": "Alpes uranaises",
+  "region_name_it": "Alpi urane",
+  "region_name_en": "Alps uranaisas",
+  "measured_at": "30.06.2025",
+  "generated_at": "2026-05-15T11:03:58.024955+00:00",
+  "cdi": 2,
+  "cdi_label_de": "Leicht trocken",
+  "warning_level": 2,
+  "color": "yellow",
+  "summary_de": "In der Region Urner Alpen zeichnet sich eine leichte Trockenheit ab. Festgestellt wird: Abfluss / Pegel. Prognose: Verschlechterung erwartet.",
+  "trend": "verschlechternd",
+  "trend_label_de": "Verschlechterung erwartet",
+  "forecast_cdi_p50": 3,
+  "forecast_cdi_p10": null,
+  "forecast_cdi_p90": null,
+  "forecast_valid_at": "25.05.2026",
+  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "indicators": {
+    "precip_1m": {
+      "key": "precip_1m",
+      "label_de": "30-Tage-Niederschlag",
+      "index": 2,
+      "label_status_de": "Leichtes Niederschlagsdefizit",
+      "value_mm": 100.4,
+      "unit": "mm",
+      "source": "MeteoSchweiz / BAFU"
+    },
+    "precip_3m": {
+      "key": "precip_3m",
+      "label_de": "90-Tage-Niederschlag",
+      "index": 1,
+      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
+      "value_mm": 420.7,
+      "unit": "mm",
+      "source": "MeteoSchweiz / BAFU"
+    },
+    "hydro": {
+      "key": "hydro",
+      "label_de": "Abfluss / Pegel",
+      "index": 4,
+      "label_status_de": "Grosses Abflussdefizit",
+      "value_mm": null,
+      "unit": null,
+      "source": "BAFU Hydrodaten"
+    },
+    "soil_moisture": {
+      "key": "soil_moisture",
+      "label_de": "Bodenfeuchte",
+      "index": 1,
+      "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
+      "value_pct": 95.5,
+      "unit": "% nFK",
+      "source": "MeteoSchweiz / swisstopo"
+    }
+  },
+  "impacts_de": [
+    "Erste Anzeichen tieferer Pegelstände an kleineren Fliessgewässern möglich.",
+    "Lokal können die Böden trocken sein.",
+    "Erhöhte Waldbrandgefahr kann auftreten."
+  ],
+  "recommendations_de": [
+    "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
+    "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
+    "Lage beobachten und bei Bedarf Massnahmen vorbereiten.",
+    "Bevölkerung über mögliche Einschränkungen informieren."
+  ],
+  "raw": {
+    "precip_1m_index": 2,
+    "precip_3m_index": 1,
+    "precip_24m_index": 1,
+    "hydro_index": 4,
+    "soil_moisture_index": 1,
+    "spi_1m": -1.08,
+    "spi_3m": -0.32,
+    "soil_moisture_ufc": 95.5,
+    "vhi": 38.0
+  },
+  "sources": [
+    {
+      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "url": "https://www.trockenheit.admin.ch",
+      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
+      "data_date": "30.06.2025"
+    },
+    {
+      "name": "MeteoSchweiz Open Data",
+      "url": "https://www.meteoswiss.admin.ch",
+      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+    },
+    {
+      "name": "BAFU Hydrodaten",
+      "url": "https://www.hydrodaten.admin.ch"
+    }
+  ],
+  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+}

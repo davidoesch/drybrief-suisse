@@ -1,0 +1,306 @@
+{
+  "37": {
+    "id": 37,
+    "name_de": "Oberaargau",
+    "name_fr": "Haute-Argovie",
+    "name_it": "Alta Argovia",
+    "name_en": "Argovia Sura",
+    "name_rm": "nan"
+  },
+  "46": {
+    "id": 46,
+    "name_de": "Surselva",
+    "name_fr": "Surselva",
+    "name_it": "Surselva",
+    "name_en": "Surselva",
+    "name_rm": "nan"
+  },
+  "32": {
+    "id": 32,
+    "name_de": "Balsthal",
+    "name_fr": "Balsthal",
+    "name_it": "Balsthal",
+    "name_en": "Balsthal",
+    "name_rm": "nan"
+  },
+  "33": {
+    "id": 33,
+    "name_de": "Unteres Emmental",
+    "name_fr": "Bas-Emmental",
+    "name_it": "Basso Emmental",
+    "name_en": "Emmental Sut",
+    "name_rm": "nan"
+  },
+  "65": {
+    "id": 65,
+    "name_de": "Sottoceneri",
+    "name_fr": "Sottoceneri",
+    "name_it": "Sottoceneri",
+    "name_en": "Sottoceneri",
+    "name_rm": "nan"
+  },
+  "34": {
+    "id": 34,
+    "name_de": "Berner Mittelland",
+    "name_fr": "Plateau bernois",
+    "name_it": "Mittelland bernese",
+    "name_en": "Planira Bernaisa",
+    "name_rm": "nan"
+  },
+  "35": {
+    "id": 35,
+    "name_de": "Westliches Berner Oberland",
+    "name_fr": "Oberland bernois partie ouest",
+    "name_it": "Oberland bernese occidentale",
+    "name_en": "Part Sura Bernaisa dal vest",
+    "name_rm": "nan"
+  },
+  "36": {
+    "id": 36,
+    "name_de": "Greyerzerland",
+    "name_fr": "Gruyère",
+    "name_it": "regione della Gruyère",
+    "name_en": "Gruyère",
+    "name_rm": "nan"
+  },
+  "38": {
+    "id": 38,
+    "name_de": "Oberes Emmental",
+    "name_fr": "Haut-Emmental",
+    "name_it": "Alto Emmental",
+    "name_en": "Emmental Sura",
+    "name_rm": "nan"
+  },
+  "40": {
+    "id": 40,
+    "name_de": "westliche Zentralschweiz",
+    "name_fr": "Suisse centrale partie ouest",
+    "name_it": "Svizzera centro-occidentale",
+    "name_en": "Svizra Centrala dal vest",
+    "name_rm": "nan"
+  },
+  "41": {
+    "id": 41,
+    "name_de": "Östliches Berner Oberland",
+    "name_fr": "Oberland bernois partie est",
+    "name_it": "Oberland bernese orientale",
+    "name_en": "Part Sura Bernaisa da l'ost",
+    "name_rm": "nan"
+  },
+  "42": {
+    "id": 42,
+    "name_de": "östliches Mittelland",
+    "name_fr": "Plateau partie est",
+    "name_it": "Altipiano orientale",
+    "name_en": "Svizra Bassa da l'ost",
+    "name_rm": "nan"
+  },
+  "39": {
+    "id": 39,
+    "name_de": "Freiamt",
+    "name_fr": "Freiamt",
+    "name_it": "Freiamt",
+    "name_en": "Freiamt",
+    "name_rm": "nan"
+  },
+  "43": {
+    "id": 43,
+    "name_de": "Zürichseebecken",
+    "name_fr": "Bassin du lac de Zurich",
+    "name_it": "bacino del lago di Zurigo",
+    "name_en": "Batschigl dal Lai da Turitg",
+    "name_rm": "nan"
+  },
+  "45": {
+    "id": 45,
+    "name_de": "Urner Alpen",
+    "name_fr": "Alpes uranaises",
+    "name_it": "Alpi urane",
+    "name_en": "Alps uranaisas",
+    "name_rm": "nan"
+  },
+  "47": {
+    "id": 47,
+    "name_de": "Alpstein",
+    "name_fr": "Alpstein",
+    "name_it": "Alpstein",
+    "name_en": "Alpstein",
+    "name_rm": "nan"
+  },
+  "48": {
+    "id": 48,
+    "name_de": "Glarner Alpen",
+    "name_fr": "Alpes glaronaises",
+    "name_it": "Alpi glaronesi",
+    "name_en": "Alps glarunaisas",
+    "name_rm": "nan"
+  },
+  "49": {
+    "id": 49,
+    "name_de": "nördliches Mittelbünden",
+    "name_fr": "Grisons partie nord",
+    "name_it": "Nord e centro dei Grigioni",
+    "name_en": "Grischun Central dal nord",
+    "name_rm": "nan"
+  },
+  "50": {
+    "id": 50,
+    "name_de": "südliches Mittelbünden",
+    "name_fr": "Grisons partie sud",
+    "name_it": "Sud e centro dei Grigioni",
+    "name_en": "Grischun Central dal sid",
+    "name_rm": "nan"
+  },
+  "51": {
+    "id": 51,
+    "name_de": "Rheintal",
+    "name_fr": "Vallée du Rhin",
+    "name_it": "valle del Reno",
+    "name_en": "Val dal Rain",
+    "name_rm": "nan"
+  },
+  "52": {
+    "id": 52,
+    "name_de": "Prättigau",
+    "name_fr": "Prättigau",
+    "name_it": "Prettigovia",
+    "name_en": "Partenz",
+    "name_rm": "nan"
+  },
+  "53": {
+    "id": 53,
+    "name_de": "Freiberge",
+    "name_fr": "Franches-Montagnes",
+    "name_it": "Franches-Montagnes",
+    "name_en": "Francas Muntognas",
+    "name_rm": "nan"
+  },
+  "54": {
+    "id": 54,
+    "name_de": "westlicher Jura",
+    "name_fr": "Jura partie ouest",
+    "name_it": "Giura occidentale",
+    "name_en": "Giura dal vest",
+    "name_rm": "nan"
+  },
+  "55": {
+    "id": 55,
+    "name_de": "westliches Mittelland",
+    "name_fr": "Plateau partie ouest",
+    "name_it": "Altipiano occidentale",
+    "name_en": "Svizra Bassa dal vest",
+    "name_rm": "nan"
+  },
+  "56": {
+    "id": 56,
+    "name_de": "Genferseebecken",
+    "name_fr": "Bassin lémanique",
+    "name_it": "bacino del Lemano",
+    "name_en": "Batschigl dal Lai da Genevra",
+    "name_rm": "nan"
+  },
+  "57": {
+    "id": 57,
+    "name_de": "Chablais",
+    "name_fr": "Chablais",
+    "name_it": "Chablais",
+    "name_en": "Chablais",
+    "name_rm": "nan"
+  },
+  "58": {
+    "id": 58,
+    "name_de": "Walliser Südalpen",
+    "name_fr": "Alpes valaisannes partie sud",
+    "name_it": "Alpi vallesane meridionali",
+    "name_en": "Alps dal sid dal Vallais",
+    "name_rm": "nan"
+  },
+  "59": {
+    "id": 59,
+    "name_de": "nördliches Wallis",
+    "name_fr": "Valais partie nord",
+    "name_it": "Vallese settentrionale",
+    "name_en": "Vallais dal nord",
+    "name_rm": "nan"
+  },
+  "60": {
+    "id": 60,
+    "name_de": "Vispertäler",
+    "name_fr": "Vallées de Viège",
+    "name_it": "valli di Visp",
+    "name_en": "Vallada da Visp",
+    "name_rm": "nan"
+  },
+  "61": {
+    "id": 61,
+    "name_de": "Goms",
+    "name_fr": "Conches",
+    "name_it": "Goms",
+    "name_en": "Goms",
+    "name_rm": "nan"
+  },
+  "62": {
+    "id": 62,
+    "name_de": "Westliches Tessin",
+    "name_fr": "Tessin partie ouest",
+    "name_it": "Ticino occidentale",
+    "name_en": "Tessin dal vest",
+    "name_rm": "nan"
+  },
+  "63": {
+    "id": 63,
+    "name_de": "Nordtessin",
+    "name_fr": "Tessin partie nord",
+    "name_it": "Ticino settentrionale",
+    "name_en": "Tessin dal nord",
+    "name_rm": "nan"
+  },
+  "64": {
+    "id": 64,
+    "name_de": "Östliches Tessin",
+    "name_fr": "Tessin partie est",
+    "name_it": "Ticino orientale",
+    "name_en": "Tessin da l'ost",
+    "name_rm": "nan"
+  },
+  "66": {
+    "id": 66,
+    "name_de": "Bündner Südtäler",
+    "name_fr": "Vallées sud des Grisons",
+    "name_it": "valli meridionali dei Grigioni",
+    "name_en": "Vals dal sid dal Grischun",
+    "name_rm": "nan"
+  },
+  "67": {
+    "id": 67,
+    "name_de": "Oberengadin",
+    "name_fr": "Haute-Engadine",
+    "name_it": "Alta Engadina",
+    "name_en": "Engiadin'Ota",
+    "name_rm": "nan"
+  },
+  "31": {
+    "id": 31,
+    "name_de": "östlicher Jura",
+    "name_fr": "Jura partie est",
+    "name_it": "Giura orientale",
+    "name_en": "Giura da l'ost",
+    "name_rm": "nan"
+  },
+  "44": {
+    "id": 44,
+    "name_de": "östliche Zentralschweiz",
+    "name_fr": "Suisse centrale partie est",
+    "name_it": "Svizzera centro-orientale",
+    "name_en": "Svizra Centrala da l'ost",
+    "name_rm": "nan"
+  },
+  "68": {
+    "id": 68,
+    "name_de": "Unterengadin",
+    "name_fr": "Basse-Engadine",
+    "name_it": "Bassa Engadina",
+    "name_en": "Engiadina Bassa",
+    "name_rm": "nan"
+  }
+}

@@ -40,7 +40,7 @@ jobs:
       - name: Lookups committen
         run: |
           git config user.name  "DryBrief Bot"
-          git config user.email "bot@drybrief.ch"
+          git config user.email "bling-eel-matchbox@duck.com"
           git add data/lookups/
           git diff --staged --quiet || git commit -m "chore: Lookups aktualisiert [skip ci]"
           git push
@@ -70,7 +70,7 @@ jobs:
       - name: Briefings committen und deployen
         run: |
           git config user.name  "DryBrief Bot"
-          git config user.email "bot@drybrief.ch"
+          git config user.email "bling-eel-matchbox@duck.com"
           git add data/briefings/ data/raw/
           git diff --staged --quiet && echo "Keine Änderungen." && exit 0
           git commit -m "data: Trockenheitsbriefings $(date -u +%Y-%m-%d)"

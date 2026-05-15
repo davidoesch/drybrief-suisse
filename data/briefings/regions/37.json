@@ -1,0 +1,106 @@
+{
+  "region_id": 37,
+  "region_name_de": "Oberaargau",
+  "region_name_fr": "Haute-Argovie",
+  "region_name_it": "Alta Argovia",
+  "region_name_en": "Argovia Sura",
+  "measured_at": "30.06.2025",
+  "generated_at": "2026-05-15T11:03:57.973127+00:00",
+  "cdi": 5,
+  "cdi_label_de": "Extrem trocken",
+  "warning_level": 4,
+  "color": "darkred",
+  "summary_de": "In der Region Oberaargau herrscht eine extreme Trockenheit. Festgestellt wird: 30-Tage-Niederschlag; Abfluss / Pegel; Bodenfeuchte. Prognose: Deutliche entspannung erwartet.",
+  "trend": "stark_verbessernd",
+  "trend_label_de": "deutliche Entspannung erwartet",
+  "forecast_cdi_p50": 2,
+  "forecast_cdi_p10": null,
+  "forecast_cdi_p90": null,
+  "forecast_valid_at": "25.05.2026",
+  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "indicators": {
+    "precip_1m": {
+      "key": "precip_1m",
+      "label_de": "30-Tage-Niederschlag",
+      "index": 5,
+      "label_status_de": "Extremes Niederschlagsdefizit",
+      "value_mm": 26.7,
+      "unit": "mm",
+      "source": "MeteoSchweiz / BAFU"
+    },
+    "precip_3m": {
+      "key": "precip_3m",
+      "label_de": "90-Tage-Niederschlag",
+      "index": 2,
+      "label_status_de": "Leichtes Niederschlagsdefizit",
+      "value_mm": 254.8,
+      "unit": "mm",
+      "source": "MeteoSchweiz / BAFU"
+    },
+    "hydro": {
+      "key": "hydro",
+      "label_de": "Abfluss / Pegel",
+      "index": 5,
+      "label_status_de": "Extremes Abflussdefizit",
+      "value_mm": null,
+      "unit": null,
+      "source": "BAFU Hydrodaten"
+    },
+    "soil_moisture": {
+      "key": "soil_moisture",
+      "label_de": "Bodenfeuchte",
+      "index": 5,
+      "label_status_de": "Extremes Bodenfeuchtedefizit",
+      "value_pct": 23.9,
+      "unit": "% nFK",
+      "source": "MeteoSchweiz / swisstopo"
+    }
+  },
+  "impacts_de": [
+    "Austrocknung kleinerer und mittlerer Fliessgewässer.",
+    "Kritische Wassertemperaturen in Fliessgewässern möglich (Überschreitung 25 °C).",
+    "Nutzungsverbote für Wasserentnahmen möglich.",
+    "Extreme Bodentrockenheit mit erheblichen Ernteausfällen.",
+    "Sehr hohe Waldbrandgefahr.",
+    "Starke Einschränkungen der Schifffahrt auf dem Rhein.",
+    "Leistungsreduktionen bei Laufwasserkraftwerken."
+  ],
+  "recommendations_de": [
+    "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
+    "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
+    "Notfallplanung aktivieren.",
+    "Alle verfügbaren Wasserressourcen inventarisieren.",
+    "Enge Koordination mit Bund (BAFU, MeteoSchweiz), Kanton und Nachbargemeinden.",
+    "Öffentlichkeit aktiv über Massnahmen und Verbote kommunizieren.",
+    "Waldbrandverbote erlassen und überwachen."
+  ],
+  "raw": {
+    "precip_1m_index": 5,
+    "precip_3m_index": 2,
+    "precip_24m_index": 1,
+    "hydro_index": 5,
+    "soil_moisture_index": 5,
+    "spi_1m": -3.03,
+    "spi_3m": -0.91,
+    "soil_moisture_ufc": 23.9,
+    "vhi": 25.29
+  },
+  "sources": [
+    {
+      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "url": "https://www.trockenheit.admin.ch",
+      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
+      "data_date": "30.06.2025"
+    },
+    {
+      "name": "MeteoSchweiz Open Data",
+      "url": "https://www.meteoswiss.admin.ch",
+      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+    },
+    {
+      "name": "BAFU Hydrodaten",
+      "url": "https://www.hydrodaten.admin.ch"
+    }
+  ],
+  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+}

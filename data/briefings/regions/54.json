@@ -1,0 +1,103 @@
+{
+  "region_id": 54,
+  "region_name_de": "westlicher Jura",
+  "region_name_fr": "Jura partie ouest",
+  "region_name_it": "Giura occidentale",
+  "region_name_en": "Giura dal vest",
+  "measured_at": "30.06.2025",
+  "generated_at": "2026-05-15T11:03:58.076676+00:00",
+  "cdi": 3,
+  "cdi_label_de": "Trocken",
+  "warning_level": 2,
+  "color": "orange",
+  "summary_de": "Die Region westlicher Jura ist aktuell trocken. Festgestellt wird: 30-Tage-Niederschlag; Bodenfeuchte. Prognose: Deutliche entspannung erwartet.",
+  "trend": "stark_verbessernd",
+  "trend_label_de": "deutliche Entspannung erwartet",
+  "forecast_cdi_p50": 1,
+  "forecast_cdi_p10": null,
+  "forecast_cdi_p90": null,
+  "forecast_valid_at": "25.05.2026",
+  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "indicators": {
+    "precip_1m": {
+      "key": "precip_1m",
+      "label_de": "30-Tage-Niederschlag",
+      "index": 3,
+      "label_status_de": "Erhebliches Niederschlagsdefizit",
+      "value_mm": 51.2,
+      "unit": "mm",
+      "source": "MeteoSchweiz / BAFU"
+    },
+    "precip_3m": {
+      "key": "precip_3m",
+      "label_de": "90-Tage-Niederschlag",
+      "index": 1,
+      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
+      "value_mm": 333.8,
+      "unit": "mm",
+      "source": "MeteoSchweiz / BAFU"
+    },
+    "hydro": {
+      "key": "hydro",
+      "label_de": "Abfluss / Pegel",
+      "index": 2,
+      "label_status_de": "Leichtes Abflussdefizit",
+      "value_mm": null,
+      "unit": null,
+      "source": "BAFU Hydrodaten"
+    },
+    "soil_moisture": {
+      "key": "soil_moisture",
+      "label_de": "Bodenfeuchte",
+      "index": 4,
+      "label_status_de": "Grosses Bodenfeuchtedefizit",
+      "value_pct": 23.6,
+      "unit": "% nFK",
+      "source": "MeteoSchweiz / swisstopo"
+    }
+  },
+  "impacts_de": [
+    "Tiefe Pegelstände an kleineren Fliessgewässern wahrscheinlich.",
+    "Unterdurchschnittliche Grundwasserstände und Quellabflüsse möglich.",
+    "Lokale Einschränkungen der Wassernutzung möglich.",
+    "Lokal trockene Böden und Vegetationsstress.",
+    "Erhöhte Waldbrandgefahr."
+  ],
+  "recommendations_de": [
+    "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
+    "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
+    "Monitoring verstärken: Pegel, Grundwasser, Bodenfeuchte täglich prüfen.",
+    "Wasserverbrauch reduzieren und Ressourcen schonen.",
+    "Bevölkerung über Sparmassnahmen sensibilisieren.",
+    "Kontakt mit kantonalem Führungsorgan aufnehmen."
+  ],
+  "raw": {
+    "precip_1m_index": 3,
+    "precip_3m_index": 1,
+    "precip_24m_index": 1,
+    "hydro_index": 2,
+    "soil_moisture_index": 4,
+    "spi_1m": -1.63,
+    "spi_3m": -0.09,
+    "soil_moisture_ufc": 23.6,
+    "vhi": 29.43
+  },
+  "sources": [
+    {
+      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "url": "https://www.trockenheit.admin.ch",
+      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
+      "data_date": "30.06.2025"
+    },
+    {
+      "name": "MeteoSchweiz Open Data",
+      "url": "https://www.meteoswiss.admin.ch",
+      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+    },
+    {
+      "name": "BAFU Hydrodaten",
+      "url": "https://www.hydrodaten.admin.ch"
+    }
+  ],
+  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+}

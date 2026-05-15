@@ -45,11 +45,13 @@ log = logging.getLogger(__name__)
 # ── Pfade ─────────────────────────────────────────────────────────────────────
 ROOT        = Path(__file__).parent.parent
 LOOKUP_DIR  = ROOT / "data" / "lookups"
+RAW_DIR     = ROOT / "data" / "raw"
 LOOKUP_DIR.mkdir(parents=True, exist_ok=True)
+RAW_DIR.mkdir(parents=True, exist_ok=True)
 
-CACHE_GPKG        = LOOKUP_DIR / "_swissboundaries.gpkg"
-CACHE_WARNREGIONEN= LOOKUP_DIR / "_warnregionen.geojson"
-CACHE_META        = LOOKUP_DIR / "_regions_meta.json"
+CACHE_GPKG        = RAW_DIR / "_swissboundaries.gpkg"
+CACHE_WARNREGIONEN= RAW_DIR / "_warnregionen.geojson"
+CACHE_META        = RAW_DIR / "_regions_meta.json"
 
 # ── Externe URLs ──────────────────────────────────────────────────────────────
 URL_BOUNDARIES = (
@@ -58,36 +60,17 @@ URL_BOUNDARIES = (
     "swissboundaries3d_2026-01_2056_5728.gpkg.zip"
 )
 
-# WFS – Trockenheitswarnregionen (Polygone, EPSG:2056)
-URL_WFS_WARNREGIONEN = (
-    "https://wfs.geo.admin.ch/"
-    "?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature"
-    "&TYPENAME=ch.bafu.trockenheitsindex"
-    "&outputFormat=application/json"
-    "&srsName=EPSG:2056"
+# Warnregionen GPKG (topo-satromo-v2, EPSG:2056, 38 Regionen)
+URL_WARNREGIONEN_GPKG = (
+    "https://raw.githubusercontent.com/swisstopo/topo-satromo-v2/main/assets/"
+    "warnregionen_vhi_2056.gpkg"
 )
-
-# Fallback: topo-satromo GitHub (SHP als ZIP)
-URL_GITHUB_ASSETS_BASE = (
-    "https://raw.githubusercontent.com/swisstopo/topo-satromo/main/assets/"
-)
-GITHUB_CANDIDATE_FILES = [
-    "warnregionen.geojson",
-    "warnregionen_ch.geojson",
-    "Warnregionen.geojson",
-    "drought_warning_regions.geojson",
-]
 
 # STAC – Regionsmetadaten (regions.csv)
 URL_STAC_REFERENCE = (
     "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/"
     "trockenheitsdaten-numerisch_reference/"
     "trockenheitsdaten-numerisch_reference.csv.zip"
-)
-
-# Identify-API Fallback (einzelne Punkte)
-URL_IDENTIFY = (
-    "https://api3.geo.admin.ch/rest/services/api/MapServer/identify"
 )
 
 
@@ -184,7 +167,8 @@ def load_boundaries() -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame]:
 def load_warnregionen() -> gpd.GeoDataFrame:
     """
     Lädt die 38 Trockenheits-Warnregionen als Polygone.
-    Strategie: WFS → GitHub Assets → Identify-API Fallback
+    Quelle: topo-satromo-v2 GitHub (warnregionen_vhi_2056.gpkg, EPSG:2056)
+    Felder: REGION_NR (Integer64), Name (String)
     """
     if CACHE_WARNREGIONEN.exists():
         log.info("Warnregionen aus Cache: %s", CACHE_WARNREGIONEN)
@@ -192,147 +176,18 @@ def load_warnregionen() -> gpd.GeoDataFrame:
         log.info("  %d Regionen", len(gdf))
         return gdf
 
-    # Strategie 1: WFS
-    gdf = _try_wfs()
-    if gdf is not None and len(gdf) > 0:
-        _save_warnregionen(gdf)
-        return gdf
-
-    # Strategie 2: GitHub Assets
-    gdf = _try_github()
-    if gdf is not None and len(gdf) > 0:
-        _save_warnregionen(gdf)
-        return gdf
-
-    # Strategie 3: Identify-API (langsam, aber zuverlässig)
-    log.warning("WFS und GitHub fehlgeschlagen — verwende Identify-API Fallback.")
-    log.warning("Dies dauert ca. 5–10 Minuten für alle Warnregionen.")
-    gdf = _build_via_identify_api()
-    if gdf is not None and len(gdf) > 0:
-        _save_warnregionen(gdf)
-        return gdf
-
-    raise RuntimeError(
-        "Warnregionen konnten nicht geladen werden.\n"
-        "Bitte SHP manuell herunterladen von:\n"
-        "https://github.com/swisstopo/topo-satromo/tree/main/assets\n"
-        f"und als GeoJSON speichern unter: {CACHE_WARNREGIONEN}"
-    )
-
-
-def _try_wfs() -> gpd.GeoDataFrame | None:
-    log.info("Versuche WFS: %s", URL_WFS_WARNREGIONEN[:80])
+    log.info("Lade Warnregionen: %s", URL_WARNREGIONEN_GPKG)
+    data = download_bytes(URL_WARNREGIONEN_GPKG, "warnregionen_vhi_2056.gpkg")
+    tmp = RAW_DIR / "_warnregionen_vhi_2056.gpkg"
+    tmp.write_bytes(data)
     try:
-        r = requests.get(URL_WFS_WARNREGIONEN, timeout=60)
-        r.raise_for_status()
-        gdf = gpd.read_file(BytesIO(r.content))
-        if len(gdf) > 0:
-            log.info("  WFS erfolgreich: %d Features", len(gdf))
-            return gdf
-    except Exception as e:
-        log.info("  WFS fehlgeschlagen: %s", e)
-    return None
+        gdf = gpd.read_file(str(tmp), layer="warnregionen_vhi_2056")
+    finally:
+        tmp.unlink(missing_ok=True)
 
-
-def _try_github() -> gpd.GeoDataFrame | None:
-    for fname in GITHUB_CANDIDATE_FILES:
-        url = URL_GITHUB_ASSETS_BASE + fname
-        log.info("Versuche GitHub: %s", url)
-        try:
-            r = requests.get(url, timeout=30)
-            if r.status_code == 200:
-                gdf = gpd.read_file(BytesIO(r.content))
-                log.info("  GitHub erfolgreich: %d Features (%s)", len(gdf), fname)
-                return gdf
-        except Exception as e:
-            log.debug("  %s: %s", fname, e)
-    return None
-
-
-def _build_via_identify_api() -> gpd.GeoDataFrame:
-    """
-    Fallback: Ermittelt die Warnregions-Grenzen, indem Gitterpunkte
-    über die Schweiz gegen die ch.bafu.trockenheitsindex API abgefragt
-    werden. Approximativ, aber funktionsfähig für den Lookup.
-
-    Alternativ: lädt die aktuellen CDI-Daten und extrahiert die
-    Region-IDs aus dem CSV (ohne Geometrie), was für die einfache
-    Punkt-in-Region-Abfrage ausreicht.
-    """
-    log.info("Baue Warnregionen-Lookup via Identify-API …")
-
-    # Schweizer Bounding Box (LV95): ca. 2480000–2835000, 1070000–1295000
-    import numpy as np
-    xs = np.linspace(2485000, 2833000, 60)
-    ys = np.linspace(1075000, 1293000, 40)
-
-    region_points: dict[int, list] = {}
-
-    total = len(xs) * len(ys)
-    done = 0
-    for x in xs:
-        for y in ys:
-            done += 1
-            if done % 200 == 0:
-                log.info("  %d/%d Punkte abgefragt …", done, total)
-            try:
-                params = {
-                    "geometry": f"{x},{y}",
-                    "geometryType": "esriGeometryPoint",
-                    "sr": "2056",
-                    "layers": "all:ch.bafu.trockenheitsindex",
-                    "tolerance": "100",
-                    "mapExtent": "2480000,1070000,2835000,1295000",
-                    "imageDisplay": "1000,800,96",
-                    "returnGeometry": "false",
-                    "f": "json",
-                }
-                r = requests.get(URL_IDENTIFY, params=params, timeout=10)
-                r.raise_for_status()
-                data = r.json()
-                results = data.get("results", [])
-                for res in results:
-                    attrs = res.get("attributes", {})
-                    rid = _extract_region_id(attrs)
-                    if rid and 30 <= rid <= 70:
-                        if rid not in region_points:
-                            region_points[rid] = []
-                        region_points[rid].append((x, y))
-                time.sleep(0.05)  # Rate-Limiting
-            except Exception:
-                pass
-
-    log.info("  Gefundene Regions-IDs: %s", sorted(region_points.keys()))
-
-    # Aus Punkten Konvexe Hüllen bauen (Approximation)
-    from shapely.geometry import MultiPoint
-    rows = []
-    for rid, pts in region_points.items():
-        if len(pts) >= 3:
-            geom = MultiPoint(pts).convex_hull
-        elif len(pts) > 0:
-            geom = MultiPoint(pts).buffer(5000)
-        else:
-            continue
-        rows.append({"drought_region_id": rid, "geometry": geom})
-
-    gdf = gpd.GeoDataFrame(rows, crs="EPSG:2056")
-    log.info("  Approximative Warnregionen erstellt: %d", len(gdf))
+    log.info("  %d Warnregionen geladen", len(gdf))
+    _save_warnregionen(gdf)
     return gdf
-
-
-def _extract_region_id(attrs: dict) -> int | None:
-    """Extrahiert die Regions-ID aus den Identify-Attributen."""
-    for key in ["drought_region_id", "region_id", "id", "ID", "NR"]:
-        val = attrs.get(key)
-        if val is not None:
-            try:
-                v = int(float(str(val)))
-                if 30 <= v <= 70:
-                    return v
-            except (ValueError, TypeError):
-                pass
-    return None
 
 
 def _save_warnregionen(gdf: gpd.GeoDataFrame) -> None:
@@ -355,8 +210,23 @@ def load_regions_meta() -> dict[int, dict]:
     Enthält die offiziellen Region-Namen in DE/FR/IT/EN/RM.
     """
     if CACHE_META.exists():
-        log.info("Regionsmetadaten aus Cache.")
-        return {int(k): v for k, v in json.loads(CACHE_META.read_text()).items()}
+        cached = json.loads(CACHE_META.read_text())
+        # Prüfe ob Cache gültige Namen enthält (nicht nur Platzhalter "Region 31")
+        sample = next(iter(cached.values()), {})
+        has_real_names = (
+            sample.get("name_de") and
+            not sample["name_de"].startswith("Region ") and
+            not sample["name_de"].startswith("Région ")
+        )
+        if has_real_names:
+            log.info("Regionsmetadaten aus Cache (valide).")
+            return {int(k): v for k, v in cached.items()}
+        else:
+            log.warning(
+                "Cache _regions_meta.json enthält nur Platzhalter-Namen "
+                "(wahrscheinlich falsche CSV gelesen). Cache wird neu aufgebaut."
+            )
+            CACHE_META.unlink()
 
     log.info("Lade Regionsmetadaten aus STAC …")
     data = download_bytes(URL_STAC_REFERENCE, "STAC Reference CSV")
@@ -364,13 +234,22 @@ def load_regions_meta() -> dict[int, dict]:
 
     try:
         with zipfile.ZipFile(BytesIO(data)) as z:
+            all_csvs = [n for n in z.namelist() if n.endswith(".csv")]
+            log.info("  ZIP-Inhalt (CSV): %s", all_csvs)
+
+            # Exakt "regions.csv" suchen — NICHT daily_reference_regions.csv o.Ä.
+            # Priorität: 1) exakt "regions.csv", 2) endet mit "/regions.csv"
             csv_name = next(
-                (n for n in z.namelist()
-                 if "region" in n.lower() and n.endswith(".csv")),
+                (n for n in all_csvs if Path(n).name.lower() == "regions.csv"),
                 None,
             )
             if not csv_name:
-                raise FileNotFoundError(f"regions.csv nicht im ZIP: {z.namelist()}")
+                raise FileNotFoundError(
+                    f"'regions.csv' nicht im ZIP gefunden.\n"
+                    f"Vorhandene CSVs: {all_csvs}\n"
+                    f"Tipp: Cache löschen und erneut ausführen: "
+                    f"rm {CACHE_META}"
+                )
             log.info("  Lese: %s", csv_name)
             df = pd.read_csv(z.open(csv_name), sep=";", comment="#")
 
@@ -420,7 +299,7 @@ def find_region_id_field(gdf: gpd.GeoDataFrame) -> str:
     # Direkte Kandidaten
     for col in gdf.columns:
         cu = col.upper()
-        if any(k in cu for k in ["DROUGHT_REGION", "REGION_ID", "WARN_ID", "WARNREGION"]):
+        if any(k in cu for k in ["REGION_NR", "DROUGHT_REGION", "REGION_ID", "WARN_ID", "WARNREGION"]):
             vals = pd.to_numeric(gdf[col], errors="coerce").dropna()
             if len(vals) > 0 and vals.between(30, 70).mean() > 0.5:
                 log.info("  Regions-ID-Feld: '%s'", col)
@@ -537,9 +416,10 @@ def join_kantone(
     warnregionen = align_crs(kantone, warnregionen)
 
     cols = list(kantone.columns)
-    f_nr   = best_field(cols, ["KANTONSNUM", "KT_NR", "NUMMER", "NR", "ID"],   "KT-Nr")
-    f_name = best_field(cols, ["NAME", "KANTONSNAME", "KT_NAME"],               "Name")
-    f_abbr = best_field(cols, ["KUERZEL", "ABBR", "ABK", "KZ", "ABKUERZUNG"], "Kürzel")
+    f_nr   = best_field(cols, ["KANTONSNUM", "KT_NR", "NUMMER", "NR", "ID"],              "KT-Nr")
+    f_name = best_field(cols, ["NAME", "KANTONSNAME", "KT_NAME"],                          "Name")
+    # swissBOUNDARIES3D verwendet 'icc' (z.B. "CH-BE") als Kürzel
+    f_abbr = best_field(cols, ["ICC", "KUERZEL", "ABBR", "ABK", "KZ", "ABKUERZUNG"],      "Kürzel")
 
     if not f_nr:
         f_nr = cols[0]
@@ -579,10 +459,17 @@ def join_kantone(
         primary_meta  = meta.get(primary_id, {}) if primary_id else {}
 
         kt_nr = kt_row[f_nr]
+        raw_abbr = str(kt_row[f_abbr]) if f_abbr else None
+        # icc-Feld liefert "CH-BE" — wir wollen nur "BE"
+        if raw_abbr and raw_abbr.upper().startswith("CH-"):
+            abbr = raw_abbr[3:]
+        else:
+            abbr = raw_abbr
+
         records.append({
             "kt_nr":                  int(kt_nr) if not pd.isna(kt_nr) else None,
             "name":                   str(kt_row[f_name]),
-            "abbr":                   str(kt_row[f_abbr]) if f_abbr else None,
+            "abbr":                   abbr,
             "region_ids":             region_ids,
             "region_shares":          region_shares,
             "primary_region_id":      primary_id,
@@ -678,6 +565,17 @@ def main() -> None:
         out = LOOKUP_DIR / fname
         out.write_text(json.dumps(payload, ensure_ascii=False, indent=2))
         log.info("Gespeichert: %s  (%d Einträge)", out, len(payload))
+
+    # Warnregionen als WGS84 GeoJSON für das Frontend
+    cols = [rid_field, "geometry"]
+    if "Name" in warnregionen.columns:
+        cols = [rid_field, "Name", "geometry"]
+    wr_export = warnregionen[cols].copy().rename(columns={rid_field: "region_id"})
+    wr_export = wr_export.to_crs("EPSG:4326")
+    wr_export["geometry"] = wr_export.geometry.simplify(0.0005)
+    out_wr = LOOKUP_DIR / "warnregionen.geojson"
+    wr_export.to_file(str(out_wr), driver="GeoJSON")
+    log.info("Gespeichert: %s  (%d Warnregionen)", out_wr, len(wr_export))
 
     # Statistiken
     assigned = sum(1 for g in gemeinde_lookup if g["region_id"])

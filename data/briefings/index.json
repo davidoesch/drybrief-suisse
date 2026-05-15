@@ -1,0 +1,385 @@
+{
+  "generated_at": "2026-05-15T11:03:58.143602+00:00",
+  "regions": [
+    {
+      "region_id": 31,
+      "name_de": "östlicher Jura",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "warning_level": 2,
+      "color": "orange",
+      "trend": "verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 32,
+      "name_de": "Balsthal",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 33,
+      "name_de": "Unteres Emmental",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 34,
+      "name_de": "Berner Mittelland",
+      "cdi": 5,
+      "cdi_label_de": "Extrem trocken",
+      "warning_level": 4,
+      "color": "darkred",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 35,
+      "name_de": "Westliches Berner Oberland",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "warning_level": 2,
+      "color": "orange",
+      "trend": "verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 36,
+      "name_de": "Greyerzerland",
+      "cdi": 5,
+      "cdi_label_de": "Extrem trocken",
+      "warning_level": 4,
+      "color": "darkred",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 37,
+      "name_de": "Oberaargau",
+      "cdi": 5,
+      "cdi_label_de": "Extrem trocken",
+      "warning_level": 4,
+      "color": "darkred",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 38,
+      "name_de": "Oberes Emmental",
+      "cdi": 5,
+      "cdi_label_de": "Extrem trocken",
+      "warning_level": 4,
+      "color": "darkred",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 39,
+      "name_de": "Freiamt",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 40,
+      "name_de": "westliche Zentralschweiz",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 41,
+      "name_de": "Östliches Berner Oberland",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 42,
+      "name_de": "östliches Mittelland",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "warning_level": 2,
+      "color": "orange",
+      "trend": "verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 43,
+      "name_de": "Zürichseebecken",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 44,
+      "name_de": "östliche Zentralschweiz",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 45,
+      "name_de": "Urner Alpen",
+      "cdi": 2,
+      "cdi_label_de": "Leicht trocken",
+      "warning_level": 2,
+      "color": "yellow",
+      "trend": "verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 46,
+      "name_de": "Surselva",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 47,
+      "name_de": "Alpstein",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "warning_level": 2,
+      "color": "orange",
+      "trend": "verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 48,
+      "name_de": "Glarner Alpen",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 49,
+      "name_de": "nördliches Mittelbünden",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 50,
+      "name_de": "südliches Mittelbünden",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 51,
+      "name_de": "Rheintal",
+      "cdi": 2,
+      "cdi_label_de": "Leicht trocken",
+      "warning_level": 2,
+      "color": "yellow",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 52,
+      "name_de": "Prättigau",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 53,
+      "name_de": "Freiberge",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "warning_level": 2,
+      "color": "orange",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 54,
+      "name_de": "westlicher Jura",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "warning_level": 2,
+      "color": "orange",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 55,
+      "name_de": "westliches Mittelland",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 56,
+      "name_de": "Genferseebecken",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "warning_level": 2,
+      "color": "orange",
+      "trend": "stark_verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 57,
+      "name_de": "Chablais",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "warning_level": 4,
+      "color": "red",
+      "trend": "verbessernd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 58,
+      "name_de": "Walliser Südalpen",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 59,
+      "name_de": "nördliches Wallis",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 60,
+      "name_de": "Vispertäler",
+      "cdi": 2,
+      "cdi_label_de": "Leicht trocken",
+      "warning_level": 2,
+      "color": "yellow",
+      "trend": "stabil",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 61,
+      "name_de": "Goms",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 62,
+      "name_de": "Westliches Tessin",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stabil",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 63,
+      "name_de": "Nordtessin",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stark_verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 64,
+      "name_de": "Östliches Tessin",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "verschlechternd",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 65,
+      "name_de": "Sottoceneri",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stabil",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 66,
+      "name_de": "Bündner Südtäler",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stabil",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 67,
+      "name_de": "Oberengadin",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stabil",
+      "measured_at": "30.06.2025"
+    },
+    {
+      "region_id": 68,
+      "name_de": "Unterengadin",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "warning_level": 1,
+      "color": "green",
+      "trend": "stabil",
+      "measured_at": "30.06.2025"
+    }
+  ]
+}
