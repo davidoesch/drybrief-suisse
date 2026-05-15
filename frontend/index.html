@@ -3,234 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Automatisiertes Trockenheitsbriefing für Schweizer Gemeinden und Kantone. Offizielle Bundesdaten, verständlich aufbereitet.">
   <title>DryBrief Suisse — Trockenheitsbriefing</title>
-
-  <!-- Leaflet + proj4 für EPSG:2056 (swisstopo LV95) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
-
-  <!-- Fonts: Sora (headings) + DM Sans (body) + DM Mono (data) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- ── Site Header ─────────────────────────────────────────────────────── -->
-  <header class="site-header">
-    <div class="container">
-      <div class="header-brand">
-        <div class="ch-badge">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <rect width="20" height="20" fill="#E3000F"/>
-            <rect x="8.5" y="3" width="3" height="14" fill="white"/>
-            <rect x="3" y="8.5" width="14" height="3" fill="white"/>
-          </svg>
-        </div>
-        <div>
-          <span class="brand-name">DryBrief Suisse</span>
-          <span class="brand-sub">Trockenheitsbriefing · Automatisiert</span>
-        </div>
+<header class="site-header">
+  <div class="container">
+    <div class="header-brand">
+      <div class="ch-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" fill="#E3000F"/><rect x="8.5" y="3" width="3" height="14" fill="white"/><rect x="3" y="8.5" width="14" height="3" fill="white"/></svg>
       </div>
-      <div class="header-meta">
-        <span>BAFU · MeteoSchweiz · swisstopo</span>
+      <div>
+        <span class="brand-name">DryBrief Suisse</span>
+        <span class="brand-sub">Trockenheitsbriefing · Automatisiert</span>
       </div>
     </div>
-  </header>
+    <div class="header-links">
+      <a href="simple.html" class="simple-link">✨ Einfache Ansicht</a>
+      <span class="header-meta">BAFU · MeteoSchweiz</span>
+    </div>
+  </div>
+</header>
 
-  <main>
+<!-- Staleness-Banner (wird via JS befüllt) -->
+<div id="stalenessBanner" class="staleness-banner" hidden role="alert"></div>
 
-    <!-- ── Suchbereich ────────────────────────────────────────────────────── -->
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">Trockenheitslage abrufen</h1>
-        <p class="hero-sub">
-          Gemeinde, Kanton oder Kantonsabkürzung eingeben &mdash; 
-          sofortige Lagebeurteilung auf Basis offizieller Bundesdaten.
-        </p>
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Wie trocken ist es bei Ihnen?</h1>
+      <p class="hero-sub">Gemeinde oder Kanton eingeben — sofort das offizielle Trockenheitsbriefing.</p>
 
-        <div class="search-wrap">
-          <div class="search-field">
-            <svg class="search-ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-              <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            <input
-              id="searchInput"
-              type="text"
-              class="search-input"
-              placeholder="z.B. Bern, Graubünden, ZH, Davos …"
-              autocomplete="off"
-              spellcheck="false"
-              aria-label="Gemeinde oder Kanton suchen"
-              aria-autocomplete="list"
-              aria-controls="suggestions"
-            >
-            <button id="clearBtn" class="clear-btn" aria-label="Suche löschen" hidden>
-              <svg viewBox="0 0 12 12" fill="none" width="12" height="12">
-                <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </button>
-          </div>
-
-          <ul id="suggestions" class="suggestions" role="listbox" aria-label="Suchvorschläge" hidden></ul>
-
-          <button id="generateBtn" class="btn-primary" disabled>
-            <span>Briefing generieren</span>
-            <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true">
-              <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <div class="search-wrap">
+        <div class="search-field">
+          <svg class="search-ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input id="searchInput" type="text" class="search-input"
+            placeholder="z.B. Davos, Graubünden, ZH …"
+            autocomplete="off" spellcheck="false" disabled
+            aria-label="Gemeinde oder Kanton suchen" aria-autocomplete="list" aria-controls="suggestions">
+          <button id="clearBtn" class="clear-btn" aria-label="Suche löschen" hidden>
+            <svg viewBox="0 0 12 12" fill="none" width="12" height="12">
+              <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </button>
+        </div>
+        <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
+        <button id="generateBtn" class="btn-primary" disabled>
+          <span>Briefing generieren</span>
+          <svg viewBox="0 0 20 20" fill="none" width="16" height="16">
+            <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <p class="search-hint">Tipp: Auswahl anklicken → Briefing erscheint automatisch</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="loadingState" class="loading-state" hidden role="status"><div class="spinner"></div><p>Briefing wird geladen&nbsp;…</p></div>
+  <div id="errorState" class="error-state" hidden role="alert">
+    <svg viewBox="0 0 20 20" fill="none" width="20" height="20"><circle cx="10" cy="10" r="8" stroke="#dc2626" stroke-width="1.5"/><path d="M10 6v5M10 13.5v.5" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <p id="errorMsg"></p>
+  </div>
+
+  <article id="briefingOutput" class="briefing" hidden>
+
+    <!-- §1 Lagebeurteilung -->
+    <section class="status-section">
+      <div class="container">
+        <div class="status-card">
+          <div class="status-left">
+            <div id="statusDot" class="status-dot"></div>
+            <div class="status-text">
+              <div class="status-meta-row">
+                <span id="regionName" class="region-label"></span>
+                <span id="dataDate" class="data-date"></span>
+              </div>
+              <h2 id="cdiLabel" class="cdi-headline"></h2>
+              <p id="summaryText" class="summary-body"></p>
+              <a id="officialLink" class="official-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+          </div>
+          <div class="status-right">
+            <div class="trend-chip">
+              <span class="trend-chip-label">Prognose</span>
+              <span id="trendText" class="trend-chip-value"></span>
+            </div>
+            <div class="cdi-badge-large">
+              <span class="cdi-badge-num" id="cdiBadgeNum"></span>
+              <span class="cdi-badge-unit">CDI</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ── Ladezustand ────────────────────────────────────────────────────── -->
-    <div id="loadingState" class="loading-state" hidden role="status" aria-live="polite">
-      <div class="spinner" aria-hidden="true"></div>
-      <p>Briefing wird geladen&nbsp;…</p>
-    </div>
+    <!-- §2 Kernindikatoren -->
+    <section class="section-block">
+      <div class="container">
+        <h3 class="section-heading"><span class="section-num">01</span>Kernindikatoren</h3>
+        <div id="indicatorsGrid" class="indicators-grid"></div>
+      </div>
+    </section>
 
-    <!-- ── Fehlermeldung ──────────────────────────────────────────────────── -->
-    <div id="errorState" class="error-state" hidden role="alert">
-      <svg viewBox="0 0 20 20" fill="none" width="20" height="20" aria-hidden="true">
-        <circle cx="10" cy="10" r="8" stroke="#dc2626" stroke-width="1.5"/>
-        <path d="M10 6v5M10 13.5v.5" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-      <p id="errorMsg"></p>
-    </div>
+    <!-- §3 Auswirkungen -->
+    <section class="section-block" id="impactsSection" hidden>
+      <div class="container">
+        <h3 class="section-heading"><span class="section-num">02</span>Mögliche Auswirkungen</h3>
+        <ul id="impactsList" class="impact-list"></ul>
+      </div>
+    </section>
 
-    <!-- ── Briefing-Ausgabe ───────────────────────────────────────────────── -->
-    <article id="briefingOutput" class="briefing" hidden aria-live="polite">
+    <!-- §4 Empfehlungen -->
+    <section class="section-block">
+      <div class="container">
+        <h3 class="section-heading"><span class="section-num">03</span>Empfehlungen</h3>
+        <ul id="recList" class="rec-list"></ul>
+      </div>
+    </section>
 
-      <!-- §1 Lagebeurteilung -->
-      <section class="status-section" id="statusSection">
-        <div class="container">
-          <div class="status-card">
-            <div class="status-left">
-              <div id="statusDot" class="status-dot" aria-hidden="true"></div>
-              <div class="status-text">
-                <div class="status-meta-row">
-                  <span id="regionName" class="region-label"></span>
-                  <span id="dataDate"   class="data-date"></span>
-                </div>
-                <h2 id="cdiLabel" class="cdi-headline"></h2>
-                <p  id="summaryText" class="summary-body"></p>
-              </div>
-            </div>
-            <div class="status-right">
-              <div class="trend-chip">
-                <span class="trend-chip-label">Prognose</span>
-                <span id="trendText" class="trend-chip-value"></span>
-              </div>
-              <div class="cdi-badge-large">
-                <span class="cdi-badge-num" id="cdiBadgeNum"></span>
-                <span class="cdi-badge-unit">CDI</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- §4b Warnregionen im Kanton (nur bei Kanton-Auswahl) -->
+    <section class="section-block" id="kantonRegionsSection" hidden>
+      <div class="container">
+        <h3 class="section-heading">
+          <span class="section-num" id="kantonRegionsNum">↓</span>Warnregionen im Überblick
+        </h3>
+        <div id="kantonRegionsList" class="kanton-regions-list"></div>
+      </div>
+    </section>
 
-      <!-- §2 Kernindikatoren -->
-      <section class="section-block">
-        <div class="container">
-          <h3 class="section-heading">
-            <span class="section-num">01</span>
-            Kernindikatoren
-          </h3>
-          <div id="indicatorsGrid" class="indicators-grid"></div>
-        </div>
-      </section>
+    <!-- §5 Karte -->
+    <section class="section-block section-map">
+      <div class="container"><h3 class="section-heading"><span class="section-num">04</span>Trockenheitskarte</h3></div>
+      <div id="map" class="map-container"></div>
+      <div class="container"><p class="map-caption">Trockenheitsindex BAFU (ch.bafu.trockenheitsindex) · <a href="https://map.geo.admin.ch/?layers=ch.bafu.trockenheitsindex" target="_blank" rel="noopener">Interaktive Karte ↗</a></p></div>
+    </section>
 
-      <!-- §3 Auswirkungen -->
-      <section class="section-block" id="impactsSection" hidden>
-        <div class="container">
-          <h3 class="section-heading">
-            <span class="section-num">02</span>
-            Mögliche Auswirkungen
-          </h3>
-          <ul id="impactsList" class="impact-list"></ul>
-        </div>
-      </section>
+    <!-- §6 Prognose -->
+    <section class="section-block">
+      <div class="container">
+        <h3 class="section-heading"><span class="section-num">05</span>Prognose</h3>
+        <div id="forecastBlock" class="forecast-block"></div>
+      </div>
+    </section>
 
-      <!-- §4 Empfehlungen -->
-      <section class="section-block">
-        <div class="container">
-          <h3 class="section-heading">
-            <span class="section-num">03</span>
-            Empfehlungen
-          </h3>
-          <ul id="recList" class="rec-list"></ul>
-        </div>
-      </section>
+    <!-- §7 Quellen -->
+    <section class="section-block section-sources">
+      <div class="container">
+        <h3 class="section-heading"><span class="section-num">06</span>Quellen</h3>
+        <div id="sourcesList" class="sources-list"></div>
+        <p id="disclaimerText" class="disclaimer"></p>
+      </div>
+    </section>
 
-      <!-- §5 Karte -->
-      <section class="section-block section-map">
-        <div class="container">
-          <h3 class="section-heading">
-            <span class="section-num">04</span>
-            Trockenheitskarte Schweiz
-          </h3>
-        </div>
-        <div id="map" class="map-container" role="img" aria-label="Trockenheitskarte Schweiz"></div>
-        <div class="container">
-          <p class="map-caption">
-            Trockenheitsindex (ch.bafu.trockenheitsindex) — Quelle: BAFU / geo.admin.ch ·
-            <a href="https://map.geo.admin.ch/?layers=ch.bafu.trockenheitsindex" target="_blank" rel="noopener noreferrer">
-              Interaktive Karte ↗
-            </a>
-          </p>
-        </div>
-      </section>
+  </article>
+</main>
 
-      <!-- §6 Prognose-Details -->
-      <section class="section-block">
-        <div class="container">
-          <h3 class="section-heading">
-            <span class="section-num">05</span>
-            Ensemble-Prognose
-          </h3>
-          <div id="forecastBlock" class="forecast-block"></div>
-        </div>
-      </section>
+<footer class="site-footer">
+  <div class="container">
+    <span>DryBrief Suisse &mdash; Automatisiertes Trockenheitsbriefing</span>
+    <span><a href="https://www.trockenheit.admin.ch" target="_blank">BAFU</a> · <a href="https://www.meteoswiss.admin.ch" target="_blank">MeteoSchweiz</a> · <a href="simple.html">Einfache Ansicht</a></span>
+  </div>
+</footer>
 
-      <!-- §7 Quellen -->
-      <section class="section-block section-sources">
-        <div class="container">
-          <h3 class="section-heading">
-            <span class="section-num">06</span>
-            Quellen und Datenstand
-          </h3>
-          <div id="sourcesList" class="sources-list"></div>
-          <p id="disclaimerText" class="disclaimer"></p>
-        </div>
-      </section>
-
-    </article>
-
-  </main>
-
-  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
-  <footer class="site-footer">
-    <div class="container">
-      <span>DryBrief Suisse &mdash; Automatisiertes Trockenheitsbriefing</span>
-      <span>
-        <a href="https://www.trockenheit.admin.ch" target="_blank" rel="noopener">BAFU</a>
-        &middot;
-        <a href="https://www.meteoswiss.admin.ch" target="_blank" rel="noopener">MeteoSchweiz</a>
-        &middot;
-        <a href="https://www.swisstopo.admin.ch" target="_blank" rel="noopener">swisstopo</a>
-      </span>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

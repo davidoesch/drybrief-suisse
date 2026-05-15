@@ -4,56 +4,69 @@
   "region_name_fr": "Alpes valaisannes partie sud",
   "region_name_it": "Alpi vallesane meridionali",
   "region_name_en": "Alps dal sid dal Vallais",
-  "measured_at": "30.06.2025",
-  "generated_at": "2026-05-15T11:43:23.160038+00:00",
+  "region_slug": "58-walliser-suedalpen",
+  "region_url": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage",
+  "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#index",
+  "measured_at": "2026-05-04",
+  "generated_at": "2026-05-15T15:36:00.741520+00:00",
+  "data_age_days": 11,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
+  "cdi_noun_de": "Keine Trockenheit",
   "warning_level": 1,
   "color": "green",
-  "summary_de": "In der Region Walliser Südalpen sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar. Prognose: Starke verschlechterung erwartet.",
+  "color_hex": "#22c55e",
+  "summary_de": "In der Region Walliser Südalpen sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar.",
   "trend": "stark_verschlechternd",
-  "trend_label_de": "starke Verschlechterung erwartet",
-  "forecast_cdi_p50": 4,
-  "forecast_cdi_p10": null,
-  "forecast_cdi_p90": null,
-  "forecast_valid_at": "25.05.2026",
-  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "trend_label_de": "Starke Verschlechterung erwartet",
+  "forecast_cdi_p50": 3,
+  "forecast_valid_at": "2026-11-05",
+  "forecast_summary_de": "Die Lage wird sich deutlich verschlechtern — erhebliche Trockenheit erwartet (Stufe 3).",
   "indicators": {
-    "precip_1m": {
-      "key": "precip_1m",
-      "label_de": "30-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 64.3,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
-    },
-    "precip_3m": {
-      "key": "precip_3m",
-      "label_de": "90-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 387.5,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
+    "precip": {
+      "key": "precip",
+      "label_de": "Niederschlag",
+      "icon": "🌧",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#precipitation",
+      "short_term": {
+        "days": 30,
+        "index": 3,
+        "value_mm": 44.4,
+        "spi": -1.1,
+        "comparison_de": "Deutlich weniger Niederschlag als üblich",
+        "label_status_de": "Erhebliches Niederschlagsdefizit"
+      },
+      "long_term": {
+        "days": 90,
+        "index": 1,
+        "value_mm": 249.1,
+        "spi": -0.2,
+        "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
+        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+      }
     },
     "hydro": {
       "key": "hydro",
-      "label_de": "Abfluss / Pegel",
+      "label_de": "Gewässer und Pegel",
+      "icon": "💧",
       "index": 1,
       "label_status_de": "Kein oder geringes Abflussdefizit",
-      "value_mm": null,
-      "unit": null,
+      "plain_de": "Pegel und Abflüsse im normalen Bereich",
+      "flow_range_de": "70–130 % des langjährigen Mittelabflusses",
+      "value_q_rel": null,
+      "link": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#discharge",
       "source": "BAFU Hydrodaten"
     },
     "soil_moisture": {
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
+      "icon": "🌱",
       "index": 1,
+      "value_pct": 93.0,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
-      "value_pct": 84.5,
-      "unit": "% nFK",
-      "source": "MeteoSchweiz / swisstopo"
+      "plain_de": "Böden gut mit Wasser versorgt",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#moisture",
+      "source": "MeteoSchweiz"
     }
   },
   "impacts_de": [],
@@ -62,32 +75,30 @@
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen."
   ],
   "raw": {
-    "precip_1m_index": 1,
+    "precip_1m_index": 3,
     "precip_3m_index": 1,
     "precip_24m_index": 1,
     "hydro_index": 1,
     "soil_moisture_index": 1,
-    "spi_1m": -0.85,
-    "spi_3m": 1.2,
-    "soil_moisture_ufc": 84.5,
-    "vhi": 31.0
+    "spi_1m": -1.1,
+    "spi_3m": -0.2,
+    "soil_moisture_ufc": 93.0,
+    "vhi": 92.0
   },
   "sources": [
     {
-      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "name": "Trockenheitsplattform BAFU",
       "url": "https://www.trockenheit.admin.ch",
-      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
-      "data_date": "30.06.2025"
+      "data_date": "2026-05-04"
     },
     {
       "name": "MeteoSchweiz Open Data",
-      "url": "https://www.meteoswiss.admin.ch",
-      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+      "url": "https://www.meteoswiss.admin.ch"
     },
     {
       "name": "BAFU Hydrodaten",
       "url": "https://www.hydrodaten.admin.ch"
     }
   ],
-  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+  "disclaimer_de": "Automatisch aus offiziellen Bundesdaten generiert. Massgeblich ist die offizielle Warnung auf www.trockenheit.admin.ch."
 }

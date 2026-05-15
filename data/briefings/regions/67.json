@@ -4,56 +4,69 @@
   "region_name_fr": "Haute-Engadine",
   "region_name_it": "Alta Engadina",
   "region_name_en": "Engiadin'Ota",
-  "measured_at": "30.06.2025",
-  "generated_at": "2026-05-15T11:43:23.180310+00:00",
+  "region_slug": "67-oberengadin",
+  "region_url": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage",
+  "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#index",
+  "measured_at": "2026-05-04",
+  "generated_at": "2026-05-15T15:36:00.789400+00:00",
+  "data_age_days": 11,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
+  "cdi_noun_de": "Keine Trockenheit",
   "warning_level": 1,
   "color": "green",
-  "summary_de": "In der Region Oberengadin sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar. Prognose: Stabile lage erwartet.",
+  "color_hex": "#22c55e",
+  "summary_de": "In der Region Oberengadin sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar.",
   "trend": "stabil",
-  "trend_label_de": "stabile Lage erwartet",
+  "trend_label_de": "Stabile Lage erwartet",
   "forecast_cdi_p50": 1,
-  "forecast_cdi_p10": null,
-  "forecast_cdi_p90": null,
-  "forecast_valid_at": "25.05.2026",
-  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "forecast_valid_at": "2026-11-05",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 1).",
   "indicators": {
-    "precip_1m": {
-      "key": "precip_1m",
-      "label_de": "30-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 73.9,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
-    },
-    "precip_3m": {
-      "key": "precip_3m",
-      "label_de": "90-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 352.3,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
+    "precip": {
+      "key": "precip",
+      "label_de": "Niederschlag",
+      "icon": "🌧",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#precipitation",
+      "short_term": {
+        "days": 30,
+        "index": 1,
+        "value_mm": 45.3,
+        "spi": -0.89,
+        "comparison_de": "Etwas weniger Niederschlag als üblich",
+        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+      },
+      "long_term": {
+        "days": 90,
+        "index": 1,
+        "value_mm": 125.6,
+        "spi": -0.92,
+        "comparison_de": "Etwas weniger Niederschlag als üblich",
+        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+      }
     },
     "hydro": {
       "key": "hydro",
-      "label_de": "Abfluss / Pegel",
-      "index": 2,
-      "label_status_de": "Leichtes Abflussdefizit",
-      "value_mm": null,
-      "unit": null,
+      "label_de": "Gewässer und Pegel",
+      "icon": "💧",
+      "index": 1,
+      "label_status_de": "Kein oder geringes Abflussdefizit",
+      "plain_de": "Pegel und Abflüsse im normalen Bereich",
+      "flow_range_de": "70–130 % des langjährigen Mittelabflusses",
+      "value_q_rel": null,
+      "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#discharge",
       "source": "BAFU Hydrodaten"
     },
     "soil_moisture": {
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
+      "icon": "🌱",
       "index": 1,
+      "value_pct": 78.6,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
-      "value_pct": 78.8,
-      "unit": "% nFK",
-      "source": "MeteoSchweiz / swisstopo"
+      "plain_de": "Böden mässig feucht",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#moisture",
+      "source": "MeteoSchweiz"
     }
   },
   "impacts_de": [],
@@ -65,29 +78,27 @@
     "precip_1m_index": 1,
     "precip_3m_index": 1,
     "precip_24m_index": 1,
-    "hydro_index": 2,
+    "hydro_index": 1,
     "soil_moisture_index": 1,
-    "spi_1m": -0.64,
-    "spi_3m": 0.66,
-    "soil_moisture_ufc": 78.8,
-    "vhi": 24.6
+    "spi_1m": -0.89,
+    "spi_3m": -0.92,
+    "soil_moisture_ufc": 78.6,
+    "vhi": 48.0
   },
   "sources": [
     {
-      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "name": "Trockenheitsplattform BAFU",
       "url": "https://www.trockenheit.admin.ch",
-      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
-      "data_date": "30.06.2025"
+      "data_date": "2026-05-04"
     },
     {
       "name": "MeteoSchweiz Open Data",
-      "url": "https://www.meteoswiss.admin.ch",
-      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+      "url": "https://www.meteoswiss.admin.ch"
     },
     {
       "name": "BAFU Hydrodaten",
       "url": "https://www.hydrodaten.admin.ch"
     }
   ],
-  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+  "disclaimer_de": "Automatisch aus offiziellen Bundesdaten generiert. Massgeblich ist die offizielle Warnung auf www.trockenheit.admin.ch."
 }

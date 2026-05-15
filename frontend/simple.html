@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trocken? 💧</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="simple.css">
+</head>
+<body id="body">
+
+  <div id="searchView" class="search-view">
+    <a href="index.html" class="back-link">← Vollständiges Briefing</a>
+    <div class="search-box">
+      <p class="search-label">Wo bist du?</p>
+      <input id="searchInput" type="text" class="s-input"
+        placeholder="Gemeinde oder Kanton …"
+        autocomplete="off" spellcheck="false" disabled>
+      <ul id="suggestions" class="s-suggestions" hidden></ul>
+    </div>
+    <p class="search-sub">Antippen → sofort das Trockenheitsbriefing</p>
+  </div>
+
+  <div id="resultView" class="result-view" hidden>
+    <div class="top-bar">
+      <button id="backBtn" class="back-btn">← andere Gemeinde</button>
+      <a href="index.html" class="full-link">Vollständiges Briefing ↗</a>
+    </div>
+
+    <div class="big-display">
+      <div id="bigEmoji" class="big-emoji"></div>
+      <div id="locationName" class="location-name"></div>
+      <div id="bigWord" class="big-word"></div>
+      <div id="bigSub"  class="big-sub"></div>
+    </div>
+
+    <div class="cards">
+      <div class="mini-card" id="precipCard">
+        <span class="mc-icon">🌧</span>
+        <span class="mc-label">Niederschlag</span>
+        <span class="mc-val" id="precipVal"></span>
+      </div>
+      <div class="mini-card" id="hydroCard">
+        <span class="mc-icon">💧</span>
+        <span class="mc-label">Gewässer</span>
+        <span class="mc-val" id="hydroVal"></span>
+      </div>
+      <div class="mini-card" id="soilCard">
+        <span class="mc-icon">🌱</span>
+        <span class="mc-label">Boden</span>
+        <span class="mc-val" id="soilVal"></span>
+      </div>
+    </div>
+
+    <div class="forecast-strip" id="forecastStrip"></div>
+
+    <p class="data-note" id="dataNote"></p>
+    <a id="officialBtn" href="#" class="official-btn" target="_blank" rel="noopener">Offizielle Warnung BAFU ↗</a>
+  </div>
+
+<script src="simple.js"></script>
+</body>
+</html>

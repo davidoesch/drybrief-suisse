@@ -4,103 +4,111 @@
   "region_name_fr": "Gruyère",
   "region_name_it": "regione della Gruyère",
   "region_name_en": "Gruyère",
-  "measured_at": "30.06.2025",
-  "generated_at": "2026-05-15T11:43:23.124308+00:00",
-  "cdi": 5,
-  "cdi_label_de": "Extrem trocken",
-  "warning_level": 4,
-  "color": "darkred",
-  "summary_de": "In der Region Greyerzerland herrscht eine extreme Trockenheit. Festgestellt wird: 30-Tage-Niederschlag; Abfluss / Pegel; Bodenfeuchte. Prognose: Deutliche entspannung erwartet.",
+  "region_slug": "36-greyerzerland",
+  "region_url": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage",
+  "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage#index",
+  "measured_at": "2026-05-04",
+  "generated_at": "2026-05-15T15:36:00.633703+00:00",
+  "data_age_days": 11,
+  "cdi": 3,
+  "cdi_label_de": "Trocken",
+  "cdi_noun_de": "Erhebliche Trockenheit",
+  "warning_level": 2,
+  "color": "orange",
+  "color_hex": "#f97316",
+  "summary_de": "Die Region Greyerzerland ist von erheblicher Trockenheit betroffen.",
   "trend": "stark_verbessernd",
-  "trend_label_de": "deutliche Entspannung erwartet",
-  "forecast_cdi_p50": 2,
-  "forecast_cdi_p10": null,
-  "forecast_cdi_p90": null,
-  "forecast_valid_at": "25.05.2026",
-  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "forecast_cdi_p50": 1,
+  "forecast_valid_at": "2026-11-05",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 3 → 1).",
   "indicators": {
-    "precip_1m": {
-      "key": "precip_1m",
-      "label_de": "30-Tage-Niederschlag",
-      "index": 5,
-      "label_status_de": "Extremes Niederschlagsdefizit",
-      "value_mm": 44.3,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
-    },
-    "precip_3m": {
-      "key": "precip_3m",
-      "label_de": "90-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 331.3,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
+    "precip": {
+      "key": "precip",
+      "label_de": "Niederschlag",
+      "icon": "🌧",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage#precipitation",
+      "short_term": {
+        "days": 30,
+        "index": 3,
+        "value_mm": 47.9,
+        "spi": -1.72,
+        "comparison_de": "Sehr viel weniger Niederschlag als üblich",
+        "label_status_de": "Erhebliches Niederschlagsdefizit"
+      },
+      "long_term": {
+        "days": 90,
+        "index": 1,
+        "value_mm": 266.9,
+        "spi": -0.7,
+        "comparison_de": "Etwas weniger Niederschlag als üblich",
+        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+      }
     },
     "hydro": {
       "key": "hydro",
-      "label_de": "Abfluss / Pegel",
-      "index": 4,
-      "label_status_de": "Grosses Abflussdefizit",
-      "value_mm": null,
-      "unit": null,
+      "label_de": "Gewässer und Pegel",
+      "icon": "💧",
+      "index": 1,
+      "label_status_de": "Kein oder geringes Abflussdefizit",
+      "plain_de": "Pegel und Abflüsse im normalen Bereich",
+      "flow_range_de": "70–130 % des langjährigen Mittelabflusses",
+      "value_q_rel": null,
+      "link": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage#discharge",
       "source": "BAFU Hydrodaten"
     },
     "soil_moisture": {
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
-      "index": 5,
-      "label_status_de": "Extremes Bodenfeuchtedefizit",
-      "value_pct": 39.2,
-      "unit": "% nFK",
-      "source": "MeteoSchweiz / swisstopo"
+      "icon": "🌱",
+      "index": 3,
+      "value_pct": 83.8,
+      "label_status_de": "Erhebliches Bodenfeuchtedefizit",
+      "plain_de": "Böden gut mit Wasser versorgt",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage#moisture",
+      "source": "MeteoSchweiz"
     }
   },
   "impacts_de": [
-    "Austrocknung kleinerer und mittlerer Fliessgewässer.",
-    "Kritische Wassertemperaturen in Fliessgewässern möglich (Überschreitung 25 °C).",
-    "Nutzungsverbote für Wasserentnahmen möglich.",
-    "Extreme Bodentrockenheit mit erheblichen Ernteausfällen.",
-    "Sehr hohe Waldbrandgefahr.",
-    "Starke Einschränkungen der Schifffahrt auf dem Rhein.",
-    "Leistungsreduktionen bei Laufwasserkraftwerken."
+    "Tiefe Pegelstände an kleineren Fliessgewässern wahrscheinlich.",
+    "Unterdurchschnittliche Grundwasserstände und Quellabflüsse möglich.",
+    "Lokale Einschränkungen der Wassernutzung möglich.",
+    "Lokal trockene Böden und Vegetationsstress.",
+    "Erhöhte Waldbrandgefahr."
   ],
   "recommendations_de": [
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
-    "Notfallplanung aktivieren.",
-    "Alle verfügbaren Wasserressourcen inventarisieren.",
-    "Enge Koordination mit Bund (BAFU, MeteoSchweiz), Kanton und Nachbargemeinden.",
-    "Öffentlichkeit aktiv über Massnahmen und Verbote kommunizieren.",
-    "Waldbrandverbote erlassen und überwachen."
+    "Monitoring verstärken: Pegel, Grundwasser, Bodenfeuchte täglich prüfen.",
+    "Wasserverbrauch reduzieren und Ressourcen schonen.",
+    "Bevölkerung über Sparmassnahmen sensibilisieren.",
+    "Kontakt mit kantonalem Führungsorgan aufnehmen."
   ],
   "raw": {
-    "precip_1m_index": 5,
+    "precip_1m_index": 3,
     "precip_3m_index": 1,
     "precip_24m_index": 1,
-    "hydro_index": 4,
-    "soil_moisture_index": 5,
-    "spi_1m": -2.8,
-    "spi_3m": -0.65,
-    "soil_moisture_ufc": 39.2,
-    "vhi": 29.0
+    "hydro_index": 1,
+    "soil_moisture_index": 3,
+    "spi_1m": -1.72,
+    "spi_3m": -0.7,
+    "soil_moisture_ufc": 83.8,
+    "vhi": 105.0
   },
   "sources": [
     {
-      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "name": "Trockenheitsplattform BAFU",
       "url": "https://www.trockenheit.admin.ch",
-      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
-      "data_date": "30.06.2025"
+      "data_date": "2026-05-04"
     },
     {
       "name": "MeteoSchweiz Open Data",
-      "url": "https://www.meteoswiss.admin.ch",
-      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+      "url": "https://www.meteoswiss.admin.ch"
     },
     {
       "name": "BAFU Hydrodaten",
       "url": "https://www.hydrodaten.admin.ch"
     }
   ],
-  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+  "disclaimer_de": "Automatisch aus offiziellen Bundesdaten generiert. Massgeblich ist die offizielle Warnung auf www.trockenheit.admin.ch."
 }

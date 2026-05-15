@@ -4,90 +4,113 @@
   "region_name_fr": "Grisons partie sud",
   "region_name_it": "Sud e centro dei Grigioni",
   "region_name_en": "Grischun Central dal sid",
-  "measured_at": "30.06.2025",
-  "generated_at": "2026-05-15T11:43:23.147185+00:00",
-  "cdi": 1,
-  "cdi_label_de": "Nicht trocken",
-  "warning_level": 1,
-  "color": "green",
-  "summary_de": "In der Region südliches Mittelbünden sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar. Festgestellt wird: Abfluss / Pegel. Prognose: Verschlechterung erwartet.",
-  "trend": "verschlechternd",
-  "trend_label_de": "Verschlechterung erwartet",
-  "forecast_cdi_p50": 2,
-  "forecast_cdi_p10": null,
-  "forecast_cdi_p90": null,
-  "forecast_valid_at": "25.05.2026",
-  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "region_slug": "50-suedliches-mittelbuenden",
+  "region_url": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage",
+  "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#index",
+  "measured_at": "2026-05-04",
+  "generated_at": "2026-05-15T15:36:00.703244+00:00",
+  "data_age_days": 11,
+  "cdi": 4,
+  "cdi_label_de": "Sehr trocken",
+  "cdi_noun_de": "Grosse Trockenheit",
+  "warning_level": 4,
+  "color": "red",
+  "color_hex": "#ef4444",
+  "summary_de": "In der Region südliches Mittelbünden herrscht eine grosse Trockenheit.",
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "forecast_cdi_p50": 3,
+  "forecast_valid_at": "2026-11-05",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 4 → 3).",
   "indicators": {
-    "precip_1m": {
-      "key": "precip_1m",
-      "label_de": "30-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 76.3,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
-    },
-    "precip_3m": {
-      "key": "precip_3m",
-      "label_de": "90-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 354.8,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
+    "precip": {
+      "key": "precip",
+      "label_de": "Niederschlag",
+      "icon": "🌧",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#precipitation",
+      "short_term": {
+        "days": 30,
+        "index": 4,
+        "value_mm": 33.8,
+        "spi": -1.65,
+        "comparison_de": "Sehr viel weniger Niederschlag als üblich",
+        "label_status_de": "Grosses Niederschlagsdefizit"
+      },
+      "long_term": {
+        "days": 90,
+        "index": 1,
+        "value_mm": 146.6,
+        "spi": -1.09,
+        "comparison_de": "Deutlich weniger Niederschlag als üblich",
+        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+      }
     },
     "hydro": {
       "key": "hydro",
-      "label_de": "Abfluss / Pegel",
-      "index": 3,
-      "label_status_de": "Erhebliches Abflussdefizit",
-      "value_mm": null,
-      "unit": null,
+      "label_de": "Gewässer und Pegel",
+      "icon": "💧",
+      "index": 1,
+      "label_status_de": "Kein oder geringes Abflussdefizit",
+      "plain_de": "Pegel und Abflüsse im normalen Bereich",
+      "flow_range_de": "70–130 % des langjährigen Mittelabflusses",
+      "value_q_rel": null,
+      "link": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#discharge",
       "source": "BAFU Hydrodaten"
     },
     "soil_moisture": {
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
-      "value_pct": 79.8,
-      "unit": "% nFK",
-      "source": "MeteoSchweiz / swisstopo"
+      "icon": "🌱",
+      "index": 4,
+      "value_pct": 81.2,
+      "label_status_de": "Grosses Bodenfeuchtedefizit",
+      "plain_de": "Böden gut mit Wasser versorgt",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#moisture",
+      "source": "MeteoSchweiz"
     }
   },
-  "impacts_de": [],
+  "impacts_de": [
+    "Kleinere Fliessgewässer können abschnittsweise austrocknen.",
+    "Kleinere Quellen können versiegen.",
+    "Einschränkungen der Wassernutzung auf lokaler bis regionaler Ebene wahrscheinlich.",
+    "Sehr trockene Böden, Ernteausfälle wahrscheinlich.",
+    "Erhöhte Waldbrandgefahr; Anweisungen der Behörden beachten.",
+    "Kühlleistung von Produktionsanlagen kann eingeschränkt sein."
+  ],
   "recommendations_de": [
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
-    "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen."
+    "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
+    "Anweisungen und Verbote der lokalen Behörden zur Wassernutzung beachten.",
+    "Sofortmassnahmen zur Wasserversorgung prüfen.",
+    "Koordination mit Kanton und Bund sicherstellen.",
+    "Anweisungen zur Waldbrandgefahr strikte befolgen.",
+    "Landwirtschaftliche Betriebe über Bewässerungsrestriktionen informieren."
   ],
   "raw": {
-    "precip_1m_index": 1,
+    "precip_1m_index": 4,
     "precip_3m_index": 1,
     "precip_24m_index": 1,
-    "hydro_index": 3,
-    "soil_moisture_index": 1,
-    "spi_1m": -0.92,
-    "spi_3m": 0.37,
-    "soil_moisture_ufc": 79.8,
-    "vhi": 22.33
+    "hydro_index": 1,
+    "soil_moisture_index": 4,
+    "spi_1m": -1.65,
+    "spi_3m": -1.09,
+    "soil_moisture_ufc": 81.2,
+    "vhi": 32.0
   },
   "sources": [
     {
-      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "name": "Trockenheitsplattform BAFU",
       "url": "https://www.trockenheit.admin.ch",
-      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
-      "data_date": "30.06.2025"
+      "data_date": "2026-05-04"
     },
     {
       "name": "MeteoSchweiz Open Data",
-      "url": "https://www.meteoswiss.admin.ch",
-      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+      "url": "https://www.meteoswiss.admin.ch"
     },
     {
       "name": "BAFU Hydrodaten",
       "url": "https://www.hydrodaten.admin.ch"
     }
   ],
-  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+  "disclaimer_de": "Automatisch aus offiziellen Bundesdaten generiert. Massgeblich ist die offizielle Warnung auf www.trockenheit.admin.ch."
 }

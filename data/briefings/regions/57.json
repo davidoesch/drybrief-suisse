@@ -4,102 +4,107 @@
   "region_name_fr": "Chablais",
   "region_name_it": "Chablais",
   "region_name_en": "Chablais",
-  "measured_at": "30.06.2025",
-  "generated_at": "2026-05-15T11:43:23.158392+00:00",
-  "cdi": 4,
-  "cdi_label_de": "Sehr trocken",
-  "warning_level": 4,
-  "color": "red",
-  "summary_de": "Die Region Chablais weist eine grosse Trockenheit auf. Festgestellt wird: 30-Tage-Niederschlag; Abfluss / Pegel; Bodenfeuchte. Prognose: Entspannung erwartet.",
+  "region_slug": "57-chablais",
+  "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
+  "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
+  "measured_at": "2026-05-04",
+  "generated_at": "2026-05-15T15:36:00.737359+00:00",
+  "data_age_days": 11,
+  "cdi": 2,
+  "cdi_label_de": "Leicht trocken",
+  "cdi_noun_de": "Leichte Trockenheit",
+  "warning_level": 2,
+  "color": "yellow",
+  "color_hex": "#eab308",
+  "summary_de": "In der Region Chablais zeichnet sich eine leichte Trockenheit ab.",
   "trend": "verbessernd",
   "trend_label_de": "Entspannung erwartet",
-  "forecast_cdi_p50": 3,
-  "forecast_cdi_p10": null,
-  "forecast_cdi_p90": null,
-  "forecast_valid_at": "25.05.2026",
-  "forecast_uncertainty": "Prognose-Unsicherheit nicht quantifizierbar.",
+  "forecast_cdi_p50": 1,
+  "forecast_valid_at": "2026-11-05",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 2 → 1).",
   "indicators": {
-    "precip_1m": {
-      "key": "precip_1m",
-      "label_de": "30-Tage-Niederschlag",
-      "index": 4,
-      "label_status_de": "Grosses Niederschlagsdefizit",
-      "value_mm": 46.7,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
-    },
-    "precip_3m": {
-      "key": "precip_3m",
-      "label_de": "90-Tage-Niederschlag",
-      "index": 1,
-      "label_status_de": "Kein oder geringes Niederschlagsdefizit",
-      "value_mm": 345.9,
-      "unit": "mm",
-      "source": "MeteoSchweiz / BAFU"
+    "precip": {
+      "key": "precip",
+      "label_de": "Niederschlag",
+      "icon": "🌧",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#precipitation",
+      "short_term": {
+        "days": 30,
+        "index": 2,
+        "value_mm": 58.1,
+        "spi": -1.16,
+        "comparison_de": "Deutlich weniger Niederschlag als üblich",
+        "label_status_de": "Leichtes Niederschlagsdefizit"
+      },
+      "long_term": {
+        "days": 90,
+        "index": 1,
+        "value_mm": 307.8,
+        "spi": -0.35,
+        "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
+        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+      }
     },
     "hydro": {
       "key": "hydro",
-      "label_de": "Abfluss / Pegel",
-      "index": 4,
-      "label_status_de": "Grosses Abflussdefizit",
-      "value_mm": null,
-      "unit": null,
+      "label_de": "Gewässer und Pegel",
+      "icon": "💧",
+      "index": 2,
+      "label_status_de": "Leichtes Abflussdefizit",
+      "plain_de": "Pegel leicht unter dem Durchschnitt",
+      "flow_range_de": "40–70 % des langjährigen Mittelabflusses",
+      "value_q_rel": null,
+      "link": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#discharge",
       "source": "BAFU Hydrodaten"
     },
     "soil_moisture": {
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
-      "index": 4,
-      "label_status_de": "Grosses Bodenfeuchtedefizit",
-      "value_pct": 58.0,
-      "unit": "% nFK",
-      "source": "MeteoSchweiz / swisstopo"
+      "icon": "🌱",
+      "index": 1,
+      "value_pct": 90.4,
+      "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
+      "plain_de": "Böden gut mit Wasser versorgt",
+      "link": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#moisture",
+      "source": "MeteoSchweiz"
     }
   },
   "impacts_de": [
-    "Kleinere Fliessgewässer können abschnittsweise austrocknen.",
-    "Kleinere Quellen können versiegen.",
-    "Einschränkungen der Wassernutzung auf lokaler bis regionaler Ebene wahrscheinlich.",
-    "Sehr trockene Böden, Ernteausfälle wahrscheinlich.",
-    "Erhöhte Waldbrandgefahr; Anweisungen der Behörden beachten.",
-    "Kühlleistung von Produktionsanlagen kann eingeschränkt sein."
+    "Erste Anzeichen tieferer Pegelstände an kleineren Fliessgewässern möglich.",
+    "Lokal können die Böden trocken sein.",
+    "Erhöhte Waldbrandgefahr kann auftreten."
   ],
   "recommendations_de": [
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
-    "Anweisungen und Verbote der lokalen Behörden zur Wassernutzung beachten.",
-    "Sofortmassnahmen zur Wasserversorgung prüfen.",
-    "Koordination mit Kanton und Bund sicherstellen.",
-    "Anweisungen zur Waldbrandgefahr strikte befolgen.",
-    "Landwirtschaftliche Betriebe über Bewässerungsrestriktionen informieren."
+    "Lage beobachten und bei Bedarf Massnahmen vorbereiten.",
+    "Bevölkerung über mögliche Einschränkungen informieren."
   ],
   "raw": {
-    "precip_1m_index": 4,
+    "precip_1m_index": 2,
     "precip_3m_index": 1,
     "precip_24m_index": 1,
-    "hydro_index": 4,
-    "soil_moisture_index": 4,
-    "spi_1m": -2.34,
-    "spi_3m": -0.36,
-    "soil_moisture_ufc": 58.0,
-    "vhi": 32.33
+    "hydro_index": 2,
+    "soil_moisture_index": 1,
+    "spi_1m": -1.16,
+    "spi_3m": -0.35,
+    "soil_moisture_ufc": 90.4,
+    "vhi": 94.0
   },
   "sources": [
     {
-      "name": "Nationale Trockenheitsplattform (BAFU)",
+      "name": "Trockenheitsplattform BAFU",
       "url": "https://www.trockenheit.admin.ch",
-      "api_url": "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/trockenheitsdaten-numerisch_current/trockenheitsdaten-numerisch_current.csv.zip",
-      "data_date": "30.06.2025"
+      "data_date": "2026-05-04"
     },
     {
       "name": "MeteoSchweiz Open Data",
-      "url": "https://www.meteoswiss.admin.ch",
-      "api_url": "https://data.geo.admin.ch/api/stac/v1/"
+      "url": "https://www.meteoswiss.admin.ch"
     },
     {
       "name": "BAFU Hydrodaten",
       "url": "https://www.hydrodaten.admin.ch"
     }
   ],
-  "disclaimer_de": "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. Für rechtsverbindliche Trockenheitswarnungen: www.trockenheit.admin.ch"
+  "disclaimer_de": "Automatisch aus offiziellen Bundesdaten generiert. Massgeblich ist die offizielle Warnung auf www.trockenheit.admin.ch."
 }

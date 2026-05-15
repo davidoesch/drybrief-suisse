@@ -1,557 +1,278 @@
 #!/usr/bin/env python3
-"""
-03_generate_briefings.py
-========================
-Regelbasierte Textgenerierung: Trockenheitsdaten → Briefing-JSON
-
-Für jede der 38 Warnregionen wird ein standardisiertes Briefing-JSON
-erzeugt, das vom Frontend direkt geladen werden kann.
-
-Terminologie gemäss: «Empfohlene Terminologie für Trockenheitsbulletin»
-(BAFU/MeteoSchweiz, 2024)
-
-Ausgabe (data/briefings/regions/)
-----------------------------------
-  {region_id}.json   z.B. 31.json, 32.json, …
-  index.json         Übersicht aller Regionen mit Kurzstatus
-  generated_at.json  Zeitstempel der letzten Generierung
-"""
-
+"""03_generate_briefings.py v2 — Regelbasierte Textgenerierung"""
 from __future__ import annotations
-
-import json
-import logging
-import time
-from datetime import datetime, timezone
+import json, logging, re, time
+from datetime import datetime, timezone, date
 from pathlib import Path
 from typing import Any
-
 import pandas as pd
 
-# ── Logging ───────────────────────────────────────────────────────────────────
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s  %(levelname)s  %(message)s",
-    datefmt="%H:%M:%S",
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)s  %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger(__name__)
 
-# ── Pfade ─────────────────────────────────────────────────────────────────────
-ROOT          = Path(__file__).parent.parent
-RAW_DIR       = ROOT / "data" / "raw"
-LOOKUP_DIR    = ROOT / "data" / "lookups"
-BRIEFING_DIR  = ROOT / "data" / "briefings" / "regions"
-BRIEFING_DIR.mkdir(parents=True, exist_ok=True)
-CONFIG_DIR    = Path(__file__).parent / "config"
-
-# ── Konfiguration laden ───────────────────────────────────────────────────────
-
-def load_thresholds() -> dict:
-    path = CONFIG_DIR / "thresholds.json"
-    return json.loads(path.read_text())
-
-
-def load_regions_meta() -> dict[int, dict]:
-    path = LOOKUP_DIR / "regions_meta.json"
-    if not path.exists():
-        log.warning("regions_meta.json fehlt — verwende Platzhalter.")
-        return {rid: {"id": rid, "name_de": f"Region {rid}",
-                      "name_fr": f"Région {rid}", "name_it": f"Regione {rid}",
-                      "name_en": f"Region {rid}"}
-                for rid in range(31, 69)}
-    raw = json.loads(path.read_text())
-    return {int(k): v for k, v in raw.items()}
-
-
-# ── Daten laden ───────────────────────────────────────────────────────────────
-
-def load_current() -> pd.DataFrame:
-    path = RAW_DIR / "weekly_current_regions.csv"
-    if not path.exists():
-        raise FileNotFoundError(
-            f"{path} fehlt. Zuerst 02_fetch_data.py ausführen."
-        )
-    df = pd.read_csv(path, sep=";")
-    df.columns = [c.replace(".", "_").strip() for c in df.columns]
-    log.info("Aktuelle Daten: %d Zeilen", len(df))
-    return df
-
-
-def load_forecast() -> pd.DataFrame | None:
-    path = RAW_DIR / "weekly_forecast_regions.csv"
-    if not path.exists():
-        log.warning("Forecast-Datei fehlt — Prognose wird weggelassen.")
-        return None
-    df = pd.read_csv(path, sep=";")
-    df.columns = [c.replace(".", "_").strip() for c in df.columns]
-    log.info("Forecast-Daten: %d Zeilen", len(df))
-    return df
-
-
-# ── Regelengine ───────────────────────────────────────────────────────────────
-
-class RuleEngine:
-    """
-    Deterministische Textgenerierung auf Basis definierter Schwellenwerte.
-    Keine freie KI-Generierung. Alle Aussagen sind datenbasiert und
-    nachvollziehbar.
-    """
-
-    def __init__(self, thresholds: dict):
-        self.t = thresholds
-
-    def cdi_label(self, cdi: int) -> str:
-        return self.t["cdi"].get(str(cdi), {}).get("label_de", f"CDI {cdi}")
-
-    def cdi_color(self, cdi: int) -> str:
-        return self.t["cdi"].get(str(cdi), {}).get("color", "grey")
-
-    def warning_level(self, cdi: int) -> int:
-        return self.t["cdi"].get(str(cdi), {}).get("warning_level", cdi)
-
-    def index_label(self, index_type: str, value: int) -> str:
-        return self.t.get(index_type, {}).get(str(value), f"Stufe {value}")
-
-    def trend_label(self, current_cdi: int, forecast_cdi: int | None) -> str:
-        if forecast_cdi is None:
-            return "unbekannt"
-        diff = forecast_cdi - current_cdi
-        if diff >= 2:
-            return "stark_verschlechternd"
-        elif diff == 1:
-            return "verschlechternd"
-        elif diff == 0:
-            return "stabil"
-        elif diff == -1:
-            return "verbessernd"
-        else:
-            return "stark_verbessernd"
-
-    def trend_label_de(self, trend: str) -> str:
-        return {
-            "stark_verschlechternd": "starke Verschlechterung erwartet",
-            "verschlechternd":       "Verschlechterung erwartet",
-            "stabil":                "stabile Lage erwartet",
-            "verbessernd":           "Entspannung erwartet",
-            "stark_verbessernd":     "deutliche Entspannung erwartet",
-            "unbekannt":             "keine Prognose verfügbar",
-        }.get(trend, trend)
-
-    def generate_summary(
-        self,
-        region_name: str,
-        cdi: int,
-        indicators: dict,
-        trend: str,
-    ) -> str:
-        """
-        Generiert eine sachliche Kurzzusammenfassung.
-        Ausschliesslich regelbasiert — keine freie Textgenerierung.
-        """
-        parts = []
-
-        # Lagebeurteilung
-        cdi_txt = self.cdi_label(cdi)
-        if cdi == 1:
-            parts.append(
-                f"In der Region {region_name} sind aktuell keine aussergewöhnlichen "
-                f"Trockenheitssignale feststellbar."
-            )
-        elif cdi == 2:
-            parts.append(
-                f"In der Region {region_name} zeichnet sich eine leichte Trockenheit ab."
-            )
-        elif cdi == 3:
-            parts.append(
-                f"Die Region {region_name} ist aktuell trocken."
-            )
-        elif cdi == 4:
-            parts.append(
-                f"Die Region {region_name} weist eine grosse Trockenheit auf."
-            )
-        elif cdi == 5:
-            parts.append(
-                f"In der Region {region_name} herrscht eine extreme Trockenheit."
-            )
-
-        # Auffällige Einzelindikatoren
-        notable = []
-        for ind_key, ind_val in indicators.items():
-            idx = ind_val.get("index", 1)
-            if idx >= 3:
-                notable.append(ind_val.get("label_de", ""))
-        if notable:
-            parts.append(
-                "Festgestellt wird: " + "; ".join(notable) + "."
-            )
-
-        # Prognose
-        trend_txt = self.trend_label_de(trend)
-        parts.append(f"Prognose: {trend_txt.capitalize()}.")
-
-        return " ".join(parts)
-
-    def generate_recommendations(self, cdi: int) -> list[str]:
-        base = self.t.get("recommendations", {})
-        recs = base.get("all", [])
-        level_recs = base.get(str(cdi), [])
-        return recs + level_recs
-
-    def generate_impacts(self, cdi: int) -> list[str]:
-        impacts_map = self.t.get("impacts", {})
-        return impacts_map.get(str(cdi), [])
-
-
-# ── Prognose-Block ────────────────────────────────────────────────────────────
-
-def get_latest_row(df: pd.DataFrame, region_id: int, date_col: str) -> dict | None:
-    """Gibt die neueste Zeile für eine Region zurück."""
-    rid_col = "drought_region_id"
-    sub = df[df[rid_col] == region_id]
-    if sub.empty:
-        return None
-    latest = sub.sort_values(date_col, ascending=False).iloc[0]
-    return latest.to_dict()
-
-
-def extract_forecast_uncertainty(row: dict) -> str:
-    """Beschreibt die Prognose-Unsicherheit via P10/P90-Spanne."""
-    p10 = row.get("cdi_p10")
-    p90 = row.get("cdi_p90")
-    if p10 is None or p90 is None:
-        return "Prognose-Unsicherheit nicht quantifizierbar."
-    span = int(p90) - int(p10)
-    if span == 0:
-        return "Die Ensemble-Prognose zeigt eine einheitliche Entwicklung."
-    elif span == 1:
-        return "Die Ensemble-Prognose zeigt eine geringe Unsicherheit."
-    elif span == 2:
-        return "Die Ensemble-Prognose zeigt eine mässige Unsicherheit."
-    else:
-        return (
-            "Die Ensemble-Prognose weist eine grosse Spannweite auf "
-            f"(CDI P10={int(p10)}, P90={int(p90)}). "
-            "Aktuelle Lage mit erhöhter Vorsicht interpretieren."
-        )
-
-
-# ── Briefing-Zusammenbau ──────────────────────────────────────────────────────
-
-def build_briefing(
-    region_id: int,
-    current_row: dict,
-    forecast_row: dict | None,
-    meta: dict,
-    engine: RuleEngine,
-    thresholds: dict,
-) -> dict:
-    """Baut das vollständige Briefing-JSON für eine Region."""
-
-    # CDI (aktuell)
-    cdi_raw = current_row.get("cdi")
-    cdi = int(float(cdi_raw)) if cdi_raw is not None and not _isnan(cdi_raw) else 1
-    cdi = max(1, min(5, cdi))
-
-    # Prognose-CDI
-    forecast_cdi = None
-    forecast_cdi_p10 = None
-    forecast_cdi_p90 = None
-    forecast_uncertainty = "Keine Prognosedaten verfügbar."
-    if forecast_row:
-        p50 = forecast_row.get("cdi_p50")
-        if p50 is not None and not _isnan(p50):
-            forecast_cdi = int(float(p50))
-            forecast_cdi = max(1, min(5, forecast_cdi))
-        p10 = forecast_row.get("cdi_p10")
-        p90 = forecast_row.get("cdi_p90")
-        if p10 and not _isnan(p10):
-            forecast_cdi_p10 = int(float(p10))
-        if p90 and not _isnan(p90):
-            forecast_cdi_p90 = int(float(p90))
-        forecast_uncertainty = extract_forecast_uncertainty(forecast_row)
-
-    # Trend
-    trend = engine.trend_label(cdi, forecast_cdi)
-
-    # Kernindikatoren
-    indicators = {
-        "precip_1m": {
-            "key":      "precip_1m",
-            "label_de": "30-Tage-Niederschlag",
-            "index":    _safe_int(current_row.get("precip_1m_index")),
-            "label_status_de": engine.index_label(
-                "precip_index", _safe_int(current_row.get("precip_1m_index"))
-            ),
-            "value_mm": _safe_float(current_row.get("precip_sum_1m")),
-            "unit":     "mm",
-            "source":   "MeteoSchweiz / BAFU",
-        },
-        "precip_3m": {
-            "key":      "precip_3m",
-            "label_de": "90-Tage-Niederschlag",
-            "index":    _safe_int(current_row.get("precip_3m_index")),
-            "label_status_de": engine.index_label(
-                "precip_index", _safe_int(current_row.get("precip_3m_index"))
-            ),
-            "value_mm": _safe_float(current_row.get("precip_sum_3m")),
-            "unit":     "mm",
-            "source":   "MeteoSchweiz / BAFU",
-        },
-        "hydro": {
-            "key":      "hydro",
-            "label_de": "Abfluss / Pegel",
-            "index":    _safe_int(current_row.get("hydro_index")),
-            "label_status_de": engine.index_label(
-                "hydro_index", _safe_int(current_row.get("hydro_index"))
-            ),
-            "value_mm": None,
-            "unit":     None,
-            "source":   "BAFU Hydrodaten",
-        },
-        "soil_moisture": {
-            "key":      "soil_moisture",
-            "label_de": "Bodenfeuchte",
-            "index":    _safe_int(current_row.get("soil_moisture_index")),
-            "label_status_de": engine.index_label(
-                "soil_moisture_index",
-                _safe_int(current_row.get("soil_moisture_index"))
-            ),
-            "value_pct": _safe_float(current_row.get("soil_moisture_ufc")),
-            "unit":      "% nFK",
-            "source":    "MeteoSchweiz / swisstopo",
-        },
-    }
-
-    # Zusammenfassung
-    region_name = meta.get("name_de", f"Region {region_id}")
-    summary_de  = engine.generate_summary(region_name, cdi, indicators, trend)
-
-    # Auswirkungen und Empfehlungen
-    impacts         = engine.generate_impacts(cdi)
-    recommendations = engine.generate_recommendations(cdi)
-
-    # Quellen-Block
-    sources = [
-        {
-            "name":      "Nationale Trockenheitsplattform (BAFU)",
-            "url":       "https://www.trockenheit.admin.ch",
-            "api_url":   (
-                "https://data.geo.admin.ch/ch.bafu.trockenheitsdaten-numerisch/"
-                "trockenheitsdaten-numerisch_current/"
-                "trockenheitsdaten-numerisch_current.csv.zip"
-            ),
-            "data_date": str(current_row.get("measured_at", "unbekannt")),
-        },
-        {
-            "name":    "MeteoSchweiz Open Data",
-            "url":     "https://www.meteoswiss.admin.ch",
-            "api_url": "https://data.geo.admin.ch/api/stac/v1/",
-        },
-        {
-            "name":    "BAFU Hydrodaten",
-            "url":     "https://www.hydrodaten.admin.ch",
-        },
-    ]
-
-    return {
-        # Identifikation
-        "region_id":      region_id,
-        "region_name_de": region_name,
-        "region_name_fr": meta.get("name_fr"),
-        "region_name_it": meta.get("name_it"),
-        "region_name_en": meta.get("name_en"),
-
-        # Zeitstempel
-        "measured_at":    str(current_row.get("measured_at", "unbekannt")),
-        "generated_at":   datetime.now(timezone.utc).isoformat(),
-
-        # Lagebeurteilung
-        "cdi":            cdi,
-        "cdi_label_de":   engine.cdi_label(cdi),
-        "warning_level":  engine.warning_level(cdi),
-        "color":          engine.cdi_color(cdi),
-        "summary_de":     summary_de,
-
-        # Trend und Prognose
-        "trend":               trend,
-        "trend_label_de":      engine.trend_label_de(trend),
-        "forecast_cdi_p50":    forecast_cdi,
-        "forecast_cdi_p10":    forecast_cdi_p10,
-        "forecast_cdi_p90":    forecast_cdi_p90,
-        "forecast_valid_at":   str(forecast_row.get("valid_at")) if forecast_row else None,
-        "forecast_uncertainty":forecast_uncertainty,
-
-        # Kernindikatoren
-        "indicators": indicators,
-
-        # Auswirkungen (vordefinierte Textbausteine)
-        "impacts_de":           impacts,
-
-        # Empfehlungen
-        "recommendations_de":   recommendations,
-
-        # Rohdaten (für Transparenz und Weiterverarbeitung)
-        "raw": {
-            "precip_1m_index":    _safe_int(current_row.get("precip_1m_index")),
-            "precip_3m_index":    _safe_int(current_row.get("precip_3m_index")),
-            "precip_24m_index":   _safe_int(current_row.get("precip_24m_index")),
-            "hydro_index":        _safe_int(current_row.get("hydro_index")),
-            "soil_moisture_index":_safe_int(current_row.get("soil_moisture_index")),
-            "spi_1m":             _safe_float(current_row.get("spi_1m")),
-            "spi_3m":             _safe_float(current_row.get("spi_3m")),
-            "soil_moisture_ufc":  _safe_float(current_row.get("soil_moisture_ufc")),
-            "vhi":                _safe_float(current_row.get("vhi")),
-        },
-
-        # Quellen
-        "sources": sources,
-
-        # Haftungsausschluss
-        "disclaimer_de": (
-            "Dieses Briefing wird automatisch aus offiziellen Bundesdaten generiert. "
-            "Es ersetzt keine fachliche Beurteilung durch zuständige Behörden. "
-            "Für rechtsverbindliche Trockenheitswarnungen: "
-            "www.trockenheit.admin.ch"
-        ),
-    }
-
-
-# ── Hilfsfunktionen ───────────────────────────────────────────────────────────
-
-class _JsonEncoder(json.JSONEncoder):
-    def default(self, o: Any):
+class _J(json.JSONEncoder):
+    def default(self, o):
         import numpy as np
-        if isinstance(o, (np.integer,)):
-            return int(o)
-        if isinstance(o, (np.floating,)):
-            return float(o)
+        if isinstance(o, np.integer): return int(o)
+        if isinstance(o, np.floating): return float(o)
         return super().default(o)
 
+ROOT         = Path(__file__).parent.parent
+RAW_DIR      = ROOT / "data" / "raw"
+LOOKUP_DIR   = ROOT / "data" / "lookups"
+BRIEFING_DIR = ROOT / "data" / "briefings" / "regions"
+BRIEFING_DIR.mkdir(parents=True, exist_ok=True)
+CONFIG_DIR   = Path(__file__).parent / "config"
+TROCKENHEIT_BASE = "https://www.trockenheit.admin.ch/de/regionen"
 
-def _isnan(v: Any) -> bool:
-    try:
-        import math
-        return math.isnan(float(v))
-    except (TypeError, ValueError):
-        return False
+# ── Slug / URL ────────────────────────────────────────────────────────────────
+def make_slug(region_id: int, name_de: str) -> str:
+    s = name_de.lower().replace("ä","ae").replace("ö","oe").replace("ü","ue").replace("ß","ss")
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return f"{region_id}-{s}"
 
+def r_url(slug: str, anchor: str = "") -> str:
+    base = f"{TROCKENHEIT_BASE}/{slug}/aktuelle-lage"
+    return f"{base}#{anchor}" if anchor else base
 
-def _safe_int(v: Any, default: int = 1) -> int:
-    try:
-        if _isnan(v):
-            return default
-        return max(1, min(5, int(float(v))))
-    except (TypeError, ValueError):
-        return default
+# ── Klartextbeschreibungen ────────────────────────────────────────────────────
+def spi_to_comparison(spi: float | None) -> str:
+    if spi is None: return "Keine Vergleichsdaten verfügbar"
+    if spi > 1.5:  return "Deutlich mehr Niederschlag als üblich"
+    if spi > 0.5:  return "Etwas mehr Niederschlag als üblich"
+    if spi >= -0.5:return "Etwa gleich viel Niederschlag wie üblich"
+    if spi >= -1.0:return "Etwas weniger Niederschlag als üblich"
+    if spi >= -1.5:return "Deutlich weniger Niederschlag als üblich"
+    if spi >= -2.0:return "Sehr viel weniger Niederschlag als üblich"
+    return "Extrem wenig Niederschlag — historisch seltenes Ereignis"
 
+def soil_to_plain(ufc: float | None) -> str:
+    if ufc is None:  return "Keine Messdaten verfügbar"
+    if ufc >= 80:    return "Böden gut mit Wasser versorgt"
+    if ufc >= 60:    return "Böden mässig feucht"
+    if ufc >= 40:    return "Böden leicht trocken"
+    if ufc >= 20:    return "Böden trocken — Pflanzen unter Stress"
+    return "Böden sehr trocken — erheblicher Wassermangel"
 
-def _safe_float(v: Any) -> float | None:
-    try:
-        if _isnan(v):
-            return None
-        return round(float(v), 2)
-    except (TypeError, ValueError):
-        return None
+def hydro_to_plain(idx: int) -> str:
+    return {1:"Pegel und Abflüsse im normalen Bereich",
+            2:"Pegel leicht unter dem Durchschnitt",
+            3:"Pegel deutlich unter dem Durchschnitt",
+            4:"Niedrigwassersituation — kritisch tiefe Pegel",
+            5:"Extreme Niedrigwassersituation — historisch selten"}.get(idx,"Keine Daten")
 
+def hydro_flow_range(idx: int) -> str:
+    """Indicative percentage of long-term mean flow for each hydro index level."""
+    return {1:"70–130 % des langjährigen Mittelabflusses",
+            2:"40–70 % des langjährigen Mittelabflusses",
+            3:"20–40 % des langjährigen Mittelabflusses",
+            4:"10–20 % des langjährigen Mittelabflusses",
+            5:"< 10 % des langjährigen Mittelabflusses"}.get(idx,"keine Angabe")
+
+def fc_summary(cdi: int, fc_cdi: int | None) -> str:
+    if fc_cdi is None: return "Für die nächsten Wochen liegt aktuell keine Prognose vor."
+    d = fc_cdi - cdi
+    names = {1:"keine",2:"leichte",3:"erhebliche",4:"grosse",5:"extreme"}
+    if d >= 2: return f"Die Lage wird sich deutlich verschlechtern — {names.get(fc_cdi,'Stufe '+str(fc_cdi))} Trockenheit erwartet (Stufe {fc_cdi})."
+    if d == 1: return f"Eine leichte Verschlechterung wird erwartet (Stufe {cdi} → {fc_cdi})."
+    if d == 0: return f"Die Lage bleibt voraussichtlich stabil (Stufe {cdi})."
+    if d == -1:return f"Eine leichte Entspannung wird erwartet (Stufe {cdi} → {fc_cdi})."
+    return f"Eine deutliche Entspannung wird erwartet (Stufe {cdi} → {fc_cdi})."
+
+def age_days(measured_at_str) -> int | None:
+    try: return (date.today() - date.fromisoformat(str(measured_at_str))).days
+    except: return None
+
+# ── Hilfsfunktionen ───────────────────────────────────────────────────────────
+def _isnan(v):
+    try: import math; return math.isnan(float(v))
+    except: return False
+def _si(v, default=1):
+    try: return max(1, min(5, int(float(v)))) if not _isnan(v) else default
+    except: return default
+def _sf(v):
+    try: return round(float(v),2) if not _isnan(v) else None
+    except: return None
+
+# ── Config ────────────────────────────────────────────────────────────────────
+def load_thresholds(): return json.loads((CONFIG_DIR/"thresholds.json").read_text())
+def load_meta() -> dict[int,dict]:
+    p = LOOKUP_DIR/"regions_meta.json"
+    if not p.exists(): return {r:{"id":r,"name_de":f"Region {r}","name_fr":f"Région {r}","name_it":f"Regione {r}","name_en":f"Region {r}"} for r in range(31,69)}
+    return {int(k):v for k,v in json.loads(p.read_text()).items()}
+
+# ── Engine ────────────────────────────────────────────────────────────────────
+class Engine:
+    def __init__(self, t): self.t = t
+    def cdi_label(self, c): return self.t["cdi"].get(str(c),{}).get("label_de",f"CDI {c}")
+    def cdi_noun(self, c):  return self.t["cdi"].get(str(c),{}).get("noun_de",f"Trockenheit Stufe {c}")
+    def cdi_color(self, c): return self.t["cdi"].get(str(c),{}).get("color","grey")
+    def cdi_hex(self, c):   return self.t["cdi"].get(str(c),{}).get("color_hex","#6b6b6b")
+    def warn_level(self, c):return self.t["cdi"].get(str(c),{}).get("warning_level",c)
+    def idx_label(self, t, v): return self.t.get(t,{}).get(str(v),f"Stufe {v}")
+    def trend_key(self, cur, fc):
+        if fc is None: return "unbekannt"
+        d = fc - cur
+        if d>=2: return "stark_verschlechternd"
+        if d==1: return "verschlechternd"
+        if d==0: return "stabil"
+        if d==-1:return "verbessernd"
+        return "stark_verbessernd"
+    def trend_de(self, t): return {"stark_verschlechternd":"Starke Verschlechterung erwartet","verschlechternd":"Verschlechterung erwartet","stabil":"Stabile Lage erwartet","verbessernd":"Entspannung erwartet","stark_verbessernd":"Deutliche Entspannung erwartet","unbekannt":"Keine Prognose verfügbar"}.get(t,t)
+    def summary(self, name, cdi):
+        return {1:f"In der Region {name} sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar.",2:f"In der Region {name} zeichnet sich eine leichte Trockenheit ab.",3:f"Die Region {name} ist von erheblicher Trockenheit betroffen.",4:f"In der Region {name} herrscht eine grosse Trockenheit.",5:f"Die Region {name} ist von extremer Trockenheit betroffen."}.get(cdi,f"Trockenheitsstufe {cdi}.")
+    def impacts(self, c): return self.t.get("impacts",{}).get(str(c),[])
+    def recs(self, c): return self.t.get("recommendations",{}).get("all",[])+self.t.get("recommendations",{}).get(str(c),[])
+
+# ── Briefing-Zusammenbau ──────────────────────────────────────────────────────
+def get_latest(df, rid, date_col):
+    sub = df[df["drought_region_id"]==rid]
+    return sub.sort_values(date_col,ascending=False).iloc[0].to_dict() if not sub.empty else None
+
+def build(rid, curr, fc, meta, eng):
+    cdi = _si(curr.get("cdi"))
+    fc_cdi = None
+    fc_valid = None
+    # HINWEIS: cdi_p10/p90 existieren NICHT im forecast CSV — nur cdi_p50
+    if fc:
+        p50 = fc.get("cdi_p50")
+        if p50 is not None and not _isnan(p50):
+            fc_cdi = max(1, min(5, int(float(p50))))
+        fc_valid = str(fc.get("valid_at","")) or None
+
+    trend = eng.trend_key(cdi, fc_cdi)
+    name  = meta.get("name_de", f"Region {rid}")
+    slug  = make_slug(rid, name)
+    measured = str(curr.get("measured_at","unbekannt"))
+    adys = age_days(measured)
+
+    spi_1m = _sf(curr.get("spi_1m"))
+    spi_3m = _sf(curr.get("spi_3m"))
+    p1 = _si(curr.get("precip_1m_index"))
+    p3 = _si(curr.get("precip_3m_index"))
+
+    indicators = {
+        "precip": {
+            "key":"precip","label_de":"Niederschlag","icon":"🌧",
+            "link": r_url(slug,"precipitation"),
+            "short_term": {
+                "days":30,"index":p1,"value_mm":_sf(curr.get("precip_sum_1m")),
+                "spi":spi_1m,"comparison_de":spi_to_comparison(spi_1m),
+                "label_status_de":eng.idx_label("precip_index",p1),
+            },
+            "long_term": {
+                "days":90,"index":p3,"value_mm":_sf(curr.get("precip_sum_3m")),
+                "spi":spi_3m,"comparison_de":spi_to_comparison(spi_3m),
+                "label_status_de":eng.idx_label("precip_index",p3),
+            },
+        },
+        "hydro": {
+            "key":"hydro","label_de":"Gewässer und Pegel","icon":"💧",
+            "index":_si(curr.get("hydro_index")),
+            "label_status_de":eng.idx_label("hydro_index",_si(curr.get("hydro_index"))),
+            "plain_de":hydro_to_plain(_si(curr.get("hydro_index"))),
+            "flow_range_de":hydro_flow_range(_si(curr.get("hydro_index"))),
+            # Try several candidate column names for actual runoff ratio
+            "value_q_rel":_sf(
+                curr.get("q_rel_mean") or curr.get("q_fraction") or
+                curr.get("runoff_fraction") or curr.get("hydro_value")
+            ),
+            "link":r_url(slug,"discharge"),"source":"BAFU Hydrodaten",
+        },
+        "soil_moisture": {
+            "key":"soil_moisture","label_de":"Bodenfeuchte","icon":"🌱",
+            "index":_si(curr.get("soil_moisture_index")),
+            "value_pct":_sf(curr.get("soil_moisture_ufc")),
+            "label_status_de":eng.idx_label("soil_moisture_index",_si(curr.get("soil_moisture_index"))),
+            "plain_de":soil_to_plain(_sf(curr.get("soil_moisture_ufc"))),
+            "link":r_url(slug,"moisture"),"source":"MeteoSchweiz",
+        },
+    }
+
+    return {
+        "region_id":rid,"region_name_de":name,
+        "region_name_fr":meta.get("name_fr"),"region_name_it":meta.get("name_it"),"region_name_en":meta.get("name_en"),
+        "region_slug":slug,"region_url":r_url(slug),"region_url_cdi":r_url(slug,"index"),
+        "measured_at":measured,"generated_at":datetime.now(timezone.utc).isoformat(),"data_age_days":adys,
+        "cdi":cdi,"cdi_label_de":eng.cdi_label(cdi),"cdi_noun_de":eng.cdi_noun(cdi),
+        "warning_level":eng.warn_level(cdi),"color":eng.cdi_color(cdi),"color_hex":eng.cdi_hex(cdi),
+        "summary_de":eng.summary(name,cdi),
+        "trend":trend,"trend_label_de":eng.trend_de(trend),
+        "forecast_cdi_p50":fc_cdi,"forecast_valid_at":fc_valid,
+        "forecast_summary_de":fc_summary(cdi,fc_cdi),
+        "indicators":indicators,
+        "impacts_de":eng.impacts(cdi),"recommendations_de":eng.recs(cdi),
+        "raw":{"precip_1m_index":p1,"precip_3m_index":p3,"precip_24m_index":_si(curr.get("precip_24m_index")),"hydro_index":_si(curr.get("hydro_index")),"soil_moisture_index":_si(curr.get("soil_moisture_index")),"spi_1m":spi_1m,"spi_3m":spi_3m,"soil_moisture_ufc":_sf(curr.get("soil_moisture_ufc")),"vhi":_sf(curr.get("vhi"))},
+        "sources":[{"name":"Trockenheitsplattform BAFU","url":"https://www.trockenheit.admin.ch","data_date":measured},{"name":"MeteoSchweiz Open Data","url":"https://www.meteoswiss.admin.ch"},{"name":"BAFU Hydrodaten","url":"https://www.hydrodaten.admin.ch"}],
+        "disclaimer_de":"Automatisch aus offiziellen Bundesdaten generiert. Massgeblich ist die offizielle Warnung auf www.trockenheit.admin.ch.",
+    }
 
 # ── main ──────────────────────────────────────────────────────────────────────
+def main():
+    t0=time.time()
+    log.info("="*60); log.info("DryBrief Suisse — Briefing-Generierung v2"); log.info("="*60)
+    T=load_thresholds(); meta=load_meta(); eng=Engine(T)
+    cur_df=pd.read_csv(RAW_DIR/"weekly_current_regions.csv",sep=";")
+    cur_df.columns=[c.replace(".","_").strip() for c in cur_df.columns]
+    log.info("Aktuelle Daten: %d Zeilen, Spalten: %s", len(cur_df), list(cur_df.columns))
 
-def main() -> None:
-    t0 = time.time()
-    log.info("=" * 60)
-    log.info("DryBrief Suisse — Briefing-Generierung")
-    log.info("=" * 60)
+    fc_df=None
+    fc_path=RAW_DIR/"weekly_forecast_regions.csv"
+    if fc_path.exists():
+        fc_df=pd.read_csv(fc_path,sep=";")
+        fc_df.columns=[c.replace(".","_").strip() for c in fc_df.columns]
+        log.info("Forecast-Spalten: %s", list(fc_df.columns))
+        log.info("(Hinweis: cdi_p10/p90 existieren NICHT im CSV — nur cdi_p50)")
 
-    thresholds = load_thresholds()
-    meta       = load_regions_meta()
-    engine     = RuleEngine(thresholds)
-    current_df = load_current()
-    forecast_df= load_forecast()
+    cur_df["measured_at"] = pd.to_datetime(cur_df["measured_at"], errors="coerce").dt.strftime("%Y-%m-%d")
+    cur_df = cur_df[cur_df["measured_at"].notna()]
+    log.info("Spalten current: %s", list(cur_df.columns))
 
-    # Letzte Woche aus current (neuestes Datum)
-    date_col_curr = "measured_at"
-    latest_date   = current_df[date_col_curr].max()
-    log.info("Aktuellster Datenstand: %s", latest_date)
-    current_df    = current_df[current_df[date_col_curr] == latest_date]
+    full_dates = sorted(
+        [d for d, g in cur_df.groupby("measured_at") if g.notna().values.all()],
+        reverse=True,
+    )
+    lat = full_dates[0] if full_dates else cur_df["measured_at"].max()
+    ady = age_days(lat)
+    log.info("Neuester vollständiger Datenstand: %s (%s Tage alt, %d vollst. Daten)",
+             lat, ady, len(full_dates))
+    if ady and ady > 7:
+        log.warning("⚠ DATEN SIND %d TAGE ALT! Bitte 02_fetch_data.py erneut ausführen.", ady)
 
-    # Letzte Prognose
-    if forecast_df is not None:
-        fc_date_col  = "valid_at"
-        fc_latest    = forecast_df[fc_date_col].max()
-        forecast_df  = forecast_df[forecast_df[fc_date_col] == fc_latest]
-        log.info("Prognose-Datum:        %s", fc_latest)
+    cur_df = cur_df[cur_df["measured_at"] == lat]
+    log.info("Gefiltert auf %s: %d Zeilen", lat, len(cur_df))
 
-    # Pro Region ein Briefing
-    all_region_ids = sorted(current_df["drought_region_id"].dropna().astype(int).unique())
-    log.info("Generiere Briefings für %d Regionen …", len(all_region_ids))
-
-    index_entries = []
-    for region_id in all_region_ids:
-        curr_row = get_latest_row(current_df, region_id, date_col_curr)
-        if curr_row is None:
-            log.warning("  Region %d: keine aktuellen Daten.", region_id)
-            continue
-
-        fc_row = None
-        if forecast_df is not None:
-            fc_row = get_latest_row(forecast_df, region_id, "valid_at")
-
-        region_meta = meta.get(region_id, {
-            "id": region_id, "name_de": f"Region {region_id}",
-            "name_fr": f"Région {region_id}", "name_it": f"Regione {region_id}",
-            "name_en": f"Region {region_id}",
-        })
-
-        briefing = build_briefing(
-            region_id, curr_row, fc_row, region_meta, engine, thresholds
+    if fc_df is not None:
+        fc_df["valid_at"] = pd.to_datetime(fc_df["valid_at"], errors="coerce").dt.strftime("%Y-%m-%d")
+        fc_df = fc_df[fc_df["valid_at"].notna()]
+        full_fc = sorted(
+            [d for d, g in fc_df.groupby("valid_at") if g.notna().values.all()],
+            reverse=True,
         )
+        fc_lat = full_fc[0] if full_fc else fc_df["valid_at"].max()
+        fc_df = fc_df[fc_df["valid_at"] == fc_lat]
+        log.info("Forecast-Datum: %s (%d Zeilen)", fc_lat, len(fc_df))
 
-        # Briefing-JSON speichern
-        out = BRIEFING_DIR / f"{region_id}.json"
-        out.write_text(json.dumps(briefing, ensure_ascii=False, indent=2, cls=_JsonEncoder))
+    all_ids=sorted(cur_df["drought_region_id"].dropna().astype(int).unique())
+    log.info("Region-IDs im CSV: %s", all_ids)
 
-        # Index-Eintrag
-        index_entries.append({
-            "region_id":      region_id,
-            "name_de":        briefing["region_name_de"],
-            "cdi":            briefing["cdi"],
-            "cdi_label_de":   briefing["cdi_label_de"],
-            "warning_level":  briefing["warning_level"],
-            "color":          briefing["color"],
-            "trend":          briefing["trend"],
-            "measured_at":    briefing["measured_at"],
-        })
+    entries=[]
+    for rid in all_ids:
+        c=get_latest(cur_df,rid,"measured_at")
+        if not c: continue
+        f=get_latest(fc_df,rid,"valid_at") if fc_df is not None else None
+        m=meta.get(rid,{"id":rid,"name_de":f"Region {rid}","name_fr":f"Région {rid}","name_it":f"Regione {rid}"})
+        b=build(rid,c,f,m,eng)
+        (BRIEFING_DIR/f"{rid}.json").write_text(json.dumps(b,ensure_ascii=False,indent=2,cls=_J))
+        entries.append({"region_id":rid,"name_de":b["region_name_de"],"region_slug":b["region_slug"],"cdi":b["cdi"],"cdi_label_de":b["cdi_label_de"],"warning_level":b["warning_level"],"color":b["color"],"color_hex":b["color_hex"],"trend":b["trend"],"measured_at":b["measured_at"],"data_age_days":b["data_age_days"]})
+        log.info("  Region %3d (%s): CDI=%d [%s]  Alter=%sd", rid, b["region_name_de"], b["cdi"], b["color"], b["data_age_days"])
 
-        log.info("  Region %d (%s): CDI=%d %s, Trend=%s",
-                 region_id, briefing["region_name_de"],
-                 briefing["cdi"], briefing["color"], briefing["trend"])
+    now=datetime.now(timezone.utc).isoformat()
+    payload={"generated_at":now,"data_date":str(lat),"data_age_days":ady,"n_regions":len(entries),"regions":sorted(entries,key=lambda x:x["region_id"])}
+    (ROOT/"data"/"briefings"/"index.json").write_text(json.dumps(payload,ensure_ascii=False,indent=2,cls=_J))
+    (ROOT/"data"/"briefings"/"generated_at.json").write_text(json.dumps({"generated_at":now,"data_date":str(lat),"data_age_days":ady},cls=_J))
 
-    # Gesamt-Index
-    index_path = ROOT / "data" / "briefings" / "index.json"
-    index_path.write_text(json.dumps({
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "regions":      sorted(index_entries, key=lambda x: x["region_id"]),
-    }, ensure_ascii=False, indent=2, cls=_JsonEncoder))
-    log.info("Index gespeichert: %s", index_path)
+    log.info("CDI-Verteilung: %s", {v:sum(1 for e in entries if e["cdi"]==v) for v in range(1,6)})
+    log.info("Laufzeit: %.1f s", time.time()-t0)
 
-    # Zeitstempel-Datei für GitHub Actions / Cache-Busting
-    ts_path = ROOT / "data" / "briefings" / "generated_at.json"
-    ts_path.write_text(json.dumps({
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "n_regions":    len(index_entries),
-    }, cls=_JsonEncoder))
-
-    log.info("")
-    log.info("CDI-Verteilung:")
-    for cdi_val in range(1, 6):
-        count = sum(1 for e in index_entries if e["cdi"] == cdi_val)
-        label = engine.cdi_label(cdi_val)
-        bar   = "█" * count
-        log.info("  CDI %d (%s): %s %d", cdi_val, label, bar, count)
-
-    log.info("Laufzeit: %.1f s", time.time() - t0)
-    log.info("Briefing-Generierung abgeschlossen.")
-
-
-if __name__ == "__main__":
-    main()
+if __name__=="__main__": main()
