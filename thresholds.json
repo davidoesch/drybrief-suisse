@@ -1,0 +1,162 @@
+{
+  "_comment": "Regelbasierte Schwellenwerte und Textbausteine für DryBrief Suisse.",
+  "_source": "Empfohlene Terminologie für Trockenheitsbulletin (BAFU/MeteoSchweiz)",
+  "_version": "1.1 (16.03.2026)",
+
+  "cdi": {
+    "1": {
+      "label_de":     "Nicht trocken",
+      "label_fr":     "Pas sec",
+      "label_it":     "Non secco",
+      "label_en":     "Not dry",
+      "noun_de":      "Keine Trockenheit",
+      "noun_fr":      "Pas de sécheresse",
+      "noun_it":      "Nessuna siccità",
+      "color":        "green",
+      "color_hex":    "#22c55e",
+      "warning_level": 1,
+      "icon":         "✅"
+    },
+    "2": {
+      "label_de":     "Leicht trocken",
+      "label_fr":     "Légèrement sec",
+      "label_it":     "Leggermente secco",
+      "label_en":     "Slightly dry",
+      "noun_de":      "Leichte Trockenheit",
+      "noun_fr":      "Sécheresse légère",
+      "noun_it":      "Siccità leggera",
+      "color":        "yellow",
+      "color_hex":    "#eab308",
+      "warning_level": 2,
+      "icon":         "⚠️"
+    },
+    "3": {
+      "label_de":     "Trocken",
+      "label_fr":     "Sec",
+      "label_it":     "Secco",
+      "label_en":     "Dry",
+      "noun_de":      "Erhebliche Trockenheit",
+      "noun_fr":      "Sécheresse modérée",
+      "noun_it":      "Siccità moderata",
+      "color":        "orange",
+      "color_hex":    "#f97316",
+      "warning_level": 2,
+      "icon":         "🟠"
+    },
+    "4": {
+      "label_de":     "Sehr trocken",
+      "label_fr":     "Très sec",
+      "label_it":     "Molto secco",
+      "label_en":     "Very dry",
+      "noun_de":      "Grosse Trockenheit",
+      "noun_fr":      "Sécheresse élevée",
+      "noun_it":      "Siccità elevata",
+      "color":        "red",
+      "color_hex":    "#ef4444",
+      "warning_level": 4,
+      "icon":         "🔴"
+    },
+    "5": {
+      "label_de":     "Extrem trocken",
+      "label_fr":     "Extrêmement sec",
+      "label_it":     "Estremamente secco",
+      "label_en":     "Extremely dry",
+      "noun_de":      "Extreme Trockenheit",
+      "noun_fr":      "Sécheresse extrême",
+      "noun_it":      "Siccità estrema",
+      "color":        "darkred",
+      "color_hex":    "#991b1b",
+      "warning_level": 4,
+      "icon":         "🚨"
+    }
+  },
+
+  "precip_index": {
+    "1": "Kein oder geringes Niederschlagsdefizit",
+    "2": "Leichtes Niederschlagsdefizit",
+    "3": "Erhebliches Niederschlagsdefizit",
+    "4": "Grosses Niederschlagsdefizit",
+    "5": "Extremes Niederschlagsdefizit"
+  },
+
+  "hydro_index": {
+    "1": "Kein oder geringes Abflussdefizit",
+    "2": "Leichtes Abflussdefizit",
+    "3": "Erhebliches Abflussdefizit",
+    "4": "Grosses Abflussdefizit",
+    "5": "Extremes Abflussdefizit"
+  },
+
+  "soil_moisture_index": {
+    "1": "Kein oder geringes Bodenfeuchtedefizit",
+    "2": "Leichtes Bodenfeuchtedefizit",
+    "3": "Erhebliches Bodenfeuchtedefizit",
+    "4": "Grosses Bodenfeuchtedefizit",
+    "5": "Extremes Bodenfeuchtedefizit"
+  },
+
+  "impacts": {
+    "1": [],
+    "2": [
+      "Erste Anzeichen tieferer Pegelstände an kleineren Fliessgewässern möglich.",
+      "Lokal können die Böden trocken sein.",
+      "Erhöhte Waldbrandgefahr kann auftreten."
+    ],
+    "3": [
+      "Tiefe Pegelstände an kleineren Fliessgewässern wahrscheinlich.",
+      "Unterdurchschnittliche Grundwasserstände und Quellabflüsse möglich.",
+      "Lokale Einschränkungen der Wassernutzung möglich.",
+      "Lokal trockene Böden und Vegetationsstress.",
+      "Erhöhte Waldbrandgefahr."
+    ],
+    "4": [
+      "Kleinere Fliessgewässer können abschnittsweise austrocknen.",
+      "Kleinere Quellen können versiegen.",
+      "Einschränkungen der Wassernutzung auf lokaler bis regionaler Ebene wahrscheinlich.",
+      "Sehr trockene Böden, Ernteausfälle wahrscheinlich.",
+      "Erhöhte Waldbrandgefahr; Anweisungen der Behörden beachten.",
+      "Kühlleistung von Produktionsanlagen kann eingeschränkt sein."
+    ],
+    "5": [
+      "Austrocknung kleinerer und mittlerer Fliessgewässer.",
+      "Kritische Wassertemperaturen in Fliessgewässern möglich (Überschreitung 25 °C).",
+      "Nutzungsverbote für Wasserentnahmen möglich.",
+      "Extreme Bodentrockenheit mit erheblichen Ernteausfällen.",
+      "Sehr hohe Waldbrandgefahr.",
+      "Starke Einschränkungen der Schifffahrt auf dem Rhein.",
+      "Leistungsreduktionen bei Laufwasserkraftwerken."
+    ]
+  },
+
+  "recommendations": {
+    "all": [
+      "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
+      "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen."
+    ],
+    "1": [],
+    "2": [
+      "Lage beobachten und bei Bedarf Massnahmen vorbereiten.",
+      "Bevölkerung über mögliche Einschränkungen informieren."
+    ],
+    "3": [
+      "Monitoring verstärken: Pegel, Grundwasser, Bodenfeuchte täglich prüfen.",
+      "Wasserverbrauch reduzieren und Ressourcen schonen.",
+      "Bevölkerung über Sparmassnahmen sensibilisieren.",
+      "Kontakt mit kantonalem Führungsorgan aufnehmen."
+    ],
+    "4": [
+      "Anweisungen und Verbote der lokalen Behörden zur Wassernutzung beachten.",
+      "Sofortmassnahmen zur Wasserversorgung prüfen.",
+      "Koordination mit Kanton und Bund sicherstellen.",
+      "Anweisungen zur Waldbrandgefahr strikte befolgen.",
+      "Landwirtschaftliche Betriebe über Bewässerungsrestriktionen informieren."
+    ],
+    "5": [
+      "Notfallplanung aktivieren.",
+      "Alle verfügbaren Wasserressourcen inventarisieren.",
+      "Enge Koordination mit Bund (BAFU, MeteoSchweiz), Kanton und Nachbargemeinden.",
+      "Öffentlichkeit aktiv über Massnahmen und Verbote kommunizieren.",
+      "Waldbrandverbote erlassen und überwachen."
+    ]
+  }
+}
