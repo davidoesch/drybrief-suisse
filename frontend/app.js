@@ -6,6 +6,19 @@
 
 const DATA_BASE = window.location.pathname.includes('/frontend') ? '../data' : './data';
 
+// ── Permalink: ?date=YYYY-MM-DD ───────────────────────────────────────────────
+function parseDateParam() {
+  const raw = new URLSearchParams(window.location.search).get('date') ?? '';
+  if(/^\d{4}-\d{2}-\d{2}$/.test(raw)) return raw;
+  // Accept DD-MM-YYYY as fallback
+  const m = raw.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+  if(m) return `${m[3]}-${m[2]}-${m[1]}`;
+  return null;
+}
+const DATE_PARAM = parseDateParam();
+// Historical: load from data/briefings/YYYY-MM-DD/; latest: data/briefings/
+const BRIEFING_BASE = DATE_PARAM ? `${DATA_BASE}/briefings/${DATE_PARAM}` : `${DATA_BASE}/briefings`;
+
 if (window.location.protocol === 'file:') {
   document.body.innerHTML = `<div style="font-family:system-ui;max-width:520px;margin:80px auto;padding:28px;background:#fff8f0;border:2px solid #f97316;border-radius:12px;line-height:1.7"><h2 style="color:#ea580c;margin-bottom:10px">⚠ Lokaler Server erforderlich</h2><p>DryBrief kann nicht via <code>file://</code> geöffnet werden (CORS).</p><p style="margin-top:12px"><b>Terminal:</b></p><pre style="background:#111;color:#f5f5f3;padding:14px;border-radius:8px;font-size:13px">cd /path/to/drybrief-suisse
 python -m http.server 8080</pre><p style="margin-top:10px">Dann: <a href="http://localhost:8080/frontend/" style="color:#ea580c">http://localhost:8080/frontend/</a></p></div>`;
@@ -30,10 +43,14 @@ const $=id=>document.getElementById(id);
 const searchInput=$('searchInput'), clearBtn=$('clearBtn'), suggList=$('suggestions');
 const generateBtn=$('generateBtn'), loadingState=$('loadingState');
 const errorState=$('errorState'), errorMsg=$('errorMsg'), briefingEl=$('briefingOutput');
-const stalenessBanner=$('stalenessBanner');
+const stalenessBanner=$('stalenessBanner'), historyBanner=$('historyBanner');
 
 // ── Init ──────────────────────────────────────────────────────────────────────
 async function init(){
+  if(DATE_PARAM){
+    historyBanner.innerHTML=`Historisches Briefing: Daten vom <strong>${fmt(DATE_PARAM)}</strong> &middot; <a href="${window.location.pathname}">Aktuelles Briefing anzeigen</a>`;
+    historyBanner.hidden=false;
+  }
   try{
     const r=await fetch(`${DATA_BASE}/lookups/search_index.json`);
     if(!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -41,7 +58,7 @@ async function init(){
     searchInput.disabled=false;
     bindEvents();
   } catch(e){
-    searchInput.placeholder='Suchindex nicht geladen — Pipeline ausführen';
+    searchInput.placeholder='Suchindex nicht geladen, Pipeline ausführen';
     searchInput.disabled=true;
   }
 }
@@ -107,9 +124,12 @@ async function onGenerate(){
     } else {
       const rid=currentEntry.primary_region_id??currentEntry.region_id;
       if(!rid){ showErr('Keine Warnregion für diese Auswahl gefunden.'); return; }
-      const r=await fetch(`${DATA_BASE}/briefings/regions/${rid}.json`);
-      if(!r.ok) throw new Error(`Briefing Region ${rid} nicht gefunden (HTTP ${r.status}).\nPipeline ausführen: python pipeline/03_generate_briefings.py`);
-      render(await r.json());
+      const r=await fetch(`${BRIEFING_BASE}/regions/${rid}.json`);
+      if(!r.ok) throw new Error(DATE_PARAM
+        ? `Kein Briefing für ${DATE_PARAM} vorhanden.\nZuerst generieren:\npython pipeline/03_generate_briefings.py --date ${DATE_PARAM}`
+        : `Briefing nicht gefunden (HTTP ${r.status}).\nPipeline ausführen: python pipeline/03_generate_briefings.py`);
+      const briefing=await r.json();
+      render(briefing);
     }
   } catch(e){ showErr(e.message); }
   finally{ loadingState.hidden=true; generateBtn.disabled=false; }
@@ -120,10 +140,15 @@ async function onGenerateKanton(){
   if(!ids.length){ showErr('Keine Warnregionen für diesen Kanton gefunden.'); return; }
 
   const results=await Promise.allSettled(
-    ids.map(rid=>fetch(`${DATA_BASE}/briefings/regions/${rid}.json`).then(r=>r.ok?r.json():null))
+    ids.map(rid=>fetch(`${BRIEFING_BASE}/regions/${rid}.json`).then(r=>r.ok?r.json():null))
   );
   const briefings=results.map(r=>r.status==='fulfilled'?r.value:null).filter(Boolean);
-  if(!briefings.length){ showErr('Keine Briefing-Daten für diesen Kanton.'); return; }
+  if(!briefings.length){
+    showErr(DATE_PARAM
+      ? `Kein Briefing für ${DATE_PARAM} vorhanden.\nZuerst generieren:\npython pipeline/03_generate_briefings.py --date ${DATE_PARAM}`
+      : 'Keine Briefing-Daten für diesen Kanton. Pipeline ausführen: python pipeline/03_generate_briefings.py');
+    return;
+  }
 
   // Median CDI
   const cdis=[...briefings.map(b=>b.cdi??1)].sort((a,b)=>a-b);
@@ -137,7 +162,7 @@ async function onGenerateKanton(){
     cdi_label_de:(CDI[medianCdi]?.word??base.cdi_label_de),
     region_name_de:currentEntry.display_name,
     summary_de:`Kanton ${currentEntry.display_name}: ${briefings.length} Warnregionen. `+
-      `Medianer Trockenheitsindex CDI ${medianCdi} — ${CDI[medianCdi]?.word??''}.`,
+      `Medianer Trockenheitsindex CDI ${medianCdi}, ${CDI[medianCdi]?.word??''}.`,
     region_id:null,
   };
   render(synth);
@@ -185,7 +210,7 @@ function render(b){
     stalenessBanner.textContent=`⚠ Daten sind ${adys} Tage alt! Bitte Pipeline neu ausführen: python pipeline/02_fetch_data.py && python pipeline/03_generate_briefings.py`;
     stalenessBanner.className='staleness-banner staleness-error'; stalenessBanner.hidden=false;
   } else if(adys>7){
-    stalenessBanner.textContent=`ℹ Daten vom ${fmt(b.measured_at)} (${adys} Tage alt) — wöchentliche Aktualisierung empfohlen.`;
+    stalenessBanner.textContent=`ℹ Daten vom ${fmt(b.measured_at)} (${adys} Tage alt), wöchentliche Aktualisierung empfohlen.`;
     stalenessBanner.className='staleness-banner staleness-warn'; stalenessBanner.hidden=false;
   } else { stalenessBanner.hidden=true; }
 
@@ -205,9 +230,16 @@ function render(b){
 
   $('trendText').textContent=`${TREND_ARROWS[b.trend??'unbekannt']??'?'} ${b.trend_label_de??'–'}`;
 
-  // Link auf offizielle Seite
-  $('officialLink').href=b.region_url_cdi??b.region_url??'https://www.trockenheit.admin.ch';
-  $('officialLink').textContent=`Offizielle Warnung ${b.region_name_de??''} ↗`;
+  // Link auf offizielle Seite — nur bei Einzelregion sinnvoll
+  const hasMultiple = currentEntry?.type === 'kanton' || (currentEntry?.region_ids?.length > 1);
+  const linkEl = $('officialLink');
+  if(hasMultiple){
+    linkEl.hidden = true;
+  } else {
+    linkEl.hidden = false;
+    linkEl.href = b.region_url_cdi ?? b.region_url ?? 'https://www.trockenheit.admin.ch';
+    linkEl.textContent = `Offizielle Warnung ${b.region_name_de ?? ''} \u2197`;
+  }
 
   renderIndicators(b.indicators??{});
 
@@ -226,6 +258,12 @@ function render(b){
 
   document.querySelectorAll('.section-num').forEach(el=>el.style.color=cfg.hex);
 
+  // Permalink: URL mit Datum aktualisieren (nur beim aktuellen Stand, nicht nochmals bei historisch)
+  if(!DATE_PARAM && b.measured_at && b.measured_at!=='unbekannt'){
+    const url=new URL(window.location.href);
+    url.searchParams.set('date', b.measured_at);
+    history.replaceState(null,'',url);
+  }
   initOrUpdateMap(b.region_id);
   briefingEl.hidden=false;
   briefingEl.scrollIntoView({behavior:'smooth',block:'start'});
@@ -240,7 +278,7 @@ function renderIndicators(ind){
     const st=p.short_term??{}, lt=p.long_term??{};
     const idx=Math.max(st.index??1, lt.index??1);
     const cfg=CDI[idx]??CDI[1];
-    const card=makeCard(p.icon??'🌧', 'Niederschlag', idx, cfg, p.link);
+    const card=makeCard(p.icon??'🌧', p.label_de??'Niederschlag', idx, cfg, p.link);
     card.querySelector('.ind-status').innerHTML=`
       <div class="precip-row">
         <span class="precip-term">Letzte 30 Tage</span>
@@ -252,34 +290,45 @@ function renderIndicators(ind){
         <span class="precip-val">${lt.value_mm??'–'}&thinsp;<small>mm</small></span>
         <span class="precip-comp">${escHtml(lt.comparison_de??'')}</span>
       </div>`;
+    appendLink(card);
     grid.appendChild(card);
   }
 
   // Gewässer und Pegel
   if(ind.hydro){
     const h=ind.hydro, cfg=CDI[h.index??1]??CDI[1];
-    const card=makeCard(h.icon??'💧', 'Gewässer und Pegel', h.index??1, cfg, h.link);
+    const card=makeCard(h.icon??'💧', h.label_de??'Gewässer und Pegel', h.index??1, cfg, h.link);
     card.querySelector('.ind-status').textContent=h.plain_de??h.label_status_de??'–';
     const hVal=document.createElement('span'); hVal.className='ind-val';
-    if(h.value_q_rel!=null){
-      hVal.innerHTML=`${h.value_q_rel}&thinsp;<small>% des langjährigen Mittelabflusses</small>`;
+    if(h.value_q_m3s!=null){
+      // Bevorzuge echte m³/s-Daten wenn vorhanden
+      let html=`Aktuell: ${h.value_q_m3s}&thinsp;<small>m³/s</small>`;
+      if(h.value_q_norm_min!=null && h.value_q_norm_max!=null){
+        const period=h.value_q_norm_period??'Normalwert';
+        html+=`<br><small>Normal (${escHtml(period)}): ${h.value_q_norm_min}\u2013${h.value_q_norm_max}\u202fm³/s</small>`;
+      }
+      hVal.innerHTML=html;
+    } else if(h.value_q_rel!=null){
+      hVal.innerHTML=`Aktuell: ${h.value_q_rel}&thinsp;<small>% des langjährigen Mittelabflusses</small>`;
     } else if(h.flow_range_de){
-      hVal.innerHTML=`Typisch für diese Stufe: <small>${escHtml(h.flow_range_de)}</small>`;
+      hVal.innerHTML=`Normalbereich (Stufe ${h.index??1}): <small>${escHtml(h.flow_range_de)}</small>`;
     }
     if(hVal.innerHTML) card.appendChild(hVal);
+    appendLink(card);
     grid.appendChild(card);
   }
 
   // Bodenfeuchte
   if(ind.soil_moisture){
     const s=ind.soil_moisture, cfg=CDI[s.index??1]??CDI[1];
-    const card=makeCard(s.icon??'🌱', 'Bodenfeuchte', s.index??1, cfg, s.link);
+    const card=makeCard(s.icon??'🌱', s.label_de??'Bodenfeuchte', s.index??1, cfg, s.link);
     card.querySelector('.ind-status').textContent=s.plain_de??s.label_status_de??'–';
     if(s.value_pct!=null){
       const v=document.createElement('span'); v.className='ind-val';
       v.innerHTML=`${s.value_pct}&thinsp;<small>% der maximalen Feldkapazität</small>`;
       card.appendChild(v);
     }
+    appendLink(card);
     grid.appendChild(card);
   }
 }
@@ -288,16 +337,24 @@ function makeCard(icon, label, idx, cfg, link){
   const card=document.createElement('div'); card.className='ind-card';
   card.style.setProperty('--ind-color',cfg.hex);
   card.style.setProperty('--ind-bg',cfg.bg);
-  const linkHtml=link?`<a class="ind-detail-link" href="${escAttr(link)}" target="_blank" rel="noopener">Details auf trockenheit.admin.ch ↗</a>`:'';
   card.innerHTML=`
     <div class="ind-top">
       <span class="ind-icon">${icon}</span>
       <span class="ind-label">${escHtml(label)}</span>
       <span class="ind-pill" style="background:${cfg.hex}">${idx}</span>
     </div>
-    <p class="ind-status"></p>
-    ${linkHtml}`;
+    <p class="ind-status"></p>`;
+  if(link) card.dataset.link=link;
   return card;
+}
+
+function appendLink(card){
+  if(!card.dataset.link) return;
+  const a=document.createElement('a');
+  a.className='ind-detail-link'; a.href=card.dataset.link;
+  a.target='_blank'; a.rel='noopener';
+  a.textContent='Details auf trockenheit.admin.ch \u2197';
+  card.appendChild(a);
 }
 
 function renderForecast(b){
@@ -315,8 +372,8 @@ function renderForecast(b){
         <p class="fc-main-text">${escHtml(summary??'')}</p>
         <div class="fc-detail">
           <span class="fc-label-small">Prognose CDI (P50)</span>
-          <span class="fc-val" style="color:${cfg.hex}">Stufe ${p50} — ${escHtml((CDI[p50]??{}).word??'')}</span>
-          ${b.forecast_valid_at?`<span class="fc-valid">Gültig ab: ${fmt(b.forecast_valid_at)}</span>`:''}
+          <span class="fc-val" style="color:${cfg.hex}">Stufe ${p50}: ${escHtml((CDI[p50]??{}).word??'')}</span>
+          ${b.forecast_valid_at?`<span class="fc-valid">Prognose für die Woche ab ${fmt(b.forecast_valid_at)}</span>`:''}
         </div>
       </div>
     </div>
@@ -378,7 +435,7 @@ async function addRegionClickLayer(){
     catch(e){ return; }
   }
   try{
-    const r=await fetch(`${DATA_BASE}/briefings/index.json`);
+    const r=await fetch(`${BRIEFING_BASE}/index.json`);
     if(r.ok){ const d=await r.json(); briefingIndex={}; for(const reg of d.regions) briefingIndex[reg.region_id]=reg; }
   } catch(e){}
   if(!warnregionenGeoJSON) return;

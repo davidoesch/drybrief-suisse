@@ -1,0 +1,19 @@
+{
+  "built_at": "2026-05-15T22:07:24.905781+00:00",
+  "n_municipalities": 2123,
+  "duration_seconds": 518.9,
+  "zone_distribution": {
+    "ausserhalb LW-Zone": 2123
+  },
+  "altitude_stats": {
+    "min_m": 193,
+    "max_m": 3083,
+    "mean_m": 732
+  },
+  "data_sources": [
+    "geo.admin.ch Height API",
+    "ch.blw.landwirtschaftliche-zonengrenzen (Identify API)",
+    "ch.bafu.wasser-grundwasserschutzareale (Identify API)",
+    "Land use: Schätzung aus BLW-Zone + Höhenlage"
+  ]
+}

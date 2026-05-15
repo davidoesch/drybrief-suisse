@@ -115,6 +115,21 @@ body{
 .official-btn:hover{opacity:.85;}
 .official-btn:active{transform:scale(.98);}
 
+/* ── Empfehlungen ── */
+.recs-card{
+  background:rgba(255,255,255,.25);
+  border:2px solid rgba(0,0,0,.08);
+  border-radius:12px;padding:18px 20px;
+  margin-bottom:20px;
+}
+.recs-title{
+  font-family:var(--font);font-weight:700;font-size:15px;
+  margin-bottom:14px;letter-spacing:.2px;
+}
+.recs-list{list-style:none;display:flex;flex-direction:column;gap:11px;}
+.recs-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.5;}
+.rec-check{flex-shrink:0;font-weight:700;font-size:15px;margin-top:1px;}
+
 /* ── Responsive ── */
 @media(max-width:400px){
   .cards{grid-template-columns:1fr;}

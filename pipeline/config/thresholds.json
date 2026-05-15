@@ -1,74 +1,192 @@
 {
-  "_comment": "Regelbasierte Schwellenwerte und Textbausteine für DryBrief Suisse.",
+  "_comment": "Regelbasierte Schwellenwerte und Textbausteine für DryBrief Suisse. Alle Inhaltstexte, Emojis und Symbole sind hier zentralisiert.",
   "_source": "Empfohlene Terminologie für Trockenheitsbulletin (BAFU/MeteoSchweiz)",
-  "_version": "1.1 (16.03.2026)",
+  "_version": "1.2 (15.05.2026)",
 
   "cdi": {
     "1": {
-      "label_de":     "Nicht trocken",
-      "label_fr":     "Pas sec",
-      "label_it":     "Non secco",
-      "label_en":     "Not dry",
-      "noun_de":      "Keine Trockenheit",
-      "noun_fr":      "Pas de sécheresse",
-      "noun_it":      "Nessuna siccità",
-      "color":        "green",
-      "color_hex":    "#22c55e",
+      "label_de":      "Nicht trocken",
+      "label_fr":      "Pas sec",
+      "label_it":      "Non secco",
+      "label_en":      "Not dry",
+      "noun_de":       "Keine Trockenheit",
+      "noun_fr":       "Pas de sécheresse",
+      "noun_it":       "Nessuna siccità",
+      "word_de":       "Nicht trocken",
+      "sub_de":        "Alles in Ordnung, keine Trockenheit.",
+      "color":         "green",
+      "color_hex":     "#22c55e",
+      "bg_hex":        "#d1fae5",
+      "fg_hex":        "#064e3b",
       "warning_level": 1,
-      "icon":         "✅"
+      "emoji":         "💧",
+      "icon":          "✅"
     },
     "2": {
-      "label_de":     "Leicht trocken",
-      "label_fr":     "Légèrement sec",
-      "label_it":     "Leggermente secco",
-      "label_en":     "Slightly dry",
-      "noun_de":      "Leichte Trockenheit",
-      "noun_fr":      "Sécheresse légère",
-      "noun_it":      "Siccità leggera",
-      "color":        "yellow",
-      "color_hex":    "#eab308",
+      "label_de":      "Leicht trocken",
+      "label_fr":      "Légèrement sec",
+      "label_it":      "Leggermente secco",
+      "label_en":      "Slightly dry",
+      "noun_de":       "Leichte Trockenheit",
+      "noun_fr":       "Sécheresse légère",
+      "noun_it":       "Siccità leggera",
+      "word_de":       "Leicht trocken",
+      "sub_de":        "Erste Anzeichen, die Lage im Auge behalten.",
+      "color":         "yellow",
+      "color_hex":     "#eab308",
+      "bg_hex":        "#fef9c3",
+      "fg_hex":        "#713f12",
       "warning_level": 2,
-      "icon":         "⚠️"
+      "emoji":         "☀️",
+      "icon":          "⚠️"
     },
     "3": {
-      "label_de":     "Trocken",
-      "label_fr":     "Sec",
-      "label_it":     "Secco",
-      "label_en":     "Dry",
-      "noun_de":      "Erhebliche Trockenheit",
-      "noun_fr":      "Sécheresse modérée",
-      "noun_it":      "Siccità moderata",
-      "color":        "orange",
-      "color_hex":    "#f97316",
+      "label_de":      "Trocken",
+      "label_fr":      "Sec",
+      "label_it":      "Secco",
+      "label_en":      "Dry",
+      "noun_de":       "Erhebliche Trockenheit",
+      "noun_fr":       "Sécheresse modérée",
+      "noun_it":       "Siccità moderata",
+      "word_de":       "Trocken",
+      "sub_de":        "Erhebliche Trockenheit, Massnahmen prüfen.",
+      "color":         "orange",
+      "color_hex":     "#f97316",
+      "bg_hex":        "#ffedd5",
+      "fg_hex":        "#7c2d12",
       "warning_level": 2,
-      "icon":         "🟠"
+      "emoji":         "🌵",
+      "icon":          "🟠"
     },
     "4": {
-      "label_de":     "Sehr trocken",
-      "label_fr":     "Très sec",
-      "label_it":     "Molto secco",
-      "label_en":     "Very dry",
-      "noun_de":      "Grosse Trockenheit",
-      "noun_fr":      "Sécheresse élevée",
-      "noun_it":      "Siccità elevata",
-      "color":        "red",
-      "color_hex":    "#ef4444",
+      "label_de":      "Sehr trocken",
+      "label_fr":      "Très sec",
+      "label_it":      "Molto secco",
+      "label_en":      "Very dry",
+      "noun_de":       "Grosse Trockenheit",
+      "noun_fr":       "Sécheresse élevée",
+      "noun_it":       "Siccità elevata",
+      "word_de":       "Sehr trocken",
+      "sub_de":        "Grosse Trockenheit, Behörden informieren und handeln.",
+      "color":         "red",
+      "color_hex":     "#ef4444",
+      "bg_hex":        "#fee2e2",
+      "fg_hex":        "#7f1d1d",
       "warning_level": 4,
-      "icon":         "🔴"
+      "emoji":         "🔥",
+      "icon":          "🔴"
     },
     "5": {
-      "label_de":     "Extrem trocken",
-      "label_fr":     "Extrêmement sec",
-      "label_it":     "Estremamente secco",
-      "label_en":     "Extremely dry",
-      "noun_de":      "Extreme Trockenheit",
-      "noun_fr":      "Sécheresse extrême",
-      "noun_it":      "Siccità estrema",
-      "color":        "darkred",
-      "color_hex":    "#991b1b",
+      "label_de":      "Extrem trocken",
+      "label_fr":      "Extrêmement sec",
+      "label_it":      "Estremamente secco",
+      "label_en":      "Extremely dry",
+      "noun_de":       "Extreme Trockenheit",
+      "noun_fr":       "Sécheresse extrême",
+      "noun_it":       "Siccità estrema",
+      "word_de":       "Extrem trocken",
+      "sub_de":        "Kritische Lage, sofort handeln.",
+      "color":         "darkred",
+      "color_hex":     "#991b1b",
+      "bg_hex":        "#1c0101",
+      "fg_hex":        "#fef2f2",
       "warning_level": 4,
-      "icon":         "🚨"
+      "emoji":         "🚨",
+      "icon":          "🚨"
     }
+  },
+
+  "cdi_summary_de": {
+    "1": "In der Region {name} sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar.",
+    "2": "In der Region {name} zeichnet sich eine leichte Trockenheit ab.",
+    "3": "Die Region {name} ist von erheblicher Trockenheit betroffen.",
+    "4": "In der Region {name} herrscht eine grosse Trockenheit.",
+    "5": "Die Region {name} ist von extremer Trockenheit betroffen."
+  },
+
+  "trend": {
+    "labels_de": {
+      "stark_verschlechternd": "Starke Verschlechterung erwartet",
+      "verschlechternd":       "Verschlechterung erwartet",
+      "stabil":                "Stabile Lage erwartet",
+      "verbessernd":           "Entspannung erwartet",
+      "stark_verbessernd":     "Deutliche Entspannung erwartet",
+      "unbekannt":             "Keine Prognose verfügbar"
+    },
+    "arrows": {
+      "stark_verschlechternd": "↑↑",
+      "verschlechternd":       "↑",
+      "stabil":                "→",
+      "verbessernd":           "↓",
+      "stark_verbessernd":     "↓↓",
+      "unbekannt":             "?"
+    }
+  },
+
+  "fc_summary_de": {
+    "worsen_strong":  "Die Lage wird sich deutlich verschlechtern, {noun} erwartet (Stufe {fc}).",
+    "worsen":         "Eine leichte Verschlechterung wird erwartet (Stufe {cur} nach {fc}).",
+    "stable":         "Die Lage bleibt voraussichtlich stabil (Stufe {cur}).",
+    "improve":        "Eine leichte Entspannung wird erwartet (Stufe {cur} nach {fc}).",
+    "improve_strong": "Eine deutliche Entspannung wird erwartet (Stufe {cur} nach {fc}).",
+    "no_forecast":    "Für die nächsten Wochen liegt aktuell keine Prognose vor."
+  },
+
+  "indicators": {
+    "precip": {
+      "label_de":    "Niederschlag",
+      "icon":        "🌧",
+      "link_anchor": "precipitation"
+    },
+    "hydro": {
+      "label_de":    "Gewässer und Pegel",
+      "icon":        "💧",
+      "link_anchor": "discharge"
+    },
+    "soil_moisture": {
+      "label_de":    "Bodenfeuchte",
+      "icon":        "🌱",
+      "link_anchor": "moisture"
+    }
+  },
+
+  "_comment_spi": "Schwellenwerte absteigend. Erster Treffer (spi > Schwellenwert) gewinnt.",
+  "spi_comparisons": [
+    [1.5,  "Deutlich mehr Niederschlag als üblich"],
+    [0.5,  "Etwas mehr Niederschlag als üblich"],
+    [-0.5, "Etwa gleich viel Niederschlag wie üblich"],
+    [-1.0, "Etwas weniger Niederschlag als üblich"],
+    [-1.5, "Deutlich weniger Niederschlag als üblich"],
+    [-2.0, "Sehr viel weniger Niederschlag als üblich"]
+  ],
+  "spi_default": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
+  "spi_nodata":  "Keine Vergleichsdaten verfügbar",
+
+  "_comment_soil": "Schwellenwerte absteigend. Erster Treffer (ufc >= Schwellenwert) gewinnt.",
+  "soil_plain_pct": [
+    [80, "Böden gut mit Wasser versorgt"],
+    [60, "Böden mässig feucht"],
+    [40, "Böden leicht trocken"],
+    [20, "Böden trocken, Pflanzen unter Stress"]
+  ],
+  "soil_default": "Böden sehr trocken, erheblicher Wassermangel",
+  "soil_nodata":  "Keine Messdaten verfügbar",
+
+  "hydro_plain": {
+    "1": "Abfluss und Pegel im normalen Bereich",
+    "2": "Abfluss aktuell leicht tiefer als normal",
+    "3": "Abfluss aktuell deutlich tiefer als normal",
+    "4": "Niedrigwasser mit kritisch tiefen Pegeln",
+    "5": "Extremes Niedrigwasser, historisch selten"
+  },
+
+  "_comment_hydro_flow": "Typischer Prozentbereich des langjährigen Mittelabflusses pro Stufe.",
+  "hydro_flow_range": {
+    "1": "70 bis 130 % des langjährigen Mittelabflusses",
+    "2": "40 bis 70 % des langjährigen Mittelabflusses",
+    "3": "20 bis 40 % des langjährigen Mittelabflusses",
+    "4": "10 bis 20 % des langjährigen Mittelabflusses",
+    "5": "unter 10 % des langjährigen Mittelabflusses"
   },
 
   "precip_index": {
@@ -114,7 +232,7 @@
       "Kleinere Quellen können versiegen.",
       "Einschränkungen der Wassernutzung auf lokaler bis regionaler Ebene wahrscheinlich.",
       "Sehr trockene Böden, Ernteausfälle wahrscheinlich.",
-      "Erhöhte Waldbrandgefahr; Anweisungen der Behörden beachten.",
+      "Erhöhte Waldbrandgefahr, Anweisungen der Behörden beachten.",
       "Kühlleistung von Produktionsanlagen kann eingeschränkt sein."
     ],
     "5": [
@@ -125,6 +243,100 @@
       "Sehr hohe Waldbrandgefahr.",
       "Starke Einschränkungen der Schifffahrt auf dem Rhein.",
       "Leistungsreduktionen bei Laufwasserkraftwerken."
+    ]
+  },
+
+  "_comment_muni": "Gemeinde-spezifische Regeln. Basieren auf tatsächlich vorhandenen Profil-Feldern. Numerisch: altitude_m (Mittelwert), altitude_m_max (Maximum). Boolean (any): is_alpine, has_forest. Strings-Fields werden nicht direkt verglichen.",
+  "municipality_rules": [
+    {
+      "_comment": "Hochalpin: mind. eine Gemeinde über 2000m (Gletscherregionen)",
+      "id":       "alpine_glacier",
+      "type":     "recommendation",
+      "cdi_min":  1,
+      "conditions": [{"field": "altitude_m_max", "op": ">", "value": 2000}],
+      "text":     "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
+    },
+    {
+      "_comment": "Alpwirtschaft: mind. eine Gemeinde mit is_alpine=true (typisch > 1400m)",
+      "id":       "sommerung",
+      "type":     "recommendation",
+      "cdi_min":  2,
+      "conditions": [{"field": "is_alpine", "op": "==", "value": true}],
+      "text":     "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen."
+    },
+    {
+      "_comment": "Bergregion: mittlere Höhe über 1200m (Alpen/Hochalpen)",
+      "id":       "mountain_sources",
+      "type":     "recommendation",
+      "cdi_min":  2,
+      "conditions": [{"field": "altitude_m", "op": ">", "value": 1200}],
+      "text":     "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
+    },
+    {
+      "_comment": "Voralpenregion: mittlere Höhe 600–1200m",
+      "id":       "prealp_springs",
+      "type":     "recommendation",
+      "cdi_min":  3,
+      "conditions": [
+        {"field": "altitude_m", "op": ">",  "value": 600},
+        {"field": "altitude_m", "op": "<=", "value": 1200}
+      ],
+      "text":     "Voralpenregion: Quellschüttungen und Kleingewässer besonders beobachten."
+    },
+    {
+      "_comment": "Flachland/Mittelland: mittlere Höhe unter 600m — Hitzeinsel-Effekt",
+      "id":       "lowland_heat",
+      "type":     "recommendation",
+      "cdi_min":  3,
+      "conditions": [{"field": "altitude_m", "op": "<=", "value": 600}],
+      "text":     "Flachlandlage: Hitze und Trockenheit treffen Bevölkerung und Vegetation besonders stark. Kühle Aufenthaltsorte aufsuchen, ältere Personen regelmässig kontaktieren."
+    },
+    {
+      "_comment": "Wald vorhanden: Waldbrandgefahr als Empfehlung ab CDI 3",
+      "id":       "forest_fire_risk",
+      "type":     "recommendation",
+      "cdi_min":  3,
+      "conditions": [{"field": "has_forest", "op": "==", "value": true}],
+      "text":     "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
+    },
+    {
+      "_comment": "Wald vorhanden: Waldbrandgefahr als Auswirkung ab CDI 4",
+      "id":       "forest_fire_impact",
+      "type":     "impact",
+      "cdi_min":  4,
+      "conditions": [{"field": "has_forest", "op": "==", "value": true}],
+      "text":     "Erhöhte Waldbrandgefahr in der Region. Feuerverbote beachten, Feuerwehr frühzeitig informieren."
+    }
+  ],
+
+  "_comment_recs_simple": "Vereinfachte Empfehlungen für die einfache Ansicht (Bürger, Jugendliche). Kurze, direkte Sprache.",
+  "recommendations_simple": {
+    "all": [
+      "Informiere dich auf www.trockenheit.ch.",
+      "Spare Wasser, wo es geht – jeder Tropfen zählt."
+    ],
+    "1": [],
+    "2": [
+      "Behalte die Lage im Blick.",
+      "Informiere Nachbarn, falls Einschränkungen kommen."
+    ],
+    "3": [
+      "Dusche kürzer und drehe den Hahn beim Zähneputzen zu.",
+      "Giesse Pflanzen nur morgens oder abends – nie in der Mittagshitze.",
+      "Melde Wasserverluste (z.B. leckende Leitungen) deiner Gemeinde.",
+      "Achte im Wald auf Verbotsschilder und zünde kein Feuer an."
+    ],
+    "4": [
+      "Befolge alle Wasserverbote deiner Gemeinde – sie sind ernst gemeint.",
+      "Kein Feuer draussen – absolut kein Grillen, kein Lagerfeuer.",
+      "Kaufe nur so viel Wasser, wie du brauchst – lass Vorräte für alle.",
+      "Hilf älteren oder kranken Nachbarn, die Hitze zu überstehen."
+    ],
+    "5": [
+      "Folge sofort allen Anweisungen der Behörden.",
+      "Spare Wasser, wo es nur geht – jeder Liter zählt.",
+      "Absolutes Feuerverbot draussen – auch keine Kerzen im Freien.",
+      "Prüfe täglich, ob ältere Nachbarn Wasser und Hilfe brauchen."
     ]
   },
 

@@ -3,15 +3,7 @@ if(window.location.protocol==='file:'){document.body.innerHTML='<div style="font
 
 const DATA_BASE=window.location.pathname.includes('/frontend')?'../data':'./data';
 
-const LEVELS={
-  1:{bg:'#d1fae5',fg:'#064e3b',emoji:'💧',word:'Nicht trocken',sub:'Alles in Ordnung — keine Trockenheit.'},
-  2:{bg:'#fef9c3',fg:'#713f12',emoji:'☀️',word:'Leicht trocken',sub:'Erste Anzeichen — die Lage im Auge behalten.'},
-  3:{bg:'#ffedd5',fg:'#7c2d12',emoji:'🌵',word:'Trocken',sub:'Erhebliche Trockenheit — Massnahmen prüfen.'},
-  4:{bg:'#fee2e2',fg:'#7f1d1d',emoji:'🔥',word:'Sehr trocken',sub:'Grosse Trockenheit — Behörden informieren und handeln.'},
-  5:{bg:'#1c0101',fg:'#fef2f2',emoji:'🚨',word:'Extrem trocken',sub:'Kritische Lage — sofort handeln.'},
-};
-
-let searchIndex={}, currentEntry=null, suggIdx=-1;
+let searchIndex={}, currentEntry=null;
 const $=id=>document.getElementById(id);
 
 async function init(){
@@ -19,9 +11,9 @@ async function init(){
     const r=await fetch(`${DATA_BASE}/lookups/search_index.json`);
     searchIndex=await r.json();
     $('searchInput').disabled=false;
-    $('searchInput').placeholder='Gemeinde oder Kanton …';
+    $('searchInput').placeholder='Gemeinde oder Kanton \u2026';
     bindEvents();
-  }catch(e){ $('searchInput').placeholder='Pipeline ausführen — search_index.json fehlt'; }
+  }catch(e){ $('searchInput').placeholder='Pipeline ausführen \u2013 search_index.json fehlt'; }
 }
 
 function bindEvents(){
@@ -35,7 +27,7 @@ function bindEvents(){
     res.forEach(([,e])=>{
       const li=document.createElement('li');
       li.innerHTML=`<span>${e.type==='kanton'?'🏛':'📍'}</span> <strong>${e.display_name}</strong>`;
-      li.addEventListener('click',()=>{ inp.value=e.display_name; sugg.hidden=true; loadBriefing(e); });
+      li.addEventListener('click',()=>{ inp.value=e.display_name; sugg.hidden=true; currentEntry=e; loadBriefing(e); });
       sugg.appendChild(li);
     });
   });
@@ -55,15 +47,22 @@ async function loadBriefing(entry){
 }
 
 function showResult(b, entry){
-  const cdi=Math.max(1,Math.min(5,b.cdi??1)), lv=LEVELS[cdi];
-  const body=document.body;
-  body.style.background=lv.bg; body.style.color=lv.fg;
+  const cdi=Math.max(1,Math.min(5,b.cdi??1));
+  // Farben und Texte kommen aus dem Briefing JSON (generiert aus thresholds.json)
+  const bg    = b.cdi_bg_hex ?? '#d1fae5';
+  const fg    = b.cdi_fg_hex ?? '#064e3b';
+  const emoji = b.cdi_emoji  ?? '💧';
+  const word  = b.cdi_label_de ?? 'Nicht trocken';
+  const sub   = b.cdi_sub_de   ?? b.summary_de ?? '';
 
-  $('bigEmoji').textContent=lv.emoji;
+  const body=document.body;
+  body.style.background=bg; body.style.color=fg;
+
+  $('bigEmoji').textContent=emoji;
   $('locationName').textContent=entry.display_name;
-  $('bigWord').textContent=lv.word;
-  $('bigSub').textContent=lv.sub;
-  $('bigWord').style.color=lv.fg;
+  $('bigWord').textContent=word;
+  $('bigSub').textContent=sub;
+  $('bigWord').style.color=fg;
 
   // Mini-Cards
   const ind=b.indicators??{};
@@ -73,8 +72,7 @@ function showResult(b, entry){
   $('soilVal').textContent=ind.soil_moisture?.plain_de??'–';
 
   // Prognose
-  const fc=$('forecastStrip');
-  fc.textContent=b.forecast_summary_de??'Keine Prognose verfügbar.';
+  $('forecastStrip').textContent=b.forecast_summary_de??'Keine Prognose verfügbar.';
 
   // Metainfo
   const age=b.data_age_days;
@@ -83,14 +81,22 @@ function showResult(b, entry){
 
   $('officialBtn').href=b.region_url??'https://www.trockenheit.admin.ch';
 
-  // Karten-Farbe anpassen
+  // Empfehlungen
+  const recs=(b.recommendations_simple_de??b.recommendations_de??[]).slice(0,5);
+  const recsCard=$('recsCard');
+  if(recs.length){
+    $('recsList').innerHTML=recs.map(r=>`<li><span class="rec-check">✓</span><span>${escHtml(r)}</span></li>`).join('');
+    recsCard.hidden=false;
+    recsCard.style.borderColor=fg+'44';
+  } else { recsCard.hidden=true; }
+
+  // Kartenfarben angleichen
   ['precipCard','hydroCard','soilCard'].forEach(id=>{
-    $( id ).style.background=lightenHex(lv.bg,0.4);
-    $( id ).style.borderColor=lv.fg+'22';
-    $( id ).style.color=lv.fg;
+    $(id).style.borderColor=fg+'33';
+    $(id).style.color=fg;
   });
-  $('officialBtn').style.background=lv.fg;
-  $('officialBtn').style.color=lv.bg;
+  $('officialBtn').style.background=fg;
+  $('officialBtn').style.color=bg;
 
   $('searchView').hidden=true;
   $('resultView').hidden=false;
@@ -99,10 +105,6 @@ function showResult(b, entry){
 function fmtDate(ds){
   try{return new Intl.DateTimeFormat('de-CH',{day:'2-digit',month:'long',year:'numeric'}).format(new Date(ds));}catch{return ds??'–';}
 }
-
-function lightenHex(hex,amount){
-  // Very simple mix with white
-  return hex; // just return same bg (cards use opacity for contrast)
-}
+function escHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
 init();

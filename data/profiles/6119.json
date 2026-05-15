@@ -1,0 +1,27 @@
+{
+  "bfs_nr": 6119,
+  "name": "Turtmann-Unterems",
+  "region_id": 60.0,
+  "area_ha": 4242.3,
+  "altitude_m": 2477,
+  "altitude_class": "Hochalpen",
+  "agri_zone": "ausserhalb LW-Zone",
+  "agri_zone_code": null,
+  "is_sommerungsbetrieb": false,
+  "land_use_source": "Schätzung aus BLW-Zone + Höhenlage (nicht BFS Arealstatistik)",
+  "agri_pct_est": 0.0,
+  "forest_pct_est": 23.8,
+  "alpine_pct_est": 47.6,
+  "built_pct_est": 23.8,
+  "water_pct_est": 4.8,
+  "in_groundwater_zone": false,
+  "wildfire_level_region": null,
+  "is_alpine": true,
+  "is_agricultural": false,
+  "has_forest": false,
+  "is_urban": false,
+  "centroid_lv95": [
+    2621274,
+    1115308
+  ]
+}

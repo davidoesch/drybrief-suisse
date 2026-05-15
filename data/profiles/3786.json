@@ -1,0 +1,27 @@
+{
+  "bfs_nr": 3786,
+  "name": "Samedan",
+  "region_id": 67.0,
+  "area_ha": 11378.7,
+  "altitude_m": 2974,
+  "altitude_class": "Extreme Höhenlage",
+  "agri_zone": "ausserhalb LW-Zone",
+  "agri_zone_code": null,
+  "is_sommerungsbetrieb": false,
+  "land_use_source": "Schätzung aus BLW-Zone + Höhenlage (nicht BFS Arealstatistik)",
+  "agri_pct_est": 0.0,
+  "forest_pct_est": 23.8,
+  "alpine_pct_est": 47.6,
+  "built_pct_est": 23.8,
+  "water_pct_est": 4.8,
+  "in_groundwater_zone": false,
+  "wildfire_level_region": null,
+  "is_alpine": true,
+  "is_agricultural": false,
+  "has_forest": false,
+  "is_urban": false,
+  "centroid_lv95": [
+    2785771,
+    1148923
+  ]
+}

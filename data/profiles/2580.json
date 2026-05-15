@@ -1,0 +1,27 @@
+{
+  "bfs_nr": 2580,
+  "name": "Kappel (SO)",
+  "region_id": 33.0,
+  "area_ha": 509.9,
+  "altitude_m": 538,
+  "altitude_class": "Mittelland",
+  "agri_zone": "ausserhalb LW-Zone",
+  "agri_zone_code": null,
+  "is_sommerungsbetrieb": false,
+  "land_use_source": "Schätzung aus BLW-Zone + Höhenlage (nicht BFS Arealstatistik)",
+  "agri_pct_est": 10.0,
+  "forest_pct_est": 25.0,
+  "alpine_pct_est": 30.0,
+  "built_pct_est": 30.0,
+  "water_pct_est": 5.0,
+  "in_groundwater_zone": false,
+  "wildfire_level_region": null,
+  "is_alpine": false,
+  "is_agricultural": false,
+  "has_forest": true,
+  "is_urban": false,
+  "centroid_lv95": [
+    2631674,
+    1241224
+  ]
+}

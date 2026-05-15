@@ -836,6 +836,18 @@ a:hover { text-decoration: underline; }
   .indicators-grid { grid-template-columns: 1fr; }
 }
 
+/* ── History Banner ──────────────────────────────────────────── */
+.history-banner {
+  padding: 9px 20px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  background: #eff6ff;
+  color: #1e40af;
+  border-bottom: 1px solid #bfdbfe;
+}
+.history-banner a { color: #1e40af; text-decoration: underline; }
+
 /* ── Staleness Banner ─────────────────────────────────────────── */
 .staleness-banner {
   padding: 10px 20px;
