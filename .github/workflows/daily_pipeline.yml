@@ -10,7 +10,7 @@ on:
       rebuild_lookups:
         description: "Lookups neu aufbauen (einmalig, ~5 min)"
         required: false
-        default: "false"
+        default: false
         type: boolean
 
 permissions:

@@ -217,8 +217,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# github action
-.github/workflows/
+
 
 # Rohdaten
 data/raw/*
