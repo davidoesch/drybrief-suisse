@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.358168+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.122972+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,9 +71,9 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 39.5,
+      "value_pct": 40.0,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
-      "plain_de": "Böden trocken, Pflanzen unter Stress",
+      "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
     }
@@ -84,7 +84,8 @@
     "Einschränkungen der Wassernutzung auf lokaler bis regionaler Ebene wahrscheinlich.",
     "Sehr trockene Böden, Ernteausfälle wahrscheinlich.",
     "Erhöhte Waldbrandgefahr, Anweisungen der Behörden beachten.",
-    "Kühlleistung von Produktionsanlagen kann eingeschränkt sein."
+    "Kühlleistung von Produktionsanlagen kann eingeschränkt sein.",
+    "Erhöhte Waldbrandgefahr in der Region. Feuerverbote beachten, Feuerwehr frühzeitig informieren."
   ],
   "recommendations_de": [
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
@@ -94,7 +95,8 @@
     "Koordination mit Kanton und Bund sicherstellen.",
     "Anweisungen zur Waldbrandgefahr strikte befolgen.",
     "Landwirtschaftliche Betriebe über Bewässerungsrestriktionen informieren.",
-    "Sömmerungsgebiete vorhanden (~30% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Flachlandlage: Hitze und Trockenheit treffen Bevölkerung und Vegetation besonders stark. Kühle Aufenthaltsorte aufsuchen, ältere Personen regelmässig kontaktieren.",
+    "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
@@ -103,7 +105,8 @@
     "Kein Feuer draussen – absolut kein Grillen, kein Lagerfeuer.",
     "Kaufe nur so viel Wasser, wie du brauchst – lass Vorräte für alle.",
     "Hilf älteren oder kranken Nachbarn, die Hitze zu überstehen.",
-    "Sömmerungsgebiete vorhanden (~30% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Flachlandlage: Hitze und Trockenheit treffen Bevölkerung und Vegetation besonders stark. Kühle Aufenthaltsorte aufsuchen, ältere Personen regelmässig kontaktieren.",
+    "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "raw": {
     "precip_1m_index": 4,
@@ -113,8 +116,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -1.84,
     "spi_3m": -0.53,
-    "soil_moisture_ufc": 39.5,
-    "vhi": 47.2
+    "soil_moisture_ufc": 40.0,
+    "vhi": 48.67
   },
   "sources": [
     {

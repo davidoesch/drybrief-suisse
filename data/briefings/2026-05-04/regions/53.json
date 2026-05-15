@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.426010+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.145917+00:00",
+  "data_age_days": 11,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -21,12 +21,12 @@
   "color": "yellow",
   "color_hex": "#eab308",
   "summary_de": "In der Region Freiberge zeichnet sich eine leichte Trockenheit ab.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 2,
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "trend_arrow": "↓",
+  "forecast_cdi_p50": 1,
   "forecast_valid_at": "2026-05-11",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 2).",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 2 nach 1).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 69.0,
+      "value_pct": 70.7,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage#moisture",
@@ -87,15 +87,13 @@
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
     "Lage beobachten und bei Bedarf Massnahmen vorbereiten.",
-    "Bevölkerung über mögliche Einschränkungen informieren.",
-    "Sömmerungsgebiete vorhanden (~30% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Bevölkerung über mögliche Einschränkungen informieren."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
     "Spare Wasser, wo es geht – jeder Tropfen zählt.",
     "Behalte die Lage im Blick.",
-    "Informiere Nachbarn, falls Einschränkungen kommen.",
-    "Sömmerungsgebiete vorhanden (~30% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Informiere Nachbarn, falls Einschränkungen kommen."
   ],
   "raw": {
     "precip_1m_index": 3,
@@ -105,7 +103,7 @@
     "soil_moisture_index": 1,
     "spi_1m": -1.24,
     "spi_3m": -0.5,
-    "soil_moisture_ufc": 69.0,
+    "soil_moisture_ufc": 70.7,
     "vhi": 109.0
   },
   "sources": [

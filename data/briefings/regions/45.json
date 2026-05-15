@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.376065+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.129315+00:00",
+  "data_age_days": 11,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 94.8,
+      "value_pct": 95.3,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage#moisture",
@@ -88,14 +88,18 @@
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
     "Lage beobachten und bei Bedarf Massnahmen vorbereiten.",
     "Bevölkerung über mögliche Einschränkungen informieren.",
-    "Sömmerungsgebiete vorhanden (~36% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
     "Spare Wasser, wo es geht – jeder Tropfen zählt.",
     "Behalte die Lage im Blick.",
     "Informiere Nachbarn, falls Einschränkungen kommen.",
-    "Sömmerungsgebiete vorhanden (~36% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "raw": {
     "precip_1m_index": 4,
@@ -105,7 +109,7 @@
     "soil_moisture_index": 1,
     "spi_1m": -1.94,
     "spi_3m": -0.5,
-    "soil_moisture_ufc": 94.8,
+    "soil_moisture_ufc": 95.3,
     "vhi": 45.0
   },
   "sources": [

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.408170+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.139717+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 81.2,
+      "value_pct": 82.4,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#moisture",
@@ -94,8 +94,9 @@
     "Koordination mit Kanton und Bund sicherstellen.",
     "Anweisungen zur Waldbrandgefahr strikte befolgen.",
     "Landwirtschaftliche Betriebe über Bewässerungsrestriktionen informieren.",
-    "Hochalpine Lage: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
-    "Sömmerungsgebiete vorhanden (~41% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
@@ -104,8 +105,9 @@
     "Kein Feuer draussen – absolut kein Grillen, kein Lagerfeuer.",
     "Kaufe nur so viel Wasser, wie du brauchst – lass Vorräte für alle.",
     "Hilf älteren oder kranken Nachbarn, die Hitze zu überstehen.",
-    "Hochalpine Lage: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
-    "Sömmerungsgebiete vorhanden (~41% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "raw": {
     "precip_1m_index": 4,
@@ -115,7 +117,7 @@
     "soil_moisture_index": 4,
     "spi_1m": -1.65,
     "spi_3m": -1.09,
-    "soil_moisture_ufc": 81.2,
+    "soil_moisture_ufc": 82.4,
     "vhi": 32.0
   },
   "sources": [

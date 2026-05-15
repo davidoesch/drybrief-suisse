@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.365379+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.125096+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -21,12 +21,12 @@
   "color": "red",
   "color_hex": "#ef4444",
   "summary_de": "In der Region Zürichseebecken herrscht eine grosse Trockenheit.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 3,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-05-11",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 4 nach 3).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 4 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 60.8,
+      "value_pct": 61.8,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage#moisture",
@@ -84,7 +84,8 @@
     "Einschränkungen der Wassernutzung auf lokaler bis regionaler Ebene wahrscheinlich.",
     "Sehr trockene Böden, Ernteausfälle wahrscheinlich.",
     "Erhöhte Waldbrandgefahr, Anweisungen der Behörden beachten.",
-    "Kühlleistung von Produktionsanlagen kann eingeschränkt sein."
+    "Kühlleistung von Produktionsanlagen kann eingeschränkt sein.",
+    "Erhöhte Waldbrandgefahr in der Region. Feuerverbote beachten, Feuerwehr frühzeitig informieren."
   ],
   "recommendations_de": [
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
@@ -94,7 +95,8 @@
     "Koordination mit Kanton und Bund sicherstellen.",
     "Anweisungen zur Waldbrandgefahr strikte befolgen.",
     "Landwirtschaftliche Betriebe über Bewässerungsrestriktionen informieren.",
-    "Sömmerungsgebiete vorhanden (~30% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Flachlandlage: Hitze und Trockenheit treffen Bevölkerung und Vegetation besonders stark. Kühle Aufenthaltsorte aufsuchen, ältere Personen regelmässig kontaktieren.",
+    "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
@@ -103,7 +105,8 @@
     "Kein Feuer draussen – absolut kein Grillen, kein Lagerfeuer.",
     "Kaufe nur so viel Wasser, wie du brauchst – lass Vorräte für alle.",
     "Hilf älteren oder kranken Nachbarn, die Hitze zu überstehen.",
-    "Sömmerungsgebiete vorhanden (~30% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Flachlandlage: Hitze und Trockenheit treffen Bevölkerung und Vegetation besonders stark. Kühle Aufenthaltsorte aufsuchen, ältere Personen regelmässig kontaktieren.",
+    "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "raw": {
     "precip_1m_index": 4,
@@ -113,8 +116,8 @@
     "soil_moisture_index": 3,
     "spi_1m": -2.37,
     "spi_3m": -0.86,
-    "soil_moisture_ufc": 60.8,
-    "vhi": 50.6
+    "soil_moisture_ufc": 61.8,
+    "vhi": 51.67
   },
   "sources": [
     {

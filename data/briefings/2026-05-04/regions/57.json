@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.459904+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.155013+00:00",
+  "data_age_days": 11,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 90.4,
+      "value_pct": 90.5,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#moisture",
@@ -88,14 +88,14 @@
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
     "Lage beobachten und bei Bedarf Massnahmen vorbereiten.",
     "Bevölkerung über mögliche Einschränkungen informieren.",
-    "Sömmerungsgebiete vorhanden (~31% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
     "Spare Wasser, wo es geht – jeder Tropfen zählt.",
     "Behalte die Lage im Blick.",
     "Informiere Nachbarn, falls Einschränkungen kommen.",
-    "Sömmerungsgebiete vorhanden (~31% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen."
   ],
   "raw": {
     "precip_1m_index": 2,
@@ -105,8 +105,8 @@
     "soil_moisture_index": 1,
     "spi_1m": -1.16,
     "spi_3m": -0.35,
-    "soil_moisture_ufc": 90.4,
-    "vhi": 94.0
+    "soil_moisture_ufc": 90.5,
+    "vhi": 71.5
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.518521+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.175625+00:00",
+  "data_age_days": 11,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -71,9 +71,9 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 78.6,
+      "value_pct": 80.7,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
-      "plain_de": "Böden mässig feucht",
+      "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
     }
@@ -82,12 +82,12 @@
   "recommendations_de": [
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
-    "Hochalpine Lage: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
     "Spare Wasser, wo es geht – jeder Tropfen zählt.",
-    "Hochalpine Lage: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
   ],
   "raw": {
     "precip_1m_index": 1,
@@ -97,7 +97,7 @@
     "soil_moisture_index": 1,
     "spi_1m": -0.89,
     "spi_3m": -0.92,
-    "soil_moisture_ufc": 78.6,
+    "soil_moisture_ufc": 80.7,
     "vhi": 48.0
   },
   "sources": [

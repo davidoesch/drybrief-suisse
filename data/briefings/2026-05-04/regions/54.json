@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.436493+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.148176+00:00",
+  "data_age_days": 11,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 86.2,
+      "value_pct": 87.2,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#moisture",
@@ -95,8 +95,8 @@
     "soil_moisture_index": 1,
     "spi_1m": -0.64,
     "spi_3m": -0.05,
-    "soil_moisture_ufc": 86.2,
-    "vhi": 61.2
+    "soil_moisture_ufc": 87.2,
+    "vhi": 60.83
   },
   "sources": [
     {

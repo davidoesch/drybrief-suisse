@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-15T23:00:40.371496+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-15T23:16:04.127140+00:00",
+  "data_age_days": 11,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region östliche Zentralschweiz ist von erheblicher Trockenheit betroffen.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 2,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 1,
   "forecast_valid_at": "2026-05-11",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 3 nach 2).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 3 nach 1).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 89.9,
+      "value_pct": 91.2,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage#moisture",
@@ -92,7 +92,10 @@
     "Wasserverbrauch reduzieren und Ressourcen schonen.",
     "Bevölkerung über Sparmassnahmen sensibilisieren.",
     "Kontakt mit kantonalem Führungsorgan aufnehmen.",
-    "Sömmerungsgebiete vorhanden (~32% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Voralpenregion: Quellschüttungen und Kleingewässer besonders beobachten.",
+    "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
@@ -101,7 +104,10 @@
     "Giesse Pflanzen nur morgens oder abends – nie in der Mittagshitze.",
     "Melde Wasserverluste (z.B. leckende Leitungen) deiner Gemeinde.",
     "Achte im Wald auf Verbotsschilder und zünde kein Feuer an.",
-    "Sömmerungsgebiete vorhanden (~32% der Fläche). Wasserversorgung auf Alpweiden prüfen."
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Voralpenregion: Quellschüttungen und Kleingewässer besonders beobachten.",
+    "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "raw": {
     "precip_1m_index": 5,
@@ -111,8 +117,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -2.23,
     "spi_3m": -0.71,
-    "soil_moisture_ufc": 89.9,
-    "vhi": 51.2
+    "soil_moisture_ufc": 91.2,
+    "vhi": 53.17
   },
   "sources": [
     {
