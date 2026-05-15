@@ -1,3 +1,4 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/davidoesch/drybrief-suisse)
 # DryBrief Suisse
 
 Automatisiertes Trockenheitsbriefing für Schweizer Gemeinden und Kantone.

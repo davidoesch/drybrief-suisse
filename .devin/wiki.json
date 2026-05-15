@@ -1,0 +1,3 @@
+{
+  "repo_notes": "Dies ist die Datenpipeline für DryBrief Suisse. Wichtig sind die Python-Skripte im Ordner /pipeline und unterordner die die täglichen Briefings generieren"
+}
