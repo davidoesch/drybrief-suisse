@@ -21,9 +21,11 @@ from __future__ import annotations
 
 import json
 import logging
+import re
+import shutil
 import time
 import zipfile
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from io import BytesIO
 from pathlib import Path
 
@@ -154,11 +156,39 @@ def save_fetch_meta(current_df: pd.DataFrame, forecast_df: pd.DataFrame) -> None
     log.info("  Prognose ab:          %s", meta["forecast_valid_from"])
 
 
+def cleanup_old_briefings(max_age_days: int = 28) -> None:
+    """Löscht datierte Briefing-Ordner (YYYY-MM-DD) die älter als max_age_days sind."""
+    briefings_dir = ROOT / "data" / "briefings"
+    if not briefings_dir.exists():
+        return
+    cutoff = datetime.now(timezone.utc).date() - timedelta(days=max_age_days)
+    date_pattern = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+    removed = 0
+    for entry in briefings_dir.iterdir():
+        if not entry.is_dir() or not date_pattern.match(entry.name):
+            continue
+        try:
+            folder_date = datetime.strptime(entry.name, "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if folder_date < cutoff:
+            shutil.rmtree(entry)
+            log.info("  Gelöscht (älter als %d Tage): %s", max_age_days, entry.name)
+            removed += 1
+    if removed:
+        log.info("Aufgeräumt: %d alte Briefing-Ordner gelöscht.", removed)
+    else:
+        log.info("Aufräumen: keine alten Briefing-Ordner gefunden.")
+
+
 def main() -> None:
     t0 = time.time()
     log.info("=" * 60)
     log.info("DryBrief Suisse — Datenabruf")
     log.info("=" * 60)
+
+    # Alte Briefings aufräumen (> 4 Wochen)
+    cleanup_old_briefings(max_age_days=28)
 
     # Download
     zip_data = download_current_zip()
