@@ -221,3 +221,9 @@ __marimo__/
 
 # Rohdaten
 data/raw/*
+
+# Gemeinde-Profile (lokal generiert, nicht für GitHub Pages nötig)
+data/profiles/
+
+# Temporäre Arbeitsdateien
+temp/
