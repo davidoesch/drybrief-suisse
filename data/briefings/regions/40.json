@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/40-westliche-zentralschweiz/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/40-westliche-zentralschweiz/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-16T08:45:19.999589+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-05-17T09:00:19.114450+00:00",
+  "data_age_days": 13,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -116,7 +116,7 @@
     "spi_1m": -2.05,
     "spi_3m": -0.7,
     "soil_moisture_ufc": 88.1,
-    "vhi": 52.33
+    "vhi": 53.43
   },
   "sources": [
     {
