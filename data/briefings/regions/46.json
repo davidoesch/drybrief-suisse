@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/46-surselva/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/46-surselva/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-18T11:01:21.567056+00:00",
-  "data_age_days": 14,
+  "generated_at": "2026-05-19T10:34:35.299851+00:00",
+  "data_age_days": 15,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Verschlechterung erwartet",
   "trend_arrow": "↑",
   "forecast_cdi_p50": 3,
-  "forecast_valid_at": "2026-05-11",
+  "forecast_valid_at": "2026-05-18",
   "forecast_summary_de": "Eine leichte Verschlechterung wird erwartet (Stufe 2 nach 3).",
   "indicators": {
     "precip": {
