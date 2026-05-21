@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/34-berner-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/34-berner-mittelland/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-20T10:22:01.192219+00:00",
-  "data_age_days": 16,
+  "generated_at": "2026-05-21T10:35:21.210845+00:00",
+  "data_age_days": 17,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -24,9 +24,9 @@
   "trend": "stark_verbessernd",
   "trend_label_de": "Deutliche Entspannung erwartet",
   "trend_arrow": "↓↓",
-  "forecast_cdi_p50": 2,
+  "forecast_cdi_p50": 1,
   "forecast_valid_at": "2026-05-18",
-  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 4 nach 2).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 4 nach 1).",
   "indicators": {
     "precip": {
       "key": "precip",
