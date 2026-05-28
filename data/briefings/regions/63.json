@@ -8,19 +8,19 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-27T10:52:05.593636+00:00",
-  "data_age_days": 23,
-  "cdi": 1,
-  "cdi_label_de": "Nicht trocken",
-  "cdi_noun_de": "Keine Trockenheit",
-  "cdi_emoji": "💧",
-  "cdi_bg_hex": "#d1fae5",
-  "cdi_fg_hex": "#064e3b",
-  "cdi_sub_de": "Alles in Ordnung, keine Trockenheit.",
-  "warning_level": 1,
-  "color": "green",
-  "color_hex": "#22c55e",
-  "summary_de": "In der Region Nordtessin sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar.",
+  "generated_at": "2026-05-28T10:52:47.338614+00:00",
+  "data_age_days": 24,
+  "cdi": 2,
+  "cdi_label_de": "Leicht trocken",
+  "cdi_noun_de": "Leichte Trockenheit",
+  "cdi_emoji": "☀️",
+  "cdi_bg_hex": "#fef9c3",
+  "cdi_fg_hex": "#713f12",
+  "cdi_sub_de": "Erste Anzeichen, die Lage im Auge behalten.",
+  "warning_level": 2,
+  "color": "yellow",
+  "color_hex": "#eab308",
+  "summary_de": "In der Region Nordtessin zeichnet sich eine leichte Trockenheit ab.",
   "trend": "stark_verschlechternd",
   "trend_label_de": "Starke Verschlechterung erwartet",
   "trend_arrow": "↑↑",
@@ -35,19 +35,19 @@
       "link": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#precipitation",
       "short_term": {
         "days": 30,
-        "index": 1,
+        "index": 2,
         "value_mm": 81.7,
         "spi": -0.76,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
-        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+        "label_status_de": "Leichtes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
-        "index": 1,
+        "index": 2,
         "value_mm": 223.2,
         "spi": -0.88,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
-        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+        "label_status_de": "Leichtes Niederschlagsdefizit"
       }
     },
     "hydro": {
@@ -78,20 +78,32 @@
       "source": "MeteoSchweiz"
     }
   },
-  "impacts_de": [],
+  "impacts_de": [
+    "Erste Anzeichen tieferer Pegelstände an kleineren Fliessgewässern möglich.",
+    "Lokal können die Böden trocken sein.",
+    "Erhöhte Waldbrandgefahr kann auftreten."
+  ],
   "recommendations_de": [
     "Aktuelle Lagebeurteilung auf www.trockenheit.ch verfolgen.",
     "Wasserverbrauch beobachten und sparsam mit Wasserressourcen umgehen.",
-    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
+    "Lage beobachten und bei Bedarf Massnahmen vorbereiten.",
+    "Bevölkerung über mögliche Einschränkungen informieren.",
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "recommendations_simple_de": [
     "Informiere dich auf www.trockenheit.ch.",
     "Spare Wasser, wo es geht – jeder Tropfen zählt.",
-    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
+    "Behalte die Lage im Blick.",
+    "Informiere Nachbarn, falls Einschränkungen kommen.",
+    "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern.",
+    "Alpwirtschaft in der Region. Wasserversorgung auf Alpweiden und Quellfassungen prüfen.",
+    "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "raw": {
-    "precip_1m_index": 1,
-    "precip_3m_index": 1,
+    "precip_1m_index": 2,
+    "precip_3m_index": 2,
     "precip_24m_index": 1,
     "hydro_index": 1,
     "soil_moisture_index": 1,

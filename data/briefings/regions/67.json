@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#index",
   "measured_at": "2026-05-04",
-  "generated_at": "2026-05-27T10:52:05.601106+00:00",
-  "data_age_days": 23,
+  "generated_at": "2026-05-28T10:52:47.346597+00:00",
+  "data_age_days": 24,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -35,11 +35,11 @@
       "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#precipitation",
       "short_term": {
         "days": 30,
-        "index": 1,
+        "index": 2,
         "value_mm": 45.3,
         "spi": -0.89,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
-        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+        "label_status_de": "Leichtes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
@@ -90,7 +90,7 @@
     "Hochalpine Gemeinden in der Region: Gletscherschmelze kann Trockenheitssignale vorübergehend überlagern."
   ],
   "raw": {
-    "precip_1m_index": 1,
+    "precip_1m_index": 2,
     "precip_3m_index": 1,
     "precip_24m_index": 1,
     "hydro_index": 1,
