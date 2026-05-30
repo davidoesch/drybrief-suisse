@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#index",
   "measured_at": "2026-05-18",
-  "generated_at": "2026-05-29T10:39:56.680051+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-05-30T09:11:23.266811+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -21,12 +21,12 @@
   "color": "red",
   "color_hex": "#ef4444",
   "summary_de": "In der Region Walliser Südalpen herrscht eine grosse Trockenheit.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 4,
-  "forecast_valid_at": "2026-05-25",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 4).",
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "trend_arrow": "↓",
+  "forecast_cdi_p50": 3,
+  "forecast_valid_at": "2026-06-01",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 4 nach 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 91.7,
+      "value_pct": 90.8,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#moisture",
@@ -120,8 +120,8 @@
     "soil_moisture_index": 1,
     "spi_1m": -0.54,
     "spi_3m": -1.98,
-    "soil_moisture_ufc": 91.7,
-    "vhi": 82.0
+    "soil_moisture_ufc": 90.8,
+    "vhi": 78.25
   },
   "sources": [
     {

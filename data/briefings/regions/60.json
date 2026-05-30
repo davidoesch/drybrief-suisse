@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#index",
   "measured_at": "2026-05-18",
-  "generated_at": "2026-05-29T10:39:56.684060+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-05-30T09:11:23.270959+00:00",
+  "data_age_days": 12,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Vispertäler ist von erheblicher Trockenheit betroffen.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 3,
-  "forecast_valid_at": "2026-05-25",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 3).",
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "trend_arrow": "↓",
+  "forecast_cdi_p50": 2,
+  "forecast_valid_at": "2026-06-01",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 3 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 90.9,
+      "value_pct": 90.2,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#moisture",
@@ -117,8 +117,8 @@
     "soil_moisture_index": 3,
     "spi_1m": -0.72,
     "spi_3m": -1.32,
-    "soil_moisture_ufc": 90.9,
-    "vhi": 62.67
+    "soil_moisture_ufc": 90.2,
+    "vhi": 61.0
   },
   "sources": [
     {

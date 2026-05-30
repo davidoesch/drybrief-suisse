@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage#index",
   "measured_at": "2026-05-18",
-  "generated_at": "2026-05-29T10:39:56.649597+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-05-30T09:11:23.234462+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -21,12 +21,12 @@
   "color": "red",
   "color_hex": "#ef4444",
   "summary_de": "In der Region Zürichseebecken herrscht eine grosse Trockenheit.",
-  "trend": "verschlechternd",
-  "trend_label_de": "Verschlechterung erwartet",
-  "trend_arrow": "↑",
-  "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-05-25",
-  "forecast_summary_de": "Eine leichte Verschlechterung wird erwartet (Stufe 4 nach 5).",
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "trend_arrow": "↓",
+  "forecast_cdi_p50": 3,
+  "forecast_valid_at": "2026-06-01",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 4 nach 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 85.3,
+      "value_pct": 83.7,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage#moisture",
@@ -116,8 +116,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -1.27,
     "spi_3m": -2.0,
-    "soil_moisture_ufc": 85.3,
-    "vhi": 68.0
+    "soil_moisture_ufc": 83.7,
+    "vhi": 68.5
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage#index",
   "measured_at": "2026-05-18",
-  "generated_at": "2026-05-29T10:39:56.682089+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-05-30T09:11:23.268902+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -21,12 +21,12 @@
   "color": "yellow",
   "color_hex": "#eab308",
   "summary_de": "In der Region nördliches Wallis zeichnet sich eine leichte Trockenheit ab.",
-  "trend": "stark_verschlechternd",
-  "trend_label_de": "Starke Verschlechterung erwartet",
-  "trend_arrow": "↑↑",
-  "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-05-25",
-  "forecast_summary_de": "Die Lage wird sich deutlich verschlechtern, Extreme Trockenheit erwartet (Stufe 5).",
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 2,
+  "forecast_valid_at": "2026-06-01",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -70,9 +70,9 @@
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
-      "index": 1,
-      "value_pct": 87.2,
-      "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
+      "index": 2,
+      "value_pct": 86.2,
+      "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
@@ -106,11 +106,11 @@
     "precip_3m_index": 4,
     "precip_24m_index": 1,
     "hydro_index": 2,
-    "soil_moisture_index": 1,
+    "soil_moisture_index": 2,
     "spi_1m": -0.45,
     "spi_3m": -2.05,
-    "soil_moisture_ufc": 87.2,
-    "vhi": 80.0
+    "soil_moisture_ufc": 86.2,
+    "vhi": 76.25
   },
   "sources": [
     {

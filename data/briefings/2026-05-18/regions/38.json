@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage#index",
   "measured_at": "2026-05-18",
-  "generated_at": "2026-05-29T10:39:56.638818+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-05-30T09:11:23.223579+00:00",
+  "data_age_days": 12,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Oberes Emmental ist von erheblicher Trockenheit betroffen.",
-  "trend": "stark_verschlechternd",
-  "trend_label_de": "Starke Verschlechterung erwartet",
-  "trend_arrow": "↑↑",
-  "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-05-25",
-  "forecast_summary_de": "Die Lage wird sich deutlich verschlechtern, Extreme Trockenheit erwartet (Stufe 5).",
+  "trend": "verschlechternd",
+  "trend_label_de": "Verschlechterung erwartet",
+  "trend_arrow": "↑",
+  "forecast_cdi_p50": 4,
+  "forecast_valid_at": "2026-06-01",
+  "forecast_summary_de": "Eine leichte Verschlechterung wird erwartet (Stufe 3 nach 4).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 97.4,
+      "value_pct": 97.1,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage#moisture",
@@ -115,8 +115,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -0.87,
     "spi_3m": -1.88,
-    "soil_moisture_ufc": 97.4,
-    "vhi": 93.5
+    "soil_moisture_ufc": 97.1,
+    "vhi": 85.33
   },
   "sources": [
     {
