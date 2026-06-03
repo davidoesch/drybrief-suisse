@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-02T11:13:49.113764+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-06-03T11:51:42.503314+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 107.1,
-        "spi": -0.77,
+        "value_mm": 108.8,
+        "spi": -0.73,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 5,
-        "value_mm": 216.7,
-        "spi": -1.93,
+        "value_mm": 218.4,
+        "spi": -1.91,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Extremes Niederschlagsdefizit"
       }
@@ -117,10 +117,10 @@
     "precip_24m_index": 1,
     "hydro_index": 5,
     "soil_moisture_index": 5,
-    "spi_1m": -0.77,
-    "spi_3m": -1.93,
+    "spi_1m": -0.73,
+    "spi_3m": -1.91,
     "soil_moisture_ufc": 72.1,
-    "vhi": 67.5
+    "vhi": 67.33
   },
   "sources": [
     {
