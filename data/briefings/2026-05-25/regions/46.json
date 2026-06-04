@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/46-surselva/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/46-surselva/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-03T11:51:42.519475+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-06-04T10:35:34.023940+00:00",
+  "data_age_days": 10,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 3,
-        "value_mm": 60.4,
+        "value_mm": 60.5,
         "spi": -1.44,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 3,
-        "value_mm": 194.6,
+        "value_mm": 194.7,
         "spi": -1.6,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 57.4,
+      "value_pct": 55.8,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/46-surselva/aktuelle-lage#moisture",
@@ -117,8 +117,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -1.44,
     "spi_3m": -1.6,
-    "soil_moisture_ufc": 57.4,
-    "vhi": 59.0
+    "soil_moisture_ufc": 55.8,
+    "vhi": 53.75
   },
   "sources": [
     {
