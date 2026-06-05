@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-04T10:35:34.044752+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-06-05T10:42:07.327782+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -24,9 +24,9 @@
   "trend": "stark_verbessernd",
   "trend_label_de": "Deutliche Entspannung erwartet",
   "trend_arrow": "↓↓",
-  "forecast_cdi_p50": 1,
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-06-01",
-  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 4 nach 1).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 4 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 30.6,
+      "value_pct": 27.4,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage#moisture",
@@ -116,8 +116,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -0.34,
     "spi_3m": -1.74,
-    "soil_moisture_ufc": 30.6,
-    "vhi": 59.25
+    "soil_moisture_ufc": 27.4,
+    "vhi": 53.4
   },
   "sources": [
     {

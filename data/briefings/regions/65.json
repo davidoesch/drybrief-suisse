@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-04T10:35:34.062178+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-06-05T10:42:07.347302+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 53.0,
+      "value_pct": 51.1,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage#moisture",
@@ -116,8 +116,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -0.66,
     "spi_3m": -1.42,
-    "soil_moisture_ufc": 53.0,
-    "vhi": 60.5
+    "soil_moisture_ufc": 51.1,
+    "vhi": 56.4
   },
   "sources": [
     {
