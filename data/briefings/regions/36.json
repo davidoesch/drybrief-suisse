@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-06T09:20:23.914870+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-06-07T09:56:36.375538+00:00",
+  "data_age_days": 13,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Entspannung erwartet",
   "trend_arrow": "↓",
   "forecast_cdi_p50": 3,
-  "forecast_valid_at": "2026-06-01",
+  "forecast_valid_at": "2026-06-08",
   "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 4 nach 3).",
   "indicators": {
     "precip": {
@@ -119,7 +119,7 @@
     "spi_1m": -0.33,
     "spi_3m": -1.7,
     "soil_moisture_ufc": 54.6,
-    "vhi": 53.5
+    "vhi": 51.29
   },
   "sources": [
     {

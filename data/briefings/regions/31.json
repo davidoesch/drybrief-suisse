@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-06T09:20:23.906755+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-06-07T09:56:36.364145+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Deutliche Entspannung erwartet",
   "trend_arrow": "↓↓",
   "forecast_cdi_p50": 3,
-  "forecast_valid_at": "2026-06-01",
+  "forecast_valid_at": "2026-06-08",
   "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 3).",
   "indicators": {
     "precip": {
@@ -118,7 +118,7 @@
     "spi_1m": -0.66,
     "spi_3m": -1.8,
     "soil_moisture_ufc": 29.2,
-    "vhi": 50.0
+    "vhi": 46.57
   },
   "sources": [
     {

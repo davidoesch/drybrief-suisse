@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/46-surselva/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/46-surselva/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-06T09:20:23.930501+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-06-07T09:56:36.396712+00:00",
+  "data_age_days": 13,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Surselva ist von erheblicher Trockenheit betroffen.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 2,
-  "forecast_valid_at": "2026-06-01",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 3 nach 2).",
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 3,
+  "forecast_valid_at": "2026-06-08",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -118,7 +118,7 @@
     "spi_1m": -1.44,
     "spi_3m": -1.6,
     "soil_moisture_ufc": 53.1,
-    "vhi": 47.5
+    "vhi": 45.86
   },
   "sources": [
     {
