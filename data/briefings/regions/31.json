@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-10T10:51:23.476807+00:00",
-  "data_age_days": 16,
+  "generated_at": "2026-06-11T11:19:12.921826+00:00",
+  "data_age_days": 17,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -21,12 +21,12 @@
   "color": "darkred",
   "color_hex": "#991b1b",
   "summary_de": "Die Region östlicher Jura ist von extremer Trockenheit betroffen.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 4,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 3,
   "forecast_valid_at": "2026-06-08",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 5 nach 4).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 2,
-        "value_mm": 74.5,
+        "value_mm": 74.7,
         "spi": -0.66,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
@@ -44,8 +44,8 @@
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 152.2,
-        "spi": -1.8,
+        "value_mm": 152.4,
+        "spi": -1.79,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
       }
@@ -116,7 +116,7 @@
     "hydro_index": 5,
     "soil_moisture_index": 5,
     "spi_1m": -0.66,
-    "spi_3m": -1.8,
+    "spi_3m": -1.79,
     "soil_moisture_ufc": 29.2,
     "vhi": 46.57
   },

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-10T10:51:23.508392+00:00",
-  "data_age_days": 16,
+  "generated_at": "2026-06-11T11:19:12.950663+00:00",
+  "data_age_days": 17,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 111.5,
+        "value_mm": 111.1,
         "spi": -0.69,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,8 +44,8 @@
       "long_term": {
         "days": 90,
         "index": 3,
-        "value_mm": 282.8,
-        "spi": -1.27,
+        "value_mm": 282.4,
+        "spi": -1.28,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       }
@@ -116,7 +116,7 @@
     "hydro_index": 1,
     "soil_moisture_index": 5,
     "spi_1m": -0.69,
-    "spi_3m": -1.27,
+    "spi_3m": -1.28,
     "soil_moisture_ufc": 81.4,
     "vhi": 46.57
   },

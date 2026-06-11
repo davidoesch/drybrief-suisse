@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-10T10:51:23.528049+00:00",
-  "data_age_days": 16,
+  "generated_at": "2026-06-11T11:19:12.967965+00:00",
+  "data_age_days": 17,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region westlicher Jura ist von erheblicher Trockenheit betroffen.",
-  "trend": "verschlechternd",
-  "trend_label_de": "Verschlechterung erwartet",
-  "trend_arrow": "↑",
-  "forecast_cdi_p50": 4,
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 3,
   "forecast_valid_at": "2026-06-08",
-  "forecast_summary_de": "Eine leichte Verschlechterung wird erwartet (Stufe 3 nach 4).",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 99.7,
+        "value_mm": 99.6,
         "spi": -0.25,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,8 +44,8 @@
       "long_term": {
         "days": 90,
         "index": 3,
-        "value_mm": 194.1,
-        "spi": -1.55,
+        "value_mm": 193.9,
+        "spi": -1.56,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       }
@@ -112,7 +112,7 @@
     "hydro_index": 2,
     "soil_moisture_index": 4,
     "spi_1m": -0.25,
-    "spi_3m": -1.55,
+    "spi_3m": -1.56,
     "soil_moisture_ufc": 34.6,
     "vhi": 44.0
   },
