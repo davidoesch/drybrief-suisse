@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-15T13:00:29.930345+00:00",
-  "data_age_days": 21,
+  "generated_at": "2026-06-16T12:06:42.895882+00:00",
+  "data_age_days": 22,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Stabile Lage erwartet",
   "trend_arrow": "→",
   "forecast_cdi_p50": 4,
-  "forecast_valid_at": "2026-06-08",
+  "forecast_valid_at": "2026-06-15",
   "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 4).",
   "indicators": {
     "precip": {
