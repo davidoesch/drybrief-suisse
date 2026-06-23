@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/35-westliches-berner-oberland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/35-westliches-berner-oberland/aktuelle-lage#index",
   "measured_at": "2026-05-25",
-  "generated_at": "2026-06-22T12:44:46.790874+00:00",
-  "data_age_days": 28,
+  "generated_at": "2026-06-23T10:31:02.075547+00:00",
+  "data_age_days": 29,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Stabile Lage erwartet",
   "trend_arrow": "→",
   "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-06-15",
+  "forecast_valid_at": "2026-06-22",
   "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 5).",
   "indicators": {
     "precip": {
