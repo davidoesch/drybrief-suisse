@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-06-15",
-  "generated_at": "2026-06-26T10:17:14.334435+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-06-27T09:25:01.986989+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 61.2,
+      "value_pct": 60.3,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#moisture",
@@ -118,8 +118,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -1.41,
     "spi_3m": -1.47,
-    "soil_moisture_ufc": 61.2,
-    "vhi": 46.5
+    "soil_moisture_ufc": 60.3,
+    "vhi": 46.0
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage#index",
   "measured_at": "2026-06-15",
-  "generated_at": "2026-06-26T10:17:14.283746+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-06-27T09:25:01.938578+00:00",
+  "data_age_days": 12,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 22.8,
+      "value_pct": 21.7,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage#moisture",
@@ -117,8 +117,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -1.46,
     "spi_3m": -1.93,
-    "soil_moisture_ufc": 22.8,
-    "vhi": 59.5
+    "soil_moisture_ufc": 21.7,
+    "vhi": 56.0
   },
   "sources": [
     {

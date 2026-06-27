@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage#index",
   "measured_at": "2026-06-15",
-  "generated_at": "2026-06-26T10:17:14.308317+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-06-27T09:25:01.962390+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 89.2,
+      "value_pct": 88.3,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage#moisture",
@@ -120,8 +120,8 @@
     "soil_moisture_index": 3,
     "spi_1m": -1.03,
     "spi_3m": -1.52,
-    "soil_moisture_ufc": 89.2,
-    "vhi": 57.5
+    "soil_moisture_ufc": 88.3,
+    "vhi": 56.0
   },
   "sources": [
     {
