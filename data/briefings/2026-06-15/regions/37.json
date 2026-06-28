@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/37-oberaargau/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/37-oberaargau/aktuelle-lage#index",
   "measured_at": "2026-06-15",
-  "generated_at": "2026-06-27T09:25:01.948888+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-06-28T09:54:26.234248+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Stabile Lage erwartet",
   "trend_arrow": "→",
   "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-06-22",
+  "forecast_valid_at": "2026-06-29",
   "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 5).",
   "indicators": {
     "precip": {
@@ -118,7 +118,7 @@
     "spi_1m": -2.49,
     "spi_3m": -2.62,
     "soil_moisture_ufc": 17.6,
-    "vhi": 44.67
+    "vhi": 43.5
   },
   "sources": [
     {

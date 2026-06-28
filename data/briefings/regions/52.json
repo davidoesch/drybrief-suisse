@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage#index",
   "measured_at": "2026-06-15",
-  "generated_at": "2026-06-27T09:25:01.977094+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-06-28T09:54:26.266259+00:00",
+  "data_age_days": 13,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Prättigau ist von erheblicher Trockenheit betroffen.",
-  "trend": "stark_verschlechternd",
-  "trend_label_de": "Starke Verschlechterung erwartet",
-  "trend_arrow": "↑↑",
-  "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-06-22",
-  "forecast_summary_de": "Die Lage wird sich deutlich verschlechtern, Extreme Trockenheit erwartet (Stufe 5).",
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 3,
+  "forecast_valid_at": "2026-06-29",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -116,7 +116,7 @@
     "spi_1m": -0.06,
     "spi_3m": -1.34,
     "soil_moisture_ufc": 68.1,
-    "vhi": 73.0
+    "vhi": 67.75
   },
   "sources": [
     {

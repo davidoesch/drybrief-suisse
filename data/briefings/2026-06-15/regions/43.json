@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage#index",
   "measured_at": "2026-06-15",
-  "generated_at": "2026-06-27T09:25:01.960551+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-06-28T09:54:26.247329+00:00",
+  "data_age_days": 13,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -21,12 +21,12 @@
   "color": "red",
   "color_hex": "#ef4444",
   "summary_de": "In der Region Zürichseebecken herrscht eine grosse Trockenheit.",
-  "trend": "verschlechternd",
-  "trend_label_de": "Verschlechterung erwartet",
-  "trend_arrow": "↑",
-  "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-06-22",
-  "forecast_summary_de": "Eine leichte Verschlechterung wird erwartet (Stufe 4 nach 5).",
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 4,
+  "forecast_valid_at": "2026-06-29",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 4).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -117,7 +117,7 @@
     "spi_1m": -1.09,
     "spi_3m": -2.04,
     "soil_moisture_ufc": 61.6,
-    "vhi": 54.33
+    "vhi": 53.5
   },
   "sources": [
     {
