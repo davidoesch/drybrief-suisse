@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/66-buendner-suedtaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/66-buendner-suedtaeler/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-06-30T10:28:32.876197+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-07-01T10:37:59.568840+00:00",
+  "data_age_days": 9,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -21,12 +21,12 @@
   "color": "yellow",
   "color_hex": "#eab308",
   "summary_de": "In der Region Bündner Südtäler zeichnet sich eine leichte Trockenheit ab.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 1,
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-06-29",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 2 nach 1).",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 139.3,
-        "spi": 0.47,
-        "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
+        "value_mm": 142.3,
+        "spi": 0.52,
+        "comparison_de": "Etwas mehr Niederschlag als üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 2,
-        "value_mm": 240.5,
-        "spi": -1.05,
+        "value_mm": 243.5,
+        "spi": -1.01,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
       }
@@ -105,10 +105,10 @@
     "precip_24m_index": 2,
     "hydro_index": 4,
     "soil_moisture_index": 2,
-    "spi_1m": 0.47,
-    "spi_3m": -1.05,
+    "spi_1m": 0.52,
+    "spi_3m": -1.01,
     "soil_moisture_ufc": 58.7,
-    "vhi": 63.5
+    "vhi": 64.67
   },
   "sources": [
     {

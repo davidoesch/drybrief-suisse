@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/36-greyerzerland/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-06-30T10:28:32.817287+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-07-01T10:37:59.508303+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -21,12 +21,12 @@
   "color": "darkred",
   "color_hex": "#991b1b",
   "summary_de": "Die Region Greyerzerland ist von extremer Trockenheit betroffen.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 4,
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 5,
   "forecast_valid_at": "2026-06-29",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 5 nach 4).",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 5).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,9 +36,9 @@
       "short_term": {
         "days": 30,
         "index": 3,
-        "value_mm": 79.9,
-        "spi": -1.49,
-        "comparison_de": "Deutlich weniger Niederschlag als üblich",
+        "value_mm": 79.8,
+        "spi": -1.5,
+        "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       },
       "long_term": {
@@ -117,10 +117,10 @@
     "precip_24m_index": 2,
     "hydro_index": 4,
     "soil_moisture_index": 5,
-    "spi_1m": -1.49,
+    "spi_1m": -1.5,
     "spi_3m": -2.37,
     "soil_moisture_ufc": 31.2,
-    "vhi": 38.5
+    "vhi": 35.67
   },
   "sources": [
     {
