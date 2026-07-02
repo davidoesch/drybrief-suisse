@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/41-oestliches-berner-oberland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/41-oestliches-berner-oberland/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-07-01T10:37:59.518184+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-07-02T09:55:07.655748+00:00",
+  "data_age_days": 10,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 62.0,
+      "value_pct": 60.9,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/41-oestliches-berner-oberland/aktuelle-lage#moisture",
@@ -121,8 +121,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -0.6,
     "spi_3m": -2.84,
-    "soil_moisture_ufc": 62.0,
-    "vhi": 36.33
+    "soil_moisture_ufc": 60.9,
+    "vhi": 38.5
   },
   "sources": [
     {

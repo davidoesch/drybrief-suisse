@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-07-01T10:37:59.551499+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-07-02T09:55:07.692876+00:00",
+  "data_age_days": 10,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -122,7 +122,7 @@
     "spi_1m": -0.82,
     "spi_3m": -2.66,
     "soil_moisture_ufc": 68.6,
-    "vhi": 35.33
+    "vhi": 37.5
   },
   "sources": [
     {
