@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-07-02T09:55:07.675585+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-07-03T09:51:45.755922+00:00",
+  "data_age_days": 11,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region südliches Mittelbünden ist von erheblicher Trockenheit betroffen.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 3,
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "trend_arrow": "↓",
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-06-29",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 3).",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 3 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 54.2,
+      "value_pct": 52.9,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#moisture",
@@ -115,8 +115,8 @@
     "soil_moisture_index": 5,
     "spi_1m": 0.46,
     "spi_3m": -1.3,
-    "soil_moisture_ufc": 54.2,
-    "vhi": 58.0
+    "soil_moisture_ufc": 52.9,
+    "vhi": 57.2
   },
   "sources": [
     {
