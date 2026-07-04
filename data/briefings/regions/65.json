@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-07-03T09:51:45.785886+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-07-04T09:16:03.557042+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 170.5,
-        "spi": 0.0,
+        "value_mm": 174.4,
+        "spi": 0.04,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 3,
-        "value_mm": 338.7,
-        "spi": -1.42,
+        "value_mm": 342.7,
+        "spi": -1.38,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       }
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 52.3,
+      "value_pct": 53.3,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage#moisture",
@@ -101,10 +101,10 @@
     "precip_24m_index": 1,
     "hydro_index": 2,
     "soil_moisture_index": 2,
-    "spi_1m": 0.0,
-    "spi_3m": -1.42,
-    "soil_moisture_ufc": 52.3,
-    "vhi": 45.2
+    "spi_1m": 0.04,
+    "spi_3m": -1.38,
+    "soil_moisture_ufc": 53.3,
+    "vhi": 43.17
   },
   "sources": [
     {

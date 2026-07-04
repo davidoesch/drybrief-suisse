@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-07-03T09:51:45.781995+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-07-04T09:16:03.552978+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 134.9,
+        "value_mm": 134.8,
         "spi": -0.17,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 236.7,
+        "value_mm": 236.6,
         "spi": -1.69,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
@@ -71,9 +71,9 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 59.9,
+      "value_pct": 64.6,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
-      "plain_de": "Böden leicht trocken",
+      "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
     }
@@ -120,8 +120,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -0.17,
     "spi_3m": -1.69,
-    "soil_moisture_ufc": 59.9,
-    "vhi": 49.6
+    "soil_moisture_ufc": 64.6,
+    "vhi": 49.17
   },
   "sources": [
     {
