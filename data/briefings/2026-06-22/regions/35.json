@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/35-westliches-berner-oberland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/35-westliches-berner-oberland/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-07-04T09:16:03.490796+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-05T09:37:12.926354+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -21,12 +21,12 @@
   "color": "darkred",
   "color_hex": "#991b1b",
   "summary_de": "Die Region Westliches Berner Oberland ist von extremer Trockenheit betroffen.",
-  "trend": "stark_verbessernd",
-  "trend_label_de": "Deutliche Entspannung erwartet",
-  "trend_arrow": "↓↓",
-  "forecast_cdi_p50": 3,
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "trend_arrow": "↓",
+  "forecast_cdi_p50": 4,
   "forecast_valid_at": "2026-06-29",
-  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 3).",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 5 nach 4).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -122,7 +122,7 @@
     "spi_1m": -1.4,
     "spi_3m": -2.71,
     "soil_moisture_ufc": 40.1,
-    "vhi": 37.5
+    "vhi": 37.86
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/68-unterengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/68-unterengadin/aktuelle-lage#index",
   "measured_at": "2026-06-22",
-  "generated_at": "2026-07-04T09:16:03.563020+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-05T09:37:12.991468+00:00",
+  "data_age_days": 13,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -118,7 +118,7 @@
     "spi_1m": 0.66,
     "spi_3m": -0.82,
     "soil_moisture_ufc": 45.2,
-    "vhi": 68.0
+    "vhi": 67.29
   },
   "sources": [
     {
