@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-07T10:19:48.226830+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-07-08T09:21:56.839964+00:00",
+  "data_age_days": 9,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -117,7 +117,7 @@
     "spi_1m": -2.32,
     "spi_3m": -2.45,
     "soil_moisture_ufc": 14.5,
-    "vhi": 20.0
+    "vhi": 14.33
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-07T10:19:48.282446+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-07-08T09:21:56.893751+00:00",
+  "data_age_days": 9,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -116,7 +116,7 @@
     "spi_1m": -1.7,
     "spi_3m": -1.55,
     "soil_moisture_ufc": 61.1,
-    "vhi": 30.5
+    "vhi": 28.67
   },
   "sources": [
     {

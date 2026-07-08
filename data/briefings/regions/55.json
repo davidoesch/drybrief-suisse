@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-07T10:19:48.277645+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-07-08T09:21:56.889441+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -118,7 +118,7 @@
     "spi_1m": -2.65,
     "spi_3m": -2.11,
     "soil_moisture_ufc": 7.6,
-    "vhi": 9.5
+    "vhi": 9.0
   },
   "sources": [
     {
