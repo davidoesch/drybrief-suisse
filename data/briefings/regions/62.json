@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-08T09:21:56.903800+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-07-09T10:24:20.868984+00:00",
+  "data_age_days": 10,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 58.3,
+      "value_pct": 57.9,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage#moisture",
@@ -118,8 +118,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -1.27,
     "spi_3m": -1.56,
-    "soil_moisture_ufc": 58.3,
-    "vhi": 58.33
+    "soil_moisture_ufc": 57.9,
+    "vhi": 58.0
   },
   "sources": [
     {

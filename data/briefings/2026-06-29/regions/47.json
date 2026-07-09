@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/47-alpstein/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/47-alpstein/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-08T09:21:56.872579+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-07-09T10:24:20.837222+00:00",
+  "data_age_days": 10,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,9 +71,9 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 37.2,
+      "value_pct": 40.3,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
-      "plain_de": "Böden trocken, Pflanzen unter Stress",
+      "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/47-alpstein/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
     }
@@ -116,8 +116,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -2.13,
     "spi_3m": -3.17,
-    "soil_moisture_ufc": 37.2,
-    "vhi": 19.33
+    "soil_moisture_ufc": 40.3,
+    "vhi": 23.75
   },
   "sources": [
     {
