@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/68-unterengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/68-unterengadin/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-09T10:24:20.881331+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-07-10T10:17:20.175515+00:00",
+  "data_age_days": 11,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 76.7,
+      "value_pct": 78.9,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/68-unterengadin/aktuelle-lage#moisture",
@@ -97,8 +97,8 @@
     "soil_moisture_index": 1,
     "spi_1m": 0.05,
     "spi_3m": -0.45,
-    "soil_moisture_ufc": 76.7,
-    "vhi": 54.0
+    "soil_moisture_ufc": 78.9,
+    "vhi": 52.2
   },
   "sources": [
     {
