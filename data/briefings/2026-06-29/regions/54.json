@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-10T10:17:20.148786+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-07-11T08:43:03.775733+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 4,
-        "value_mm": 40.0,
+        "value_mm": 40.1,
         "spi": -2.06,
         "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
         "label_status_de": "Grosses Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 199.4,
+        "value_mm": 199.5,
         "spi": -1.77,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 13.5,
+      "value_pct": 13.0,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden sehr trocken, erheblicher Wassermangel",
       "link": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#moisture",
@@ -116,8 +116,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -2.06,
     "spi_3m": -1.77,
-    "soil_moisture_ufc": 13.5,
-    "vhi": 13.8
+    "soil_moisture_ufc": 13.0,
+    "vhi": 13.0
   },
   "sources": [
     {

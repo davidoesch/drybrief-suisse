@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/40-westliche-zentralschweiz/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/40-westliche-zentralschweiz/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-10T10:17:20.122368+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-07-11T08:43:03.745518+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 91.3,
+      "value_pct": 91.2,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/40-westliche-zentralschweiz/aktuelle-lage#moisture",
@@ -105,8 +105,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -1.07,
     "spi_3m": -1.95,
-    "soil_moisture_ufc": 91.3,
-    "vhi": 30.2
+    "soil_moisture_ufc": 91.2,
+    "vhi": 31.83
   },
   "sources": [
     {
