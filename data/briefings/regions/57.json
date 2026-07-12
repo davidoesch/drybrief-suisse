@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-11T08:43:03.782509+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-12T08:58:46.647973+00:00",
+  "data_age_days": 13,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Chablais ist von erheblicher Trockenheit betroffen.",
-  "trend": "verschlechternd",
-  "trend_label_de": "Verschlechterung erwartet",
-  "trend_arrow": "↑",
-  "forecast_cdi_p50": 4,
+  "trend": "stark_verschlechternd",
+  "trend_label_de": "Starke Verschlechterung erwartet",
+  "trend_arrow": "↑↑",
+  "forecast_cdi_p50": 5,
   "forecast_valid_at": "2026-07-06",
-  "forecast_summary_de": "Eine leichte Verschlechterung wird erwartet (Stufe 3 nach 4).",
+  "forecast_summary_de": "Die Lage wird sich deutlich verschlechtern, Extreme Trockenheit erwartet (Stufe 5).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -116,7 +116,7 @@
     "spi_1m": -1.66,
     "spi_3m": -1.53,
     "soil_moisture_ufc": 65.4,
-    "vhi": 33.0
+    "vhi": 35.29
   },
   "sources": [
     {

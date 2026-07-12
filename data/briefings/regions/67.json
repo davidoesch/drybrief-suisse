@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#index",
   "measured_at": "2026-06-29",
-  "generated_at": "2026-07-11T08:43:03.803604+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-12T08:58:46.674724+00:00",
+  "data_age_days": 13,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -21,12 +21,12 @@
   "color": "green",
   "color_hex": "#22c55e",
   "summary_de": "In der Region Oberengadin sind aktuell keine aussergewöhnlichen Trockenheitssignale feststellbar.",
-  "trend": "verschlechternd",
-  "trend_label_de": "Verschlechterung erwartet",
-  "trend_arrow": "↑",
-  "forecast_cdi_p50": 2,
+  "trend": "stark_verschlechternd",
+  "trend_label_de": "Starke Verschlechterung erwartet",
+  "trend_arrow": "↑↑",
+  "forecast_cdi_p50": 3,
   "forecast_valid_at": "2026-07-06",
-  "forecast_summary_de": "Eine leichte Verschlechterung wird erwartet (Stufe 1 nach 2).",
+  "forecast_summary_de": "Die Lage wird sich deutlich verschlechtern, Erhebliche Trockenheit erwartet (Stufe 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -98,7 +98,7 @@
     "spi_1m": 0.26,
     "spi_3m": -0.47,
     "soil_moisture_ufc": 86.0,
-    "vhi": 63.5
+    "vhi": 62.71
   },
   "sources": [
     {
