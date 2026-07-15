@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#index",
   "measured_at": "2026-07-06",
-  "generated_at": "2026-07-14T09:00:22.089325+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-07-15T09:05:50.351112+00:00",
+  "data_age_days": 9,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -121,7 +121,7 @@
     "spi_1m": -0.79,
     "spi_3m": -1.57,
     "soil_moisture_ufc": 50.6,
-    "vhi": 48.0
+    "vhi": 47.33
   },
   "sources": [
     {
