@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage#index",
   "measured_at": "2026-07-06",
-  "generated_at": "2026-07-17T09:04:18.772504+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-07-18T08:44:56.829240+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -21,12 +21,12 @@
   "color": "red",
   "color_hex": "#ef4444",
   "summary_de": "In der Region Östliches Tessin herrscht eine grosse Trockenheit.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 3,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-07-13",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 4 nach 3).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 4 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 29.5,
+      "value_pct": 29.0,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage#moisture",
@@ -118,8 +118,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -1.57,
     "spi_3m": -1.42,
-    "soil_moisture_ufc": 29.5,
-    "vhi": 37.6
+    "soil_moisture_ufc": 29.0,
+    "vhi": 37.67
   },
   "sources": [
     {
