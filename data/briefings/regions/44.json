@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage#index",
   "measured_at": "2026-07-06",
-  "generated_at": "2026-07-18T08:44:56.788351+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-19T09:02:17.431970+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Entspannung erwartet",
   "trend_arrow": "↓",
   "forecast_cdi_p50": 4,
-  "forecast_valid_at": "2026-07-13",
+  "forecast_valid_at": "2026-07-20",
   "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 5 nach 4).",
   "indicators": {
     "precip": {
@@ -122,7 +122,7 @@
     "spi_1m": -2.8,
     "spi_3m": -2.64,
     "soil_moisture_ufc": 48.4,
-    "vhi": 46.0
+    "vhi": 44.43
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#index",
   "measured_at": "2026-07-06",
-  "generated_at": "2026-07-18T08:44:56.827250+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-19T09:02:17.472520+00:00",
+  "data_age_days": 13,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Entspannung erwartet",
   "trend_arrow": "↓",
   "forecast_cdi_p50": 3,
-  "forecast_valid_at": "2026-07-13",
+  "forecast_valid_at": "2026-07-20",
   "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 4 nach 3).",
   "indicators": {
     "precip": {
@@ -121,7 +121,7 @@
     "spi_1m": -0.79,
     "spi_3m": -1.57,
     "soil_moisture_ufc": 49.4,
-    "vhi": 41.83
+    "vhi": 40.29
   },
   "sources": [
     {
