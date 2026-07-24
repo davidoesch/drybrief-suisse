@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage#index",
   "measured_at": "2026-07-13",
-  "generated_at": "2026-07-23T09:20:53.099624+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-07-24T09:15:39.231857+00:00",
+  "data_age_days": 11,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 20.0,
+      "value_pct": 22.1,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage#moisture",
@@ -113,8 +113,8 @@
     "soil_moisture_index": 3,
     "spi_1m": -0.88,
     "spi_3m": -2.14,
-    "soil_moisture_ufc": 20.0,
-    "vhi": 17.5
+    "soil_moisture_ufc": 22.1,
+    "vhi": 17.0
   },
   "sources": [
     {
