@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/49-noerdliches-mittelbuenden/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/49-noerdliches-mittelbuenden/aktuelle-lage#index",
   "measured_at": "2026-07-13",
-  "generated_at": "2026-07-24T09:15:39.246010+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-07-25T08:56:21.770311+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 51.9,
+      "value_pct": 53.6,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/49-noerdliches-mittelbuenden/aktuelle-lage#moisture",
@@ -120,8 +120,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -0.86,
     "spi_3m": -1.6,
-    "soil_moisture_ufc": 51.9,
-    "vhi": 35.4
+    "soil_moisture_ufc": 53.6,
+    "vhi": 30.33
   },
   "sources": [
     {

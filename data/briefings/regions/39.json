@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#index",
   "measured_at": "2026-07-13",
-  "generated_at": "2026-07-24T09:15:39.225315+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-07-25T08:56:21.751064+00:00",
+  "data_age_days": 12,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 21.1,
+      "value_pct": 22.9,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#moisture",
@@ -117,8 +117,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -1.21,
     "spi_3m": -2.3,
-    "soil_moisture_ufc": 21.1,
-    "vhi": 14.4
+    "soil_moisture_ufc": 22.9,
+    "vhi": 14.33
   },
   "sources": [
     {
