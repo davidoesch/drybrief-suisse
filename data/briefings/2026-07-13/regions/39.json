@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#index",
   "measured_at": "2026-07-13",
-  "generated_at": "2026-07-25T08:56:21.751064+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-26T09:08:09.577692+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -118,7 +118,7 @@
     "spi_1m": -1.21,
     "spi_3m": -2.3,
     "soil_moisture_ufc": 22.9,
-    "vhi": 14.33
+    "vhi": 13.0
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/51-rheintal/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/51-rheintal/aktuelle-lage#index",
   "measured_at": "2026-07-13",
-  "generated_at": "2026-07-25T08:56:21.774837+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-07-26T09:08:09.600906+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -120,7 +120,7 @@
     "spi_1m": -1.81,
     "spi_3m": -2.89,
     "soil_moisture_ufc": 39.0,
-    "vhi": 22.5
+    "vhi": 27.14
   },
   "sources": [
     {
