@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#index",
   "measured_at": "2026-07-20",
-  "generated_at": "2026-07-28T09:31:46.985117+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-07-29T09:33:23.703189+00:00",
+  "data_age_days": 9,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -35,17 +35,17 @@
       "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#precipitation",
       "short_term": {
         "days": 30,
-        "index": 1,
-        "value_mm": 79.6,
-        "spi": -0.51,
+        "index": 2,
+        "value_mm": 71.4,
+        "spi": -0.72,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
-        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+        "label_status_de": "Leichtes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 1,
-        "value_mm": 288.2,
-        "spi": -0.38,
+        "value_mm": 280.0,
+        "spi": -0.49,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       }
@@ -108,15 +108,15 @@
     "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "raw": {
-    "precip_1m_index": 1,
+    "precip_1m_index": 2,
     "precip_3m_index": 1,
     "precip_24m_index": 2,
     "hydro_index": 4,
     "soil_moisture_index": 3,
-    "spi_1m": -0.51,
-    "spi_3m": -0.38,
+    "spi_1m": -0.72,
+    "spi_3m": -0.49,
     "soil_moisture_ufc": 55.6,
-    "vhi": 96.5
+    "vhi": 97.0
   },
   "sources": [
     {
