@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage#index",
   "measured_at": "2026-07-20",
-  "generated_at": "2026-07-30T09:25:48.894970+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-07-31T09:37:51.869301+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,9 +71,9 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 80.1,
+      "value_pct": 79.8,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
-      "plain_de": "Böden gut mit Wasser versorgt",
+      "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
     }
@@ -120,8 +120,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -0.4,
     "spi_3m": -1.57,
-    "soil_moisture_ufc": 80.1,
-    "vhi": 47.5
+    "soil_moisture_ufc": 79.8,
+    "vhi": 45.8
   },
   "sources": [
     {

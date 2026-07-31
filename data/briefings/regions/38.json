@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage#index",
   "measured_at": "2026-07-20",
-  "generated_at": "2026-07-30T09:25:48.844708+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-07-31T09:37:51.820043+00:00",
+  "data_age_days": 11,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 34.4,
+      "value_pct": 33.1,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage#moisture",
@@ -119,8 +119,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -0.94,
     "spi_3m": -2.02,
-    "soil_moisture_ufc": 34.4,
-    "vhi": 35.25
+    "soil_moisture_ufc": 33.1,
+    "vhi": 37.4
   },
   "sources": [
     {

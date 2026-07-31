@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-30T09:25:48.909897+00:00",
+  "generated_at": "2026-07-31T09:37:51.884609+00:00",
   "data_date": "2026-07-20",
-  "data_age_days": 10,
+  "data_age_days": 11,
   "n_regions": 38,
   "regions": [
     {
@@ -16,7 +16,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 32,
@@ -30,7 +30,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 33,
@@ -44,7 +44,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 34,
@@ -58,7 +58,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 35,
@@ -72,7 +72,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 36,
@@ -86,7 +86,7 @@
       "color_hex": "#ef4444",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 37,
@@ -100,7 +100,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 38,
@@ -114,7 +114,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 39,
@@ -128,7 +128,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 40,
@@ -142,7 +142,7 @@
       "color_hex": "#ef4444",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 41,
@@ -156,7 +156,7 @@
       "color_hex": "#ef4444",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 42,
@@ -170,7 +170,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 43,
@@ -184,7 +184,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 44,
@@ -196,9 +196,9 @@
       "warning_level": 4,
       "color": "darkred",
       "color_hex": "#991b1b",
-      "trend": "verbessernd",
+      "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 45,
@@ -212,7 +212,7 @@
       "color_hex": "#ef4444",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 46,
@@ -226,7 +226,7 @@
       "color_hex": "#ef4444",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 47,
@@ -240,7 +240,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 48,
@@ -254,7 +254,7 @@
       "color_hex": "#ef4444",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 49,
@@ -268,7 +268,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 50,
@@ -282,7 +282,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 51,
@@ -296,7 +296,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 52,
@@ -310,7 +310,7 @@
       "color_hex": "#ef4444",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 53,
@@ -324,7 +324,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 54,
@@ -336,9 +336,9 @@
       "warning_level": 4,
       "color": "red",
       "color_hex": "#ef4444",
-      "trend": "stabil",
+      "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 55,
@@ -352,7 +352,7 @@
       "color_hex": "#991b1b",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 56,
@@ -366,7 +366,7 @@
       "color_hex": "#ef4444",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 57,
@@ -380,7 +380,7 @@
       "color_hex": "#f97316",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 58,
@@ -394,7 +394,7 @@
       "color_hex": "#eab308",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 59,
@@ -408,7 +408,7 @@
       "color_hex": "#eab308",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 60,
@@ -422,7 +422,7 @@
       "color_hex": "#f97316",
       "trend": "verbessernd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 61,
@@ -436,7 +436,7 @@
       "color_hex": "#ef4444",
       "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 62,
@@ -448,9 +448,9 @@
       "warning_level": 4,
       "color": "darkred",
       "color_hex": "#991b1b",
-      "trend": "verbessernd",
+      "trend": "stabil",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 63,
@@ -462,9 +462,9 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "stabil",
+      "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 64,
@@ -478,7 +478,7 @@
       "color_hex": "#991b1b",
       "trend": "verbessernd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 65,
@@ -492,35 +492,35 @@
       "color_hex": "#ef4444",
       "trend": "verbessernd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 66,
       "name_de": "Bündner Südtäler",
       "region_slug": "66-buendner-suedtaeler",
-      "cdi": 3,
-      "cdi_label_de": "Trocken",
-      "cdi_emoji": "🌵",
-      "warning_level": 2,
-      "color": "orange",
-      "color_hex": "#f97316",
-      "trend": "stabil",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "cdi_emoji": "🔥",
+      "warning_level": 4,
+      "color": "red",
+      "color_hex": "#ef4444",
+      "trend": "verbessernd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 67,
       "name_de": "Oberengadin",
       "region_slug": "67-oberengadin",
-      "cdi": 3,
-      "cdi_label_de": "Trocken",
-      "cdi_emoji": "🌵",
-      "warning_level": 2,
-      "color": "orange",
-      "color_hex": "#f97316",
-      "trend": "stabil",
+      "cdi": 4,
+      "cdi_label_de": "Sehr trocken",
+      "cdi_emoji": "🔥",
+      "warning_level": 4,
+      "color": "red",
+      "color_hex": "#ef4444",
+      "trend": "verbessernd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 68,
@@ -534,7 +534,7 @@
       "color_hex": "#eab308",
       "trend": "verschlechternd",
       "measured_at": "2026-07-20",
-      "data_age_days": 10
+      "data_age_days": 11
     }
   ]
 }
