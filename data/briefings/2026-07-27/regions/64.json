@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage#index",
   "measured_at": "2026-07-27",
-  "generated_at": "2026-08-04T09:34:54.698491+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-05T09:30:57.062557+00:00",
+  "data_age_days": 9,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 3,
-        "value_mm": 64.1,
-        "spi": -1.31,
+        "value_mm": 61.9,
+        "spi": -1.36,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 2,
-        "value_mm": 341.8,
-        "spi": -1.16,
+        "value_mm": 339.6,
+        "spi": -1.18,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
       }
@@ -116,10 +116,10 @@
     "precip_24m_index": 1,
     "hydro_index": 5,
     "soil_moisture_index": 4,
-    "spi_1m": -1.31,
-    "spi_3m": -1.16,
+    "spi_1m": -1.36,
+    "spi_3m": -1.18,
     "soil_moisture_ufc": 29.4,
-    "vhi": 45.5
+    "vhi": 43.67
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/34-berner-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/34-berner-mittelland/aktuelle-lage#index",
   "measured_at": "2026-07-27",
-  "generated_at": "2026-08-04T09:34:54.393452+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-05T09:30:57.000440+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -118,7 +118,7 @@
     "spi_1m": -3.15,
     "spi_3m": -2.92,
     "soil_moisture_ufc": 15.0,
-    "vhi": 27.0
+    "vhi": 25.33
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#index",
   "measured_at": "2026-07-27",
-  "generated_at": "2026-08-04T09:34:54.690188+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-05T09:30:57.054488+00:00",
+  "data_age_days": 9,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -36,18 +36,18 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 77.3,
-        "spi": -0.04,
+        "value_mm": 71.8,
+        "spi": -0.18,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
-        "index": 1,
-        "value_mm": 232.2,
-        "spi": -0.86,
+        "index": 2,
+        "value_mm": 226.6,
+        "spi": -0.92,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
-        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
+        "label_status_de": "Leichtes Niederschlagsdefizit"
       }
     },
     "hydro": {
@@ -103,14 +103,14 @@
   ],
   "raw": {
     "precip_1m_index": 1,
-    "precip_3m_index": 1,
+    "precip_3m_index": 2,
     "precip_24m_index": 2,
     "hydro_index": 1,
     "soil_moisture_index": 4,
-    "spi_1m": -0.04,
-    "spi_3m": -0.86,
+    "spi_1m": -0.18,
+    "spi_3m": -0.92,
     "soil_moisture_ufc": 79.4,
-    "vhi": 25.5
+    "vhi": 24.33
   },
   "sources": [
     {

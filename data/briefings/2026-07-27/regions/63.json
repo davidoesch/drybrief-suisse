@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#index",
   "measured_at": "2026-07-27",
-  "generated_at": "2026-08-04T09:34:54.696403+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-05T09:30:57.060567+00:00",
+  "data_age_days": 9,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -35,17 +35,17 @@
       "link": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#precipitation",
       "short_term": {
         "days": 30,
-        "index": 2,
-        "value_mm": 70.2,
-        "spi": -1.07,
+        "index": 3,
+        "value_mm": 68.8,
+        "spi": -1.1,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
-        "label_status_de": "Leichtes Niederschlagsdefizit"
+        "label_status_de": "Erhebliches Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 3,
-        "value_mm": 292.9,
-        "spi": -1.21,
+        "value_mm": 291.4,
+        "spi": -1.23,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       }
@@ -110,15 +110,15 @@
     "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "raw": {
-    "precip_1m_index": 2,
+    "precip_1m_index": 3,
     "precip_3m_index": 3,
     "precip_24m_index": 3,
     "hydro_index": 5,
     "soil_moisture_index": 3,
-    "spi_1m": -1.07,
-    "spi_3m": -1.21,
+    "spi_1m": -1.1,
+    "spi_3m": -1.23,
     "soil_moisture_ufc": 44.6,
-    "vhi": 31.0
+    "vhi": 28.33
   },
   "sources": [
     {
