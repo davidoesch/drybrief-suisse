@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage#index",
   "measured_at": "2026-07-27",
-  "generated_at": "2026-08-05T09:30:56.996022+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-08-06T09:35:14.737746+00:00",
+  "data_age_days": 10,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Stabile Lage erwartet",
   "trend_arrow": "→",
   "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-08-03",
+  "forecast_valid_at": "2026-08-10",
   "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 5).",
   "indicators": {
     "precip": {
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 6.7,
+      "value_pct": 6.6,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden sehr trocken, erheblicher Wassermangel",
       "link": "https://www.trockenheit.admin.ch/de/regionen/32-balsthal/aktuelle-lage#moisture",
@@ -117,8 +117,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -2.38,
     "spi_3m": -2.42,
-    "soil_moisture_ufc": 6.7,
-    "vhi": 30.33
+    "soil_moisture_ufc": 6.6,
+    "vhi": 28.0
   },
   "sources": [
     {
