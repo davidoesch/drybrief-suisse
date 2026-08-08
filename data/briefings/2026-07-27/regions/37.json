@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/37-oberaargau/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/37-oberaargau/aktuelle-lage#index",
   "measured_at": "2026-07-27",
-  "generated_at": "2026-08-07T08:08:55.173478+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-08-08T07:42:05.235752+00:00",
+  "data_age_days": 12,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -118,7 +118,7 @@
     "spi_1m": -2.62,
     "spi_3m": -2.76,
     "soil_moisture_ufc": 6.4,
-    "vhi": 33.6
+    "vhi": 33.17
   },
   "sources": [
     {

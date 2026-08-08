@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage#index",
   "measured_at": "2026-07-27",
-  "generated_at": "2026-08-07T08:08:55.186272+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-08-08T07:42:05.248126+00:00",
+  "data_age_days": 12,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 16.9,
+      "value_pct": 16.6,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden sehr trocken, erheblicher Wassermangel",
       "link": "https://www.trockenheit.admin.ch/de/regionen/43-zuerichseebecken/aktuelle-lage#moisture",
@@ -117,8 +117,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -3.03,
     "spi_3m": -2.73,
-    "soil_moisture_ufc": 16.9,
-    "vhi": 32.4
+    "soil_moisture_ufc": 16.6,
+    "vhi": 30.17
   },
   "sources": [
     {
