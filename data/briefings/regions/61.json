@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage#index",
   "measured_at": "2026-08-03",
-  "generated_at": "2026-08-11T08:05:25.121543+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-12T08:10:23.201364+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 105.9,
+        "value_mm": 106.0,
         "spi": -0.38,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,8 +44,8 @@
       "long_term": {
         "days": 90,
         "index": 5,
-        "value_mm": 244.4,
-        "spi": -1.89,
+        "value_mm": 244.5,
+        "spi": -1.88,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Extremes Niederschlagsdefizit"
       }
@@ -120,7 +120,7 @@
     "hydro_index": 1,
     "soil_moisture_index": 5,
     "spi_1m": -0.38,
-    "spi_3m": -1.89,
+    "spi_3m": -1.88,
     "soil_moisture_ufc": 79.2,
     "vhi": 30.0
   },

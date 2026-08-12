@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage#index",
   "measured_at": "2026-08-03",
-  "generated_at": "2026-08-11T08:05:25.103745+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-12T08:10:23.181678+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 5,
-        "value_mm": 65.3,
-        "spi": -1.85,
+        "value_mm": 65.9,
+        "spi": -1.83,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Extremes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 5,
-        "value_mm": 246.7,
-        "spi": -2.15,
+        "value_mm": 247.3,
+        "spi": -2.14,
         "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
         "label_status_de": "Extremes Niederschlagsdefizit"
       }
@@ -117,8 +117,8 @@
     "precip_24m_index": 4,
     "hydro_index": 5,
     "soil_moisture_index": 5,
-    "spi_1m": -1.85,
-    "spi_3m": -2.15,
+    "spi_1m": -1.83,
+    "spi_3m": -2.14,
     "soil_moisture_ufc": 32.8,
     "vhi": 28.33
   },

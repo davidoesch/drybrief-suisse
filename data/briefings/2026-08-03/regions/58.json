@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#index",
   "measured_at": "2026-08-03",
-  "generated_at": "2026-08-11T08:05:25.115716+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-12T08:10:23.195024+00:00",
+  "data_age_days": 9,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 95.5,
-        "spi": 0.03,
+        "value_mm": 97.3,
+        "spi": 0.07,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 199.6,
-        "spi": -1.81,
+        "value_mm": 201.4,
+        "spi": -1.77,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
       }
@@ -118,8 +118,8 @@
     "precip_24m_index": 1,
     "hydro_index": 1,
     "soil_moisture_index": 5,
-    "spi_1m": 0.03,
-    "spi_3m": -1.81,
+    "spi_1m": 0.07,
+    "spi_3m": -1.77,
     "soil_moisture_ufc": 66.8,
     "vhi": 38.0
   },
