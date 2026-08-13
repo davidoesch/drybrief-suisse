@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/56-genferseebecken/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/56-genferseebecken/aktuelle-lage#index",
   "measured_at": "2026-08-03",
-  "generated_at": "2026-08-12T08:10:23.190837+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-08-13T08:13:41.698580+00:00",
+  "data_age_days": 10,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 20.8,
+      "value_pct": 22.2,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/56-genferseebecken/aktuelle-lage#moisture",
@@ -116,8 +116,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -0.88,
     "spi_3m": -2.0,
-    "soil_moisture_ufc": 20.8,
-    "vhi": 10.33
+    "soil_moisture_ufc": 22.2,
+    "vhi": 9.8
   },
   "sources": [
     {
