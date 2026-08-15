@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage#index",
   "measured_at": "2026-08-03",
-  "generated_at": "2026-08-14T08:08:35.071421+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-08-15T07:23:43.245779+00:00",
+  "data_age_days": 12,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 59.8,
+      "value_pct": 59.2,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage#moisture",
@@ -121,8 +121,8 @@
     "soil_moisture_index": 5,
     "spi_1m": 0.08,
     "spi_3m": -1.82,
-    "soil_moisture_ufc": 59.8,
-    "vhi": 27.8
+    "soil_moisture_ufc": 59.2,
+    "vhi": 27.0
   },
   "sources": [
     {

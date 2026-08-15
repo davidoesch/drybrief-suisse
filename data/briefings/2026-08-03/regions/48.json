@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/48-glarner-alpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/48-glarner-alpen/aktuelle-lage#index",
   "measured_at": "2026-08-03",
-  "generated_at": "2026-08-14T08:08:35.029278+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-08-15T07:23:43.226164+00:00",
+  "data_age_days": 12,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 64.6,
+      "value_pct": 64.7,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/48-glarner-alpen/aktuelle-lage#moisture",
@@ -121,8 +121,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -1.45,
     "spi_3m": -2.37,
-    "soil_moisture_ufc": 64.6,
-    "vhi": 36.8
+    "soil_moisture_ufc": 64.7,
+    "vhi": 36.14
   },
   "sources": [
     {

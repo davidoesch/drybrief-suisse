@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage#index",
   "measured_at": "2026-08-03",
-  "generated_at": "2026-08-14T08:08:35.043133+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-08-15T07:23:43.238687+00:00",
+  "data_age_days": 12,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -70,9 +70,9 @@
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
-      "index": 4,
-      "value_pct": 7.5,
-      "label_status_de": "Grosses Bodenfeuchtedefizit",
+      "index": 5,
+      "value_pct": 6.8,
+      "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden sehr trocken, erheblicher Wassermangel",
       "link": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
@@ -114,11 +114,11 @@
     "precip_3m_index": 5,
     "precip_24m_index": 1,
     "hydro_index": 5,
-    "soil_moisture_index": 4,
+    "soil_moisture_index": 5,
     "spi_1m": -1.42,
     "spi_3m": -2.61,
-    "soil_moisture_ufc": 7.5,
-    "vhi": 29.8
+    "soil_moisture_ufc": 6.8,
+    "vhi": 26.86
   },
   "sources": [
     {
