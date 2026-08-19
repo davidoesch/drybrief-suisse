@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-18T07:31:17.645962+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-19T07:31:28.741792+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 5,
-        "value_mm": 29.2,
-        "spi": -2.14,
-        "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
+        "value_mm": 34.8,
+        "spi": -1.96,
+        "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Extremes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 5,
-        "value_mm": 245.9,
-        "spi": -1.99,
+        "value_mm": 251.6,
+        "spi": -1.93,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Extremes Niederschlagsdefizit"
       }
@@ -115,8 +115,8 @@
     "precip_24m_index": 1,
     "hydro_index": 4,
     "soil_moisture_index": 5,
-    "spi_1m": -2.14,
-    "spi_3m": -1.99,
+    "spi_1m": -1.96,
+    "spi_3m": -1.93,
     "soil_moisture_ufc": 17.3,
     "vhi": 14.0
   },

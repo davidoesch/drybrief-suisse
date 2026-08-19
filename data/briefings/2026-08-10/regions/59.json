@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-18T07:31:17.633331+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-19T07:31:28.730436+00:00",
+  "data_age_days": 9,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,15 +36,15 @@
       "short_term": {
         "days": 30,
         "index": 2,
-        "value_mm": 85.9,
-        "spi": -0.67,
+        "value_mm": 86.2,
+        "spi": -0.66,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 269.0,
+        "value_mm": 269.3,
         "spi": -1.56,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
@@ -118,7 +118,7 @@
     "precip_24m_index": 1,
     "hydro_index": 2,
     "soil_moisture_index": 5,
-    "spi_1m": -0.67,
+    "spi_1m": -0.66,
     "spi_3m": -1.56,
     "soil_moisture_ufc": 58.8,
     "vhi": 34.67
