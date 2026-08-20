@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-19T07:31:28.716666+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-08-20T07:34:26.384574+00:00",
+  "data_age_days": 10,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 26.7,
+      "value_pct": 26.2,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage#moisture",
@@ -119,8 +119,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -2.52,
     "spi_3m": -2.41,
-    "soil_moisture_ufc": 26.7,
-    "vhi": 31.33
+    "soil_moisture_ufc": 26.2,
+    "vhi": 31.75
   },
   "sources": [
     {

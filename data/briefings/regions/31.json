@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-19T07:31:28.675517+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-08-20T07:34:26.342059+00:00",
+  "data_age_days": 10,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -21,12 +21,12 @@
   "color": "darkred",
   "color_hex": "#991b1b",
   "summary_de": "Die Region östlicher Jura ist von extremer Trockenheit betroffen.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 4,
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 5,
   "forecast_valid_at": "2026-08-17",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 5 nach 4).",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 5).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 2.6,
+      "value_pct": 2.5,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden sehr trocken, erheblicher Wassermangel",
       "link": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage#moisture",
@@ -117,8 +117,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -3.52,
     "spi_3m": -3.68,
-    "soil_moisture_ufc": 2.6,
-    "vhi": 28.0
+    "soil_moisture_ufc": 2.5,
+    "vhi": 25.0
   },
   "sources": [
     {

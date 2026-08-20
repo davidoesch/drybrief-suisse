@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-19T07:31:28.736106+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-08-20T07:34:26.404148+00:00",
+  "data_age_days": 10,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -24,9 +24,9 @@
   "trend": "stark_verbessernd",
   "trend_label_de": "Deutliche Entspannung erwartet",
   "trend_arrow": "↓↓",
-  "forecast_cdi_p50": 1,
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-08-17",
-  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 1).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 34.5,
+      "value_pct": 33.7,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage#moisture",
@@ -119,8 +119,8 @@
     "soil_moisture_index": 5,
     "spi_1m": -1.11,
     "spi_3m": -1.61,
-    "soil_moisture_ufc": 34.5,
-    "vhi": 48.67
+    "soil_moisture_ufc": 33.7,
+    "vhi": 47.5
   },
   "sources": [
     {
