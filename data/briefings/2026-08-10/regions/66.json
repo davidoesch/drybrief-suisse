@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/66-buendner-suedtaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/66-buendner-suedtaeler/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-22T07:24:44.631142+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-08-23T07:26:59.792823+00:00",
+  "data_age_days": 13,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -116,7 +116,7 @@
     "spi_1m": -0.99,
     "spi_3m": -1.24,
     "soil_moisture_ufc": 48.5,
-    "vhi": 43.17
+    "vhi": 42.43
   },
   "sources": [
     {

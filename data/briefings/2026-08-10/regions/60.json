@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-22T07:24:44.618711+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-08-23T07:26:59.780753+00:00",
+  "data_age_days": 13,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -118,7 +118,7 @@
     "spi_1m": -0.33,
     "spi_3m": -1.06,
     "soil_moisture_ufc": 73.7,
-    "vhi": 32.0
+    "vhi": 31.57
   },
   "sources": [
     {

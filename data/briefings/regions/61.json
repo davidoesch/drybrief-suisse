@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-22T07:24:44.620771+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-08-23T07:26:59.782762+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -24,9 +24,9 @@
   "trend": "stark_verbessernd",
   "trend_label_de": "Deutliche Entspannung erwartet",
   "trend_arrow": "↓↓",
-  "forecast_cdi_p50": 3,
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-08-17",
-  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 3).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -122,7 +122,7 @@
     "spi_1m": -0.96,
     "spi_3m": -1.81,
     "soil_moisture_ufc": 74.2,
-    "vhi": 37.83
+    "vhi": 36.43
   },
   "sources": [
     {

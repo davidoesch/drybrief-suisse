@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-22T07:24:44.571684+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-08-23T07:26:59.735760+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -21,12 +21,12 @@
   "color": "darkred",
   "color_hex": "#991b1b",
   "summary_de": "Die Region Oberes Emmental ist von extremer Trockenheit betroffen.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 5,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 3,
   "forecast_valid_at": "2026-08-17",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 5).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -120,7 +120,7 @@
     "spi_1m": -3.04,
     "spi_3m": -3.23,
     "soil_moisture_ufc": 19.4,
-    "vhi": 22.5
+    "vhi": 21.14
   },
   "sources": [
     {
