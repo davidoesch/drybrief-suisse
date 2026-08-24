@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#index",
   "measured_at": "2026-08-10",
-  "generated_at": "2026-08-23T07:26:59.776495+00:00",
-  "data_age_days": 13,
+  "generated_at": "2026-08-24T07:51:34.636053+00:00",
+  "data_age_days": 14,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -24,9 +24,9 @@
   "trend": "stark_verbessernd",
   "trend_label_de": "Deutliche Entspannung erwartet",
   "trend_arrow": "↓↓",
-  "forecast_cdi_p50": 2,
+  "forecast_cdi_p50": 3,
   "forecast_valid_at": "2026-08-17",
-  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 2).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 5 nach 3).",
   "indicators": {
     "precip": {
       "key": "precip",
