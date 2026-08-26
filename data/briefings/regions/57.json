@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-08-17",
-  "generated_at": "2026-08-25T07:37:29.863400+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-26T07:39:23.363333+00:00",
+  "data_age_days": 9,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Chablais ist von erheblicher Trockenheit betroffen.",
-  "trend": "stark_verbessernd",
-  "trend_label_de": "Deutliche Entspannung erwartet",
-  "trend_arrow": "↓↓",
-  "forecast_cdi_p50": 1,
+  "trend": "stabil",
+  "trend_label_de": "Stabile Lage erwartet",
+  "trend_arrow": "→",
+  "forecast_cdi_p50": 3,
   "forecast_valid_at": "2026-08-24",
-  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 3 nach 1).",
+  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 3).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 2,
-        "value_mm": 90.4,
+        "value_mm": 90.5,
         "spi": -0.8,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 267.9,
+        "value_mm": 268.0,
         "spi": -1.83,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
@@ -116,7 +116,7 @@
     "spi_1m": -0.8,
     "spi_3m": -1.83,
     "soil_moisture_ufc": 57.0,
-    "vhi": 18.33
+    "vhi": 16.25
   },
   "sources": [
     {

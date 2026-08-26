@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#index",
   "measured_at": "2026-08-17",
-  "generated_at": "2026-08-25T07:37:29.869385+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-08-26T07:39:23.369580+00:00",
+  "data_age_days": 9,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -98,7 +98,7 @@
     "spi_1m": 0.26,
     "spi_3m": -0.58,
     "soil_moisture_ufc": 84.5,
-    "vhi": 22.67
+    "vhi": 20.25
   },
   "sources": [
     {
