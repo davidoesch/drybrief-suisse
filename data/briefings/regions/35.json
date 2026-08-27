@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/35-westliches-berner-oberland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/35-westliches-berner-oberland/aktuelle-lage#index",
   "measured_at": "2026-08-17",
-  "generated_at": "2026-08-26T07:39:23.315568+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-08-27T18:00:22.834948+00:00",
+  "data_age_days": 10,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 4,
-      "value_pct": 71.7,
+      "value_pct": 73.8,
       "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/35-westliches-berner-oberland/aktuelle-lage#moisture",
@@ -120,8 +120,8 @@
     "soil_moisture_index": 4,
     "spi_1m": -0.92,
     "spi_3m": -1.82,
-    "soil_moisture_ufc": 71.7,
-    "vhi": 17.0
+    "soil_moisture_ufc": 73.8,
+    "vhi": 15.4
   },
   "sources": [
     {
