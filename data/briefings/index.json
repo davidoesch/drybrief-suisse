@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-27T18:00:22.906756+00:00",
+  "generated_at": "2026-08-28T19:10:39.006052+00:00",
   "data_date": "2026-08-17",
-  "data_age_days": 10,
+  "data_age_days": 11,
   "n_regions": 38,
   "regions": [
     {
@@ -14,9 +14,9 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "stark_verbessernd",
+      "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 32,
@@ -28,9 +28,9 @@
       "warning_level": 2,
       "color": "yellow",
       "color_hex": "#eab308",
-      "trend": "verbessernd",
+      "trend": "stark_verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 33,
@@ -44,7 +44,7 @@
       "color_hex": "#eab308",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 34,
@@ -58,35 +58,35 @@
       "color_hex": "#ef4444",
       "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 35,
       "name_de": "Westliches Berner Oberland",
       "region_slug": "35-westliches-berner-oberland",
-      "cdi": 4,
-      "cdi_label_de": "Sehr trocken",
-      "cdi_emoji": "🔥",
-      "warning_level": 4,
-      "color": "red",
-      "color_hex": "#ef4444",
-      "trend": "verbessernd",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "cdi_emoji": "🌵",
+      "warning_level": 2,
+      "color": "orange",
+      "color_hex": "#f97316",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 36,
       "name_de": "Greyerzerland",
       "region_slug": "36-greyerzerland",
-      "cdi": 4,
-      "cdi_label_de": "Sehr trocken",
-      "cdi_emoji": "🔥",
-      "warning_level": 4,
-      "color": "red",
-      "color_hex": "#ef4444",
-      "trend": "stark_verbessernd",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "cdi_emoji": "🌵",
+      "warning_level": 2,
+      "color": "orange",
+      "color_hex": "#f97316",
+      "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 37,
@@ -98,23 +98,23 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "verbessernd",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 38,
       "name_de": "Oberes Emmental",
       "region_slug": "38-oberes-emmental",
-      "cdi": 4,
-      "cdi_label_de": "Sehr trocken",
-      "cdi_emoji": "🔥",
-      "warning_level": 4,
-      "color": "red",
-      "color_hex": "#ef4444",
-      "trend": "verbessernd",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "cdi_emoji": "🌵",
+      "warning_level": 2,
+      "color": "orange",
+      "color_hex": "#f97316",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 39,
@@ -128,21 +128,21 @@
       "color_hex": "#ef4444",
       "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 40,
       "name_de": "westliche Zentralschweiz",
       "region_slug": "40-westliche-zentralschweiz",
-      "cdi": 4,
-      "cdi_label_de": "Sehr trocken",
-      "cdi_emoji": "🔥",
-      "warning_level": 4,
-      "color": "red",
-      "color_hex": "#ef4444",
-      "trend": "verbessernd",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "cdi_emoji": "🌵",
+      "warning_level": 2,
+      "color": "orange",
+      "color_hex": "#f97316",
+      "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 41,
@@ -154,9 +154,9 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "verbessernd",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 42,
@@ -170,7 +170,7 @@
       "color_hex": "#f97316",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 43,
@@ -182,9 +182,9 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "stabil",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 44,
@@ -198,7 +198,7 @@
       "color_hex": "#ef4444",
       "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 45,
@@ -210,9 +210,9 @@
       "warning_level": 4,
       "color": "red",
       "color_hex": "#ef4444",
-      "trend": "stark_verbessernd",
+      "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 46,
@@ -224,9 +224,9 @@
       "warning_level": 4,
       "color": "red",
       "color_hex": "#ef4444",
-      "trend": "stark_verbessernd",
+      "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 47,
@@ -240,7 +240,7 @@
       "color_hex": "#ef4444",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 48,
@@ -254,21 +254,21 @@
       "color_hex": "#ef4444",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 49,
       "name_de": "nördliches Mittelbünden",
       "region_slug": "49-noerdliches-mittelbuenden",
-      "cdi": 4,
-      "cdi_label_de": "Sehr trocken",
-      "cdi_emoji": "🔥",
-      "warning_level": 4,
-      "color": "red",
-      "color_hex": "#ef4444",
-      "trend": "verbessernd",
+      "cdi": 3,
+      "cdi_label_de": "Trocken",
+      "cdi_emoji": "🌵",
+      "warning_level": 2,
+      "color": "orange",
+      "color_hex": "#f97316",
+      "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 50,
@@ -282,7 +282,7 @@
       "color_hex": "#f97316",
       "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 51,
@@ -294,9 +294,9 @@
       "warning_level": 4,
       "color": "red",
       "color_hex": "#ef4444",
-      "trend": "verschlechternd",
+      "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 52,
@@ -308,9 +308,9 @@
       "warning_level": 4,
       "color": "red",
       "color_hex": "#ef4444",
-      "trend": "stabil",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 53,
@@ -322,9 +322,9 @@
       "warning_level": 4,
       "color": "darkred",
       "color_hex": "#991b1b",
-      "trend": "stark_verbessernd",
+      "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 54,
@@ -338,7 +338,7 @@
       "color_hex": "#eab308",
       "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 55,
@@ -352,7 +352,7 @@
       "color_hex": "#eab308",
       "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 56,
@@ -364,23 +364,23 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "stark_verbessernd",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 57,
       "name_de": "Chablais",
       "region_slug": "57-chablais",
-      "cdi": 3,
-      "cdi_label_de": "Trocken",
-      "cdi_emoji": "🌵",
+      "cdi": 2,
+      "cdi_label_de": "Leicht trocken",
+      "cdi_emoji": "☀️",
       "warning_level": 2,
-      "color": "orange",
-      "color_hex": "#f97316",
-      "trend": "stark_verbessernd",
+      "color": "yellow",
+      "color_hex": "#eab308",
+      "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 58,
@@ -392,23 +392,23 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "stark_verbessernd",
+      "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 59,
       "name_de": "nördliches Wallis",
       "region_slug": "59-noerdliches-wallis",
-      "cdi": 2,
-      "cdi_label_de": "Leicht trocken",
-      "cdi_emoji": "☀️",
-      "warning_level": 2,
-      "color": "yellow",
-      "color_hex": "#eab308",
-      "trend": "verbessernd",
+      "cdi": 1,
+      "cdi_label_de": "Nicht trocken",
+      "cdi_emoji": "💧",
+      "warning_level": 1,
+      "color": "green",
+      "color_hex": "#22c55e",
+      "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 60,
@@ -420,9 +420,9 @@
       "warning_level": 1,
       "color": "green",
       "color_hex": "#22c55e",
-      "trend": "stabil",
+      "trend": "verschlechternd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 61,
@@ -434,9 +434,9 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "stark_verbessernd",
+      "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 62,
@@ -448,9 +448,9 @@
       "warning_level": 2,
       "color": "yellow",
       "color_hex": "#eab308",
-      "trend": "verbessernd",
+      "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 63,
@@ -462,9 +462,9 @@
       "warning_level": 2,
       "color": "orange",
       "color_hex": "#f97316",
-      "trend": "stark_verbessernd",
+      "trend": "verbessernd",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 64,
@@ -478,7 +478,7 @@
       "color_hex": "#22c55e",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 65,
@@ -492,7 +492,7 @@
       "color_hex": "#22c55e",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 66,
@@ -506,7 +506,7 @@
       "color_hex": "#eab308",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 67,
@@ -520,7 +520,7 @@
       "color_hex": "#22c55e",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     },
     {
       "region_id": 68,
@@ -534,7 +534,7 @@
       "color_hex": "#eab308",
       "trend": "stabil",
       "measured_at": "2026-08-17",
-      "data_age_days": 10
+      "data_age_days": 11
     }
   ]
 }

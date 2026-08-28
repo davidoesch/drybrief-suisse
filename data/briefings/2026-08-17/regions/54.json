@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-08-17",
-  "generated_at": "2026-08-27T18:00:22.878002+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-08-28T19:10:38.978069+00:00",
+  "data_age_days": 11,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Entspannung erwartet",
   "trend_arrow": "↓",
   "forecast_cdi_p50": 1,
-  "forecast_valid_at": "2026-08-24",
+  "forecast_valid_at": "2026-08-31",
   "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 2 nach 1).",
   "indicators": {
     "precip": {
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 29.7,
+      "value_pct": 39.6,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#moisture",
@@ -103,8 +103,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -0.54,
     "spi_3m": -2.09,
-    "soil_moisture_ufc": 29.7,
-    "vhi": 7.0
+    "soil_moisture_ufc": 39.6,
+    "vhi": 7.83
   },
   "sources": [
     {
