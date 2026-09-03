@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-02T11:53:27.751692+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-09-03T11:51:46.177998+00:00",
+  "data_age_days": 10,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 97.8,
+      "value_pct": 97.9,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/45-urner-alpen/aktuelle-lage#moisture",
@@ -117,7 +117,7 @@
     "soil_moisture_index": 1,
     "spi_1m": -0.21,
     "spi_3m": -1.3,
-    "soil_moisture_ufc": 97.8,
+    "soil_moisture_ufc": 97.9,
     "vhi": 41.75
   },
   "sources": [
