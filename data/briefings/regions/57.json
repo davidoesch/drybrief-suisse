@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-03T11:51:46.202493+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-04T11:54:52.559559+00:00",
+  "data_age_days": 11,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 132.5,
-        "spi": 0.12,
+        "value_mm": 131.4,
+        "spi": 0.1,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 2,
-        "value_mm": 317.7,
-        "spi": -1.2,
+        "value_mm": 316.6,
+        "spi": -1.21,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
       }
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 83.7,
+      "value_pct": 83.4,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#moisture",
@@ -103,10 +103,10 @@
     "precip_24m_index": 1,
     "hydro_index": 2,
     "soil_moisture_index": 1,
-    "spi_1m": 0.12,
-    "spi_3m": -1.2,
-    "soil_moisture_ufc": 83.7,
-    "vhi": 29.25
+    "spi_1m": 0.1,
+    "spi_3m": -1.21,
+    "soil_moisture_ufc": 83.4,
+    "vhi": 30.6
   },
   "sources": [
     {

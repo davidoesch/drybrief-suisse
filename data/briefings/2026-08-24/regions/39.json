@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-03T11:51:46.163767+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-04T11:54:52.532239+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 87.8,
-        "spi": -0.55,
+        "value_mm": 89.1,
+        "spi": -0.52,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 231.7,
-        "spi": -1.99,
+        "value_mm": 233.0,
+        "spi": -1.97,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
       }
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 63.7,
+      "value_pct": 63.6,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#moisture",
@@ -114,9 +114,9 @@
     "precip_24m_index": 2,
     "hydro_index": 4,
     "soil_moisture_index": 2,
-    "spi_1m": -0.55,
-    "spi_3m": -1.99,
-    "soil_moisture_ufc": 63.7,
+    "spi_1m": -0.52,
+    "spi_3m": -1.97,
+    "soil_moisture_ufc": 63.6,
     "vhi": 35.33
   },
   "sources": [

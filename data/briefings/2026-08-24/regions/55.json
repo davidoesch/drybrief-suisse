@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-03T11:51:46.198380+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-04T11:54:52.556528+00:00",
+  "data_age_days": 11,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 98.8,
+        "value_mm": 98.6,
         "spi": 0.21,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 168.6,
+        "value_mm": 168.4,
         "spi": -1.76,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 72.6,
+      "value_pct": 72.4,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/55-westliches-mittelland/aktuelle-lage#moisture",
@@ -95,8 +95,8 @@
     "soil_moisture_index": 1,
     "spi_1m": 0.21,
     "spi_3m": -1.76,
-    "soil_moisture_ufc": 72.6,
-    "vhi": 12.5
+    "soil_moisture_ufc": 72.4,
+    "vhi": 14.0
   },
   "sources": [
     {

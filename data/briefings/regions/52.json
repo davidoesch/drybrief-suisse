@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-03T11:51:46.191904+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-04T11:54:52.551728+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 2,
-        "value_mm": 87.6,
-        "spi": -0.97,
+        "value_mm": 87.0,
+        "spi": -0.99,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 282.1,
-        "spi": -1.79,
+        "value_mm": 281.5,
+        "spi": -1.8,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
       }
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 71.5,
+      "value_pct": 71.4,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/52-praettigau/aktuelle-lage#moisture",
@@ -116,10 +116,10 @@
     "precip_24m_index": 4,
     "hydro_index": 5,
     "soil_moisture_index": 3,
-    "spi_1m": -0.97,
-    "spi_3m": -1.79,
-    "soil_moisture_ufc": 71.5,
-    "vhi": 39.75
+    "spi_1m": -0.99,
+    "spi_3m": -1.8,
+    "soil_moisture_ufc": 71.4,
+    "vhi": 41.4
   },
   "sources": [
     {

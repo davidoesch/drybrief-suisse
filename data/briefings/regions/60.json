@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-03T11:51:46.208341+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-04T11:54:52.564056+00:00",
+  "data_age_days": 11,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 110.1,
+        "value_mm": 110.4,
         "spi": 0.45,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 1,
-        "value_mm": 263.9,
+        "value_mm": 264.1,
         "spi": -0.12,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 93.4,
+      "value_pct": 93.0,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#moisture",
@@ -97,8 +97,8 @@
     "soil_moisture_index": 1,
     "spi_1m": 0.45,
     "spi_3m": -0.12,
-    "soil_moisture_ufc": 93.4,
-    "vhi": 35.0
+    "soil_moisture_ufc": 93.0,
+    "vhi": 36.4
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/33-unteres-emmental/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/33-unteres-emmental/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-03T11:51:46.146287+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-04T11:54:52.522538+00:00",
+  "data_age_days": 11,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -104,7 +104,7 @@
     "spi_1m": 0.26,
     "spi_3m": -1.95,
     "soil_moisture_ufc": 83.7,
-    "vhi": 38.0
+    "vhi": 34.4
   },
   "sources": [
     {
