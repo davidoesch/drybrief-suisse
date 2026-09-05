@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-04T11:54:52.548823+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-09-05T11:04:19.597688+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -110,7 +110,7 @@
     "spi_1m": 0.08,
     "spi_3m": -0.56,
     "soil_moisture_ufc": 91.7,
-    "vhi": 32.6
+    "vhi": 34.33
   },
   "sources": [
     {
