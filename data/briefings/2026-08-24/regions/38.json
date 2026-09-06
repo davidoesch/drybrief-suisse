@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/38-oberes-emmental/aktuelle-lage#index",
   "measured_at": "2026-08-24",
-  "generated_at": "2026-09-05T11:04:19.572242+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-09-06T11:27:55.595990+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -120,7 +120,7 @@
     "spi_1m": -0.36,
     "spi_3m": -1.99,
     "soil_moisture_ufc": 79.7,
-    "vhi": 32.33
+    "vhi": 33.43
   },
   "sources": [
     {
