@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#index",
   "measured_at": "2026-08-31",
-  "generated_at": "2026-09-08T11:54:52.609363+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-09-09T12:04:39.407192+00:00",
+  "data_age_days": 9,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 95.9,
+        "value_mm": 96.1,
         "spi": 0.15,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,8 +44,8 @@
       "long_term": {
         "days": 90,
         "index": 1,
-        "value_mm": 234.6,
-        "spi": -0.44,
+        "value_mm": 234.8,
+        "spi": -0.43,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       }
@@ -54,10 +54,10 @@
       "key": "hydro",
       "label_de": "Gewässer und Pegel",
       "icon": "💧",
-      "index": 2,
-      "label_status_de": "Leichtes Abflussdefizit",
-      "plain_de": "Abfluss aktuell leicht tiefer als normal",
-      "flow_range_de": "40 bis 70 % des langjährigen Mittelabflusses",
+      "index": 1,
+      "label_status_de": "Kein oder geringes Abflussdefizit",
+      "plain_de": "Abfluss und Pegel im normalen Bereich",
+      "flow_range_de": "70 bis 130 % des langjährigen Mittelabflusses",
       "value_q_m3s": null,
       "value_q_norm_min": null,
       "value_q_norm_max": null,
@@ -105,12 +105,12 @@
     "precip_1m_index": 1,
     "precip_3m_index": 1,
     "precip_24m_index": 2,
-    "hydro_index": 2,
+    "hydro_index": 1,
     "soil_moisture_index": 2,
     "spi_1m": 0.15,
-    "spi_3m": -0.44,
+    "spi_3m": -0.43,
     "soil_moisture_ufc": 82.1,
-    "vhi": 39.0
+    "vhi": 41.75
   },
   "sources": [
     {

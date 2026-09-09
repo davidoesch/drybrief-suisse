@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/62-westliches-tessin/aktuelle-lage#index",
   "measured_at": "2026-08-31",
-  "generated_at": "2026-09-08T11:54:52.612441+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-09-09T12:04:39.410179+00:00",
+  "data_age_days": 9,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -116,7 +116,7 @@
     "spi_1m": 0.02,
     "spi_3m": -1.04,
     "soil_moisture_ufc": 89.0,
-    "vhi": 57.5
+    "vhi": 59.75
   },
   "sources": [
     {

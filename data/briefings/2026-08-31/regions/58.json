@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#index",
   "measured_at": "2026-08-31",
-  "generated_at": "2026-09-08T11:54:52.606246+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-09-09T12:04:39.404162+00:00",
+  "data_age_days": 9,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Walliser Südalpen ist von erheblicher Trockenheit betroffen.",
-  "trend": "verbessernd",
-  "trend_label_de": "Entspannung erwartet",
-  "trend_arrow": "↓",
-  "forecast_cdi_p50": 2,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 1,
   "forecast_valid_at": "2026-09-07",
-  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 3 nach 2).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 3 nach 1).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 94.5,
-        "spi": 0.18,
+        "value_mm": 95.5,
+        "spi": 0.2,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 3,
-        "value_mm": 238.0,
-        "spi": -0.97,
+        "value_mm": 238.9,
+        "spi": -0.95,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       }
@@ -115,10 +115,10 @@
     "precip_24m_index": 1,
     "hydro_index": 5,
     "soil_moisture_index": 1,
-    "spi_1m": 0.18,
-    "spi_3m": -0.97,
+    "spi_1m": 0.2,
+    "spi_3m": -0.95,
     "soil_moisture_ufc": 83.5,
-    "vhi": 47.5
+    "vhi": 51.5
   },
   "sources": [
     {
