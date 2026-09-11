@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#index",
   "measured_at": "2026-08-31",
-  "generated_at": "2026-09-10T11:59:05.098289+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-11T11:57:53.844785+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -21,12 +21,12 @@
   "color": "red",
   "color_hex": "#ef4444",
   "summary_de": "In der Region Chablais herrscht eine grosse Trockenheit.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 4,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 2,
   "forecast_valid_at": "2026-09-07",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 4).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 4 nach 2).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 119.2,
-        "spi": -0.06,
+        "value_mm": 119.5,
+        "spi": -0.05,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 263.9,
-        "spi": -1.83,
+        "value_mm": 264.3,
+        "spi": -1.82,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
         "label_status_de": "Grosses Niederschlagsdefizit"
       }
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 70.4,
+      "value_pct": 68.3,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/57-chablais/aktuelle-lage#moisture",
@@ -116,10 +116,10 @@
     "precip_24m_index": 1,
     "hydro_index": 5,
     "soil_moisture_index": 2,
-    "spi_1m": -0.06,
-    "spi_3m": -1.83,
-    "soil_moisture_ufc": 70.4,
-    "vhi": 55.8
+    "spi_1m": -0.05,
+    "spi_3m": -1.82,
+    "soil_moisture_ufc": 68.3,
+    "vhi": 43.67
   },
   "sources": [
     {

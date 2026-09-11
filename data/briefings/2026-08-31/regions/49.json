@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/49-noerdliches-mittelbuenden/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/49-noerdliches-mittelbuenden/aktuelle-lage#index",
   "measured_at": "2026-08-31",
-  "generated_at": "2026-09-10T11:59:05.081483+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-11T11:57:53.826995+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 4,
-        "value_mm": 218.2,
+        "value_mm": 218.1,
         "spi": -2.06,
         "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
         "label_status_de": "Grosses Niederschlagsdefizit"
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 62.2,
+      "value_pct": 60.6,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/49-noerdliches-mittelbuenden/aktuelle-lage#moisture",
@@ -120,8 +120,8 @@
     "soil_moisture_index": 3,
     "spi_1m": -0.64,
     "spi_3m": -2.06,
-    "soil_moisture_ufc": 62.2,
-    "vhi": 58.2
+    "soil_moisture_ufc": 60.6,
+    "vhi": 49.67
   },
   "sources": [
     {

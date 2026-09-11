@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/37-oberaargau/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/37-oberaargau/aktuelle-lage#index",
   "measured_at": "2026-08-31",
-  "generated_at": "2026-09-10T11:59:05.056867+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-11T11:57:53.800885+00:00",
+  "data_age_days": 11,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 64.4,
+      "value_pct": 61.9,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/37-oberaargau/aktuelle-lage#moisture",
@@ -116,8 +116,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -0.25,
     "spi_3m": -2.75,
-    "soil_moisture_ufc": 64.4,
-    "vhi": 32.0
+    "soil_moisture_ufc": 61.9,
+    "vhi": 28.83
   },
   "sources": [
     {
