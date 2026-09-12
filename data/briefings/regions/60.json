@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#index",
   "measured_at": "2026-08-31",
-  "generated_at": "2026-09-11T11:57:53.851242+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-09-12T11:24:37.906664+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -70,9 +70,9 @@
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
-      "index": 3,
-      "value_pct": 79.5,
-      "label_status_de": "Erhebliches Bodenfeuchtedefizit",
+      "index": 4,
+      "value_pct": 78.2,
+      "label_status_de": "Grosses Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/60-vispertaeler/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
@@ -106,11 +106,11 @@
     "precip_3m_index": 1,
     "precip_24m_index": 2,
     "hydro_index": 1,
-    "soil_moisture_index": 3,
+    "soil_moisture_index": 4,
     "spi_1m": 0.15,
     "spi_3m": -0.43,
-    "soil_moisture_ufc": 79.5,
-    "vhi": 36.5
+    "soil_moisture_ufc": 78.2,
+    "vhi": 28.14
   },
   "sources": [
     {
