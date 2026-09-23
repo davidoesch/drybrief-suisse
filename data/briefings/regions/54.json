@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-09-14",
-  "generated_at": "2026-09-22T12:15:33.281544+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-09-23T12:28:19.179972+00:00",
+  "data_age_days": 9,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -117,7 +117,7 @@
     "spi_1m": -0.9,
     "spi_3m": -1.82,
     "soil_moisture_ufc": 21.5,
-    "vhi": 24.5
+    "vhi": 29.33
   },
   "sources": [
     {
