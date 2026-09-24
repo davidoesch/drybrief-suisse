@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage#index",
   "measured_at": "2026-09-14",
-  "generated_at": "2026-09-23T12:28:19.177738+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-09-24T12:28:03.936029+00:00",
+  "data_age_days": 10,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -70,9 +70,9 @@
       "key": "soil_moisture",
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
-      "index": 4,
-      "value_pct": 32.1,
-      "label_status_de": "Grosses Bodenfeuchtedefizit",
+      "index": 5,
+      "value_pct": 30.8,
+      "label_status_de": "Extremes Bodenfeuchtedefizit",
       "plain_de": "Böden trocken, Pflanzen unter Stress",
       "link": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
@@ -114,11 +114,11 @@
     "precip_3m_index": 5,
     "precip_24m_index": 2,
     "hydro_index": 5,
-    "soil_moisture_index": 4,
+    "soil_moisture_index": 5,
     "spi_1m": -1.24,
     "spi_3m": -2.29,
-    "soil_moisture_ufc": 32.1,
-    "vhi": 28.33
+    "soil_moisture_ufc": 30.8,
+    "vhi": 28.4
   },
   "sources": [
     {
