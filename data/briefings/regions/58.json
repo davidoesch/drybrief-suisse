@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#index",
   "measured_at": "2026-09-14",
-  "generated_at": "2026-09-24T12:28:03.947123+00:00",
-  "data_age_days": 10,
+  "generated_at": "2026-09-25T12:28:47.456503+00:00",
+  "data_age_days": 11,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 78.3,
+      "value_pct": 77.8,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/58-walliser-suedalpen/aktuelle-lage#moisture",
@@ -117,7 +117,7 @@
     "soil_moisture_index": 3,
     "spi_1m": -0.29,
     "spi_3m": -0.51,
-    "soil_moisture_ufc": 78.3,
+    "soil_moisture_ufc": 77.8,
     "vhi": 36.0
   },
   "sources": [
