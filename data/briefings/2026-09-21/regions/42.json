@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/42-oestliches-mittelland/aktuelle-lage#index",
   "measured_at": "2026-09-21",
-  "generated_at": "2026-09-29T13:37:14.382152+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-09-30T13:13:25.733099+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -118,7 +118,7 @@
     "spi_1m": -2.1,
     "spi_3m": -2.0,
     "soil_moisture_ufc": 14.1,
-    "vhi": 30.5
+    "vhi": 29.33
   },
   "sources": [
     {
