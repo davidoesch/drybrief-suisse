@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/66-buendner-suedtaeler/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/66-buendner-suedtaeler/aktuelle-lage#index",
   "measured_at": "2026-09-21",
-  "generated_at": "2026-10-02T13:24:43.384388+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-10-03T12:09:55.340501+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 75.3,
+      "value_pct": 72.4,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/66-buendner-suedtaeler/aktuelle-lage#moisture",
@@ -107,7 +107,7 @@
     "soil_moisture_index": 1,
     "spi_1m": -0.47,
     "spi_3m": -0.45,
-    "soil_moisture_ufc": 75.3,
+    "soil_moisture_ufc": 72.4,
     "vhi": 55.0
   },
   "sources": [

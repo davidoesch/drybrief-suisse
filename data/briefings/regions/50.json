@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#index",
   "measured_at": "2026-09-21",
-  "generated_at": "2026-10-02T13:24:43.350295+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-10-03T12:09:55.314608+00:00",
+  "data_age_days": 12,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 3,
-      "value_pct": 78.2,
+      "value_pct": 76.7,
       "label_status_de": "Erhebliches Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/50-suedliches-mittelbuenden/aktuelle-lage#moisture",
@@ -117,7 +117,7 @@
     "soil_moisture_index": 3,
     "spi_1m": -1.11,
     "spi_3m": -1.22,
-    "soil_moisture_ufc": 78.2,
+    "soil_moisture_ufc": 76.7,
     "vhi": 43.0
   },
   "sources": [
