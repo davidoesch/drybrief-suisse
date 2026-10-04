@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/48-glarner-alpen/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/48-glarner-alpen/aktuelle-lage#index",
   "measured_at": "2026-09-21",
-  "generated_at": "2026-10-03T12:09:55.311438+00:00",
-  "data_age_days": 12,
+  "generated_at": "2026-10-04T12:59:06.126293+00:00",
+  "data_age_days": 13,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 5,
-        "value_mm": 39.5,
-        "spi": -2.19,
+        "value_mm": 38.9,
+        "spi": -2.21,
         "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
         "label_status_de": "Extremes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 5,
-        "value_mm": 296.4,
-        "spi": -2.53,
+        "value_mm": 295.8,
+        "spi": -2.54,
         "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
         "label_status_de": "Extremes Niederschlagsdefizit"
       }
@@ -119,10 +119,10 @@
     "precip_24m_index": 4,
     "hydro_index": 5,
     "soil_moisture_index": 5,
-    "spi_1m": -2.19,
-    "spi_3m": -2.53,
+    "spi_1m": -2.21,
+    "spi_3m": -2.54,
     "soil_moisture_ufc": 78.7,
-    "vhi": 40.5
+    "vhi": 40.6
   },
   "sources": [
     {
