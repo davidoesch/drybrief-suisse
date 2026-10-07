@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/63-nordtessin/aktuelle-lage#index",
   "measured_at": "2026-09-28",
-  "generated_at": "2026-10-06T13:49:36.700551+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-10-07T14:06:51.777819+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 2,
-        "value_mm": 41.5,
+        "value_mm": 41.7,
         "spi": -1.34,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 2,
-        "value_mm": 289.0,
+        "value_mm": 289.2,
         "spi": -1.25,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
@@ -122,7 +122,7 @@
     "spi_1m": -1.34,
     "spi_3m": -1.25,
     "soil_moisture_ufc": 54.5,
-    "vhi": 33.0
+    "vhi": 35.75
   },
   "sources": [
     {

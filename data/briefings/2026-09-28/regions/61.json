@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/61-goms/aktuelle-lage#index",
   "measured_at": "2026-09-28",
-  "generated_at": "2026-10-06T13:49:36.696546+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-10-07T14:06:51.773324+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -122,7 +122,7 @@
     "spi_1m": -1.87,
     "spi_3m": -1.49,
     "soil_moisture_ufc": 67.9,
-    "vhi": 20.5
+    "vhi": 21.25
   },
   "sources": [
     {

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage#index",
   "measured_at": "2026-09-28",
-  "generated_at": "2026-10-06T13:49:36.575090+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-10-07T14:06:51.754414+00:00",
+  "data_age_days": 9,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -35,11 +35,11 @@
       "link": "https://www.trockenheit.admin.ch/de/regionen/53-freiberge/aktuelle-lage#precipitation",
       "short_term": {
         "days": 30,
-        "index": 4,
-        "value_mm": 36.7,
+        "index": 3,
+        "value_mm": 36.8,
         "spi": -1.53,
         "comparison_de": "Sehr viel weniger Niederschlag als üblich",
-        "label_status_de": "Grosses Niederschlagsdefizit"
+        "label_status_de": "Erhebliches Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
@@ -110,7 +110,7 @@
     "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "raw": {
-    "precip_1m_index": 4,
+    "precip_1m_index": 3,
     "precip_3m_index": 5,
     "precip_24m_index": 4,
     "hydro_index": 5,
@@ -118,7 +118,7 @@
     "spi_1m": -1.53,
     "spi_3m": -2.05,
     "soil_moisture_ufc": 23.6,
-    "vhi": 15.0
+    "vhi": 15.25
   },
   "sources": [
     {

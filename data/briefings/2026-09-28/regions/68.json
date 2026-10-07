@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/68-unterengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/68-unterengadin/aktuelle-lage#index",
   "measured_at": "2026-09-28",
-  "generated_at": "2026-10-06T13:49:36.710641+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-10-07T14:06:51.788935+00:00",
+  "data_age_days": 9,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -21,12 +21,12 @@
   "color": "orange",
   "color_hex": "#f97316",
   "summary_de": "Die Region Unterengadin ist von erheblicher Trockenheit betroffen.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 3,
+  "trend": "stark_verbessernd",
+  "trend_label_de": "Deutliche Entspannung erwartet",
+  "trend_arrow": "↓↓",
+  "forecast_cdi_p50": 1,
   "forecast_valid_at": "2026-10-05",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 3).",
+  "forecast_summary_de": "Eine deutliche Entspannung wird erwartet (Stufe 3 nach 1).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 65.9,
-        "spi": -0.38,
+        "value_mm": 69.4,
+        "spi": -0.3,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 1,
-        "value_mm": 254.8,
-        "spi": -0.89,
+        "value_mm": 258.3,
+        "spi": -0.84,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       }
@@ -115,10 +115,10 @@
     "precip_24m_index": 3,
     "hydro_index": 4,
     "soil_moisture_index": 2,
-    "spi_1m": -0.38,
-    "spi_3m": -0.89,
+    "spi_1m": -0.3,
+    "spi_3m": -0.84,
     "soil_moisture_ufc": 52.8,
-    "vhi": 41.5
+    "vhi": 40.25
   },
   "sources": [
     {
