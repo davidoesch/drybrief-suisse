@@ -7,9 +7,9 @@
   "region_slug": "39-freiamt",
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#index",
-  "measured_at": "2026-09-28",
-  "generated_at": "2026-10-19T14:12:57.553978+00:00",
-  "data_age_days": 21,
+  "measured_at": "2026-10-12",
+  "generated_at": "2026-10-20T12:27:06.773507+00:00",
+  "data_age_days": 8,
   "cdi": 5,
   "cdi_label_de": "Extrem trocken",
   "cdi_noun_de": "Extreme Trockenheit",
@@ -21,12 +21,12 @@
   "color": "darkred",
   "color_hex": "#991b1b",
   "summary_de": "Die Region Freiamt ist von extremer Trockenheit betroffen.",
-  "trend": "stabil",
-  "trend_label_de": "Stabile Lage erwartet",
-  "trend_arrow": "→",
-  "forecast_cdi_p50": 5,
-  "forecast_valid_at": "2026-10-12",
-  "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 5).",
+  "trend": "verbessernd",
+  "trend_label_de": "Entspannung erwartet",
+  "trend_arrow": "↓",
+  "forecast_cdi_p50": 4,
+  "forecast_valid_at": "2026-10-19",
+  "forecast_summary_de": "Eine leichte Entspannung wird erwartet (Stufe 5 nach 4).",
   "indicators": {
     "precip": {
       "key": "precip",
@@ -35,17 +35,17 @@
       "link": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#precipitation",
       "short_term": {
         "days": 30,
-        "index": 4,
-        "value_mm": 30.8,
-        "spi": -1.66,
-        "comparison_de": "Sehr viel weniger Niederschlag als üblich",
-        "label_status_de": "Grosses Niederschlagsdefizit"
+        "index": 2,
+        "value_mm": 44.5,
+        "spi": -0.86,
+        "comparison_de": "Etwas weniger Niederschlag als üblich",
+        "label_status_de": "Leichtes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 5,
-        "value_mm": 154.5,
-        "spi": -2.89,
+        "value_mm": 167.6,
+        "spi": -2.23,
         "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
         "label_status_de": "Extremes Niederschlagsdefizit"
       }
@@ -71,9 +71,9 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 5,
-      "value_pct": 21.2,
+      "value_pct": 64.6,
       "label_status_de": "Extremes Bodenfeuchtedefizit",
-      "plain_de": "Böden trocken, Pflanzen unter Stress",
+      "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
     }
@@ -110,21 +110,21 @@
     "Waldgebiete in der Region. Waldbrandgefahr erhöht. Offene Feuerstellen meiden, Waldwege freihalten."
   ],
   "raw": {
-    "precip_1m_index": 4,
+    "precip_1m_index": 2,
     "precip_3m_index": 5,
     "precip_24m_index": 4,
     "hydro_index": 5,
     "soil_moisture_index": 5,
-    "spi_1m": -1.66,
-    "spi_3m": -2.89,
-    "soil_moisture_ufc": 21.2,
-    "vhi": 12.71
+    "spi_1m": -0.86,
+    "spi_3m": -2.23,
+    "soil_moisture_ufc": 64.6,
+    "vhi": 38.5
   },
   "sources": [
     {
       "name": "Trockenheitsplattform BAFU",
       "url": "https://www.trockenheit.admin.ch",
-      "data_date": "2026-09-28"
+      "data_date": "2026-10-12"
     },
     {
       "name": "MeteoSchweiz Open Data",
