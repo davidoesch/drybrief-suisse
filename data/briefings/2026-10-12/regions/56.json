@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/56-genferseebecken/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/56-genferseebecken/aktuelle-lage#index",
   "measured_at": "2026-10-12",
-  "generated_at": "2026-10-20T12:27:06.808086+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-10-21T12:37:06.380207+00:00",
+  "data_age_days": 9,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 52.3,
-        "spi": -0.53,
-        "comparison_de": "Etwas weniger Niederschlag als üblich",
+        "value_mm": 56.1,
+        "spi": -0.44,
+        "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 2,
-        "value_mm": 156.6,
-        "spi": -1.26,
+        "value_mm": 160.4,
+        "spi": -1.2,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
       }
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 55.0,
+      "value_pct": 55.2,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden leicht trocken",
       "link": "https://www.trockenheit.admin.ch/de/regionen/56-genferseebecken/aktuelle-lage#moisture",
@@ -101,10 +101,10 @@
     "precip_24m_index": 2,
     "hydro_index": 3,
     "soil_moisture_index": 2,
-    "spi_1m": -0.53,
-    "spi_3m": -1.26,
-    "soil_moisture_ufc": 55.0,
-    "vhi": 34.0
+    "spi_1m": -0.44,
+    "spi_3m": -1.2,
+    "soil_moisture_ufc": 55.2,
+    "vhi": 37.0
   },
   "sources": [
     {

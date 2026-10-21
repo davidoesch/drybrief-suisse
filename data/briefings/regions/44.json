@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/44-oestliche-zentralschweiz/aktuelle-lage#index",
   "measured_at": "2026-10-12",
-  "generated_at": "2026-10-20T12:27:06.783500+00:00",
-  "data_age_days": 8,
+  "generated_at": "2026-10-21T12:37:06.353136+00:00",
+  "data_age_days": 9,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 2,
-        "value_mm": 62.7,
+        "value_mm": 62.9,
         "spi": -1.07,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 5,
-        "value_mm": 275.2,
+        "value_mm": 275.4,
         "spi": -2.46,
         "comparison_de": "Extrem wenig Niederschlag, historisch seltenes Ereignis",
         "label_status_de": "Extremes Niederschlagsdefizit"
@@ -121,7 +121,7 @@
     "spi_1m": -1.07,
     "spi_3m": -2.46,
     "soil_moisture_ufc": 93.4,
-    "vhi": 58.0
+    "vhi": 59.33
   },
   "sources": [
     {
