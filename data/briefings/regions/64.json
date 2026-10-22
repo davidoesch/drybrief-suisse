@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage#index",
   "measured_at": "2026-10-12",
-  "generated_at": "2026-10-21T12:37:06.397932+00:00",
-  "data_age_days": 9,
+  "generated_at": "2026-10-22T12:41:47.060986+00:00",
+  "data_age_days": 10,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 1,
-      "value_pct": 91.9,
+      "value_pct": 83.6,
       "label_status_de": "Kein oder geringes Bodenfeuchtedefizit",
       "plain_de": "Böden gut mit Wasser versorgt",
       "link": "https://www.trockenheit.admin.ch/de/regionen/64-oestliches-tessin/aktuelle-lage#moisture",
@@ -105,8 +105,8 @@
     "soil_moisture_index": 1,
     "spi_1m": -0.88,
     "spi_3m": -0.71,
-    "soil_moisture_ufc": 91.9,
-    "vhi": 55.67
+    "soil_moisture_ufc": 83.6,
+    "vhi": 54.0
   },
   "sources": [
     {
