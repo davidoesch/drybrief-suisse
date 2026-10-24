@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#index",
   "measured_at": "2026-10-12",
-  "generated_at": "2026-10-23T12:19:11.478829+00:00",
-  "data_age_days": 11,
+  "generated_at": "2026-10-24T11:45:46.405648+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -71,9 +71,9 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 58.5,
+      "value_pct": 66.4,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
-      "plain_de": "Böden leicht trocken",
+      "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#moisture",
       "source": "MeteoSchweiz"
     }
@@ -109,8 +109,8 @@
     "soil_moisture_index": 2,
     "spi_1m": -1.02,
     "spi_3m": -0.71,
-    "soil_moisture_ufc": 58.5,
-    "vhi": 62.5
+    "soil_moisture_ufc": 66.4,
+    "vhi": 63.17
   },
   "sources": [
     {
