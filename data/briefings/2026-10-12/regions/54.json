@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/54-westlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-10-12",
-  "generated_at": "2026-11-03T14:46:39.763115+00:00",
-  "data_age_days": 22,
+  "generated_at": "2026-11-04T14:59:04.418694+00:00",
+  "data_age_days": 23,
   "cdi": 3,
   "cdi_label_de": "Trocken",
   "cdi_noun_de": "Erhebliche Trockenheit",
@@ -36,7 +36,7 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 72.8,
+        "value_mm": 72.6,
         "spi": -0.54,
         "comparison_de": "Etwas weniger Niederschlag als üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -44,7 +44,7 @@
       "long_term": {
         "days": 90,
         "index": 2,
-        "value_mm": 215.9,
+        "value_mm": 215.6,
         "spi": -1.19,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Leichtes Niederschlagsdefizit"

@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage#index",
   "measured_at": "2026-10-12",
-  "generated_at": "2026-11-03T14:46:39.719912+00:00",
-  "data_age_days": 22,
+  "generated_at": "2026-11-04T14:59:04.367532+00:00",
+  "data_age_days": 23,
   "cdi": 4,
   "cdi_label_de": "Sehr trocken",
   "cdi_noun_de": "Grosse Trockenheit",
@@ -36,16 +36,16 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 71.2,
-        "spi": -0.17,
+        "value_mm": 70.0,
+        "spi": -0.2,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 3,
-        "value_mm": 173.6,
-        "spi": -1.46,
+        "value_mm": 172.4,
+        "spi": -1.48,
         "comparison_de": "Deutlich weniger Niederschlag als üblich",
         "label_status_de": "Erhebliches Niederschlagsdefizit"
       }
@@ -114,8 +114,8 @@
     "precip_24m_index": 4,
     "hydro_index": 1,
     "soil_moisture_index": 4,
-    "spi_1m": -0.17,
-    "spi_3m": -1.46,
+    "spi_1m": -0.2,
+    "spi_3m": -1.48,
     "soil_moisture_ufc": 41.3,
     "vhi": 42.83
   },
