@@ -7,9 +7,9 @@
   "region_slug": "67-oberengadin",
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#index",
-  "measured_at": "2026-10-12",
-  "generated_at": "2026-11-06T14:43:19.518486+00:00",
-  "data_age_days": 25,
+  "measured_at": "2026-10-26",
+  "generated_at": "2026-11-07T13:40:50.766025+00:00",
+  "data_age_days": 12,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -35,18 +35,18 @@
       "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#precipitation",
       "short_term": {
         "days": 30,
-        "index": 2,
-        "value_mm": 33.6,
-        "spi": -0.99,
-        "comparison_de": "Etwas weniger Niederschlag als üblich",
-        "label_status_de": "Leichtes Niederschlagsdefizit"
+        "index": 1,
+        "value_mm": 68.3,
+        "spi": -0.07,
+        "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
+        "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 1,
-        "value_mm": 249.3,
-        "spi": -0.69,
-        "comparison_de": "Etwas weniger Niederschlag als üblich",
+        "value_mm": 270.5,
+        "spi": -0.34,
+        "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       }
     },
@@ -71,7 +71,7 @@
       "label_de": "Bodenfeuchte",
       "icon": "🌱",
       "index": 2,
-      "value_pct": 66.4,
+      "value_pct": 67.9,
       "label_status_de": "Leichtes Bodenfeuchtedefizit",
       "plain_de": "Böden mässig feucht",
       "link": "https://www.trockenheit.admin.ch/de/regionen/67-oberengadin/aktuelle-lage#moisture",
@@ -102,21 +102,21 @@
     "Bergregion: Quellfassungen und Bergwasserleitungen auf ausreichende Schüttung prüfen."
   ],
   "raw": {
-    "precip_1m_index": 2,
+    "precip_1m_index": 1,
     "precip_3m_index": 1,
     "precip_24m_index": 3,
     "hydro_index": 2,
     "soil_moisture_index": 2,
-    "spi_1m": -0.99,
-    "spi_3m": -0.69,
-    "soil_moisture_ufc": 66.4,
-    "vhi": 63.17
+    "spi_1m": -0.07,
+    "spi_3m": -0.34,
+    "soil_moisture_ufc": 67.9,
+    "vhi": 47.17
   },
   "sources": [
     {
       "name": "Trockenheitsplattform BAFU",
       "url": "https://www.trockenheit.admin.ch",
-      "data_date": "2026-10-12"
+      "data_date": "2026-10-26"
     },
     {
       "name": "MeteoSchweiz Open Data",
