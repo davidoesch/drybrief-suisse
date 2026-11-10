@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/59-noerdliches-wallis/aktuelle-lage#index",
   "measured_at": "2026-10-26",
-  "generated_at": "2026-11-09T17:00:55.224761+00:00",
-  "data_age_days": 14,
+  "generated_at": "2026-11-10T15:20:11.157879+00:00",
+  "data_age_days": 15,
   "cdi": 2,
   "cdi_label_de": "Leicht trocken",
   "cdi_noun_de": "Leichte Trockenheit",
@@ -25,7 +25,7 @@
   "trend_label_de": "Stabile Lage erwartet",
   "trend_arrow": "→",
   "forecast_cdi_p50": 2,
-  "forecast_valid_at": "2026-11-02",
+  "forecast_valid_at": "2026-11-09",
   "forecast_summary_de": "Die Lage bleibt voraussichtlich stabil (Stufe 2).",
   "indicators": {
     "precip": {
