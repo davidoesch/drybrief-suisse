@@ -8,8 +8,8 @@
   "region_url": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage",
   "region_url_cdi": "https://www.trockenheit.admin.ch/de/regionen/65-sottoceneri/aktuelle-lage#index",
   "measured_at": "2026-10-26",
-  "generated_at": "2026-11-10T15:20:11.201789+00:00",
-  "data_age_days": 15,
+  "generated_at": "2026-11-11T14:51:10.777657+00:00",
+  "data_age_days": 16,
   "cdi": 1,
   "cdi_label_de": "Nicht trocken",
   "cdi_noun_de": "Keine Trockenheit",
@@ -36,15 +36,15 @@
       "short_term": {
         "days": 30,
         "index": 1,
-        "value_mm": 166.2,
-        "spi": 0.19,
+        "value_mm": 166.8,
+        "spi": 0.2,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
       },
       "long_term": {
         "days": 90,
         "index": 1,
-        "value_mm": 469.8,
+        "value_mm": 470.4,
         "spi": -0.21,
         "comparison_de": "Etwa gleich viel Niederschlag wie üblich",
         "label_status_de": "Kein oder geringes Niederschlagsdefizit"
@@ -93,7 +93,7 @@
     "precip_24m_index": 1,
     "hydro_index": 1,
     "soil_moisture_index": 1,
-    "spi_1m": 0.19,
+    "spi_1m": 0.2,
     "spi_3m": -0.21,
     "soil_moisture_ufc": 85.3,
     "vhi": 69.86
